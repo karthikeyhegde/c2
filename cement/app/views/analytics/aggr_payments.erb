@@ -1,0 +1,40 @@
+<style type="text/css" media="print">
+    @media print{ #user_payment_status{ height:100%;overflow:visible;} } 
+    @media print{ #user_balance_table{ height:100%;overflow:visible;} } 
+</style>
+<div class="row-fluid" id=payment_status >
+   <div class="span3 offset1 " style="background-color:#FFFFFF;color:#450A0A;mrgin:5px;padding:10px;">
+   	 <%= Utility.indian_number @bal%><br>
+      <span class='greytext10'> Balance amount pending from Contacts</span>
+   	 <br>
+   </div>
+
+   <div class="span3 "  style="background-color:#FFFFFF;color:#450A0A;mrgin:5px;padding:10px;">
+      <%=Utility.indian_number( @pay * -1)%><br>
+      <span class='greytext10'>Amount to be paid </span>
+   </div>
+
+   <div class="span4"  style="background-color:#FFFFFF;color:#450A0A;mrgin:5px;padding:10px;font-weight:bold">
+   	<%=Utility.indian_number(@bal + @pay)%><br>
+      <span class='greytext10'>Total Balance Amount</span>
+   </div>
+
+</div>
+<br style="line-height:10px;">
+<div class="row-fluid" id=payment_status>
+   <div class="span10 offset1" style="background-color:#FFFFFF;padding:1%;border:1px solid #CACACA">
+        <span class="h5"> Contact-Balance Details</span>
+&nbsp; &nbsp; <button type="button " class="btn  btn-xs" onclick="PrintElem('user_payment_status')">
+          <i class="fa fa-print" aria-hidden="true"></i> Print
+        </button><br>
+   	  <%=render :partial => 'baldetails' %>
+   </div>
+</div>
+<br>
+  <div class="row-fluid" id=payment_status>   
+ <%=render :partial => 'bal_trend'%>    
+ </div>
+<br>
+ 
+
+

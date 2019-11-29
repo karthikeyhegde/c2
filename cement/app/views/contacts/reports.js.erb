@@ -1,0 +1,10 @@
+<%if params[:commit] == 'Print View'%>
+ var x=window.open('','_blank','width=1000px,height=600, scrollbars=yes, resizable=yes');
+x.document.open().write("<%=j (render :partial=>'contacts/print_view') %>").close();
+<%else%>
+ $('#contact_report').html("<%=j (render :partial=>'contacts/reports') %>");
+ <%if params[:commit] == 'Show Report' %>
+ $('#mn_filter_cnt').html("<%=j (render :partial=>'contacts/contacts_filter') %>");
+ <%end%>
+<%end%>
+$('#flt_icon').removeClass('fa-spin')

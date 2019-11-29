@@ -1,0 +1,11 @@
+ <% if !@contact.errors.blank? %>
+   <% @contact.errors.full_messages.each do |msg| %>
+       alert("<%=h(msg)%>")
+   <%end%>    
+ <%else%>
+ $('#transaction_contact_id').val("<%=@contact.id%>");
+ $('#txn_contact').val("<%=@contact.name_subname%>");
+ $('#contact-modal-window').modal('toggle');
+ <%end%>
+
+ 

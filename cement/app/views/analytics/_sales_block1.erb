@@ -1,0 +1,93 @@
+
+  <div id='block1' class="span7" style="background-color:#FFFFFF;margin:0%;margin-left:8.5%;border:1px solid #CACACA">
+     <div>
+       <span id="block1_filter_icon" class='block_filter_icon'><i class="fa fa-wrench"></i><i class="fa fa-cog"></i></span>&nbsp;&nbsp;
+        <%if @act == 'filter_block1' %> 
+         <i class="fa fa-filter " style="color:#806517"></i> <%end%> <%if !@report.name.blank? %><span style="color:#659EC7"><%=@report.name%></span> <%end%><span style="font-size:14px;margin:4px;">&nbsp;&nbsp;Item Sales</span><hr style="line-height:0px;margin:2px;">
+        <%=render :partial => 'filter1' %>
+     </div>
+
+     <%=render :partial => 'sales_item_chart' %>
+  </div>
+
+   <div class="span3 " style="margin-left:4px;marging-top:2px;">
+         <div class="row-fluid" >
+            <div class="span12 box-notice" style="background-color:#FFFFFF;margin-left:0.5%">
+         	 Sales Amount : <%=Utility.indian_number @total_salesamnt%><br>
+             <span class='greytext10'> From<span id='amnt_txt'> <%=@from_date%> Total <%=Utility.indian_number @total_salesnm%> items sold</span></span>
+            </div>
+         </div>
+         <br style="font-size:10px;line-height:6px;">
+        <div class="row-fluid" id=payment_status>
+           <div class="span12" style="background-color:#FFFFFF;margin-left:0.5%">
+             <table class="table table-striped table-condensed" style="font-size:12px;margin:2px;">
+             <thead>
+                <th>Top Customer Name</th>
+                <th>Amount</th>
+             </thead>
+             <tbody>
+                <% @top_customers[0..5].each{|c| %>
+                <tr>
+                  <td><%=c[1]%></td>
+                  <td><%=Utility.indian_number c[2]%></td>
+                </tr>
+                <%}%>
+             </tbody>   
+
+             </table>
+             </div>
+          </div>
+   </div>
+
+   <script>
+      $('#block1_filter_icon').click(function(event) {
+   if( $('#block1_filters').hasClass('filter-left-pos')){
+
+      $('#block1_filters').removeClass('filter-left-pos');
+      $('#block1_filters').addClass('filter-right-pos');
+      $('#block1_filter_icon').addClass('block_filter_icon_click');
+     
+
+   }else{
+      $('#block1_filters').removeClass('filter-right-pos');
+      $('#block1_filters').addClass('filter-left-pos');
+       $('#block1_filter_icon').removeClass('block_filter_icon_click');
+     
+
+   }
+
+});
+
+
+  jQuery.fn.cssInt = function (prop) {
+    return parseInt(this.css(prop), 10) || 0;
+};
+      $(document).ready(function(){
+        var x = $("#block1").position();
+        $("#block1_filters").position({top:x.top+20})
+
+      });
+      
+
+  $('#report_item_ids').select2({
+    width:'60%',
+
+ });
+  $('#report_contact_ids').select2({
+    width:'60%',
+
+ });
+   $('#report_site_ids').select2({
+    width:'60%',
+
+ });
+
+$('#report_group_order').select2({
+    width:'95%',
+    maximumSelectionSize: 3,
+ });
+
+$('.report-date1').datepicker({ dateFormat: 'dd-mm-yy' });
+
+
+   </script>

@@ -1,0 +1,119 @@
+<html>
+<head>
+  <title>Transactions-Cement</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+   <%= csrf_meta_tag %>
+  <script type="text/javascript">
+     
+     var search_contacts = [];
+     var contact_names = []
+    $(document).on('keyup','input.item_numbers', {} ,function(e){
+       var num =  this.id.split("_")[2];
+      var price_e = $("#item_price_"+num)[0];
+      var number_e = $("#item_number_"+num)[0];
+      var regexDecm =  /^[1-9]\d*(\.\d+)?$/;
+      var regexNum =   /[0-9 -()+]+$/ ;
+     
+      if(price_e.value.match(regexDecm) && number_e.value.match(regexNum)){
+        $("#item_val_"+num).html(indianFormat((parseFloat(price_e.value) * parseFloat(number_e.value)).toFixed(2)));
+      }else{ $("#item_val_"+num).html('0') }
+      
+      calc_total_value();
+
+    });
+
+
+
+
+   function calc_total_value(){
+
+       var  i =1;
+       var total = 0.0;
+
+       $(".item_total").each(function(){
+          if($(this).html() != ''){
+            var st = $(this).html().split(',').join('');
+            var a = parseFloat(st);
+            total = total+a;
+          }
+       });
+
+
+
+/*if($("#transaction_other_charges_amount")[0].value != '') {
+        total = total+ parseFloat($("#transaction_other_charges_amount")[0].value);
+      }
+*/
+
+      if( $("#transaction_vehicle_charges")[0] && $("#transaction_vehicle_charges")[0].value != '') {
+        total = total+ parseFloat($("#transaction_vehicle_charges")[0].value);
+      }
+
+      if($("#transaction_hamaali")[0] && $("#transaction_hamaali")[0].value != '') {
+        total = total+ parseFloat($("#transaction_hamaali")[0].value);
+      }
+      
+      if( $("#transaction_discount")[0] && $("#transaction_discount")[0].value != '') {
+        total = total - parseFloat($("#transaction_discount")[0].value);
+      }
+
+      ptotal = parseFloat(total).toFixed(2);
+      $("#items_total_value").html(indianFormat(ptotal));    
+
+   }
+
+   function removeItem(row_no){
+     $("#trow_"+row_no).remove();
+     calc_total_value();
+
+   }  
+
+   
+   function search_contacts_call(id){
+       a =  $("#"+id)[0].value;
+       contact_names = [];
+       $.ajax({
+         type:"Get",
+         dataType: 'json',
+         url: "<%=search_names_contacts_path()%>",
+         data:"str="+a ,
+         success: function(data){
+           $.each(data, function(i,val){
+              contact_names.push(val.name+"  "+val.subname);
+           });
+           search_contacts = data;
+           
+         }
+       });
+       
+       return contact_names;
+
+   }
+
+   function show_other_fields(){
+
+     $("#other_link").hide();
+     $("#vehicle").show();
+     $("#hamaali").show();
+     $("#discount").show();
+   }
+
+  </script>
+</head>
+<body>
+<%=render :template => "layouts/nav.erb" %>
+<div class="container-fluid">
+  <div class="row-fluid" style="padding:1px">
+    <div class="span12"style="text-align:left" id="items">
+    <br>
+          <%=yield%>
+    </div>
+
+
+  </div>
+
+</div>
+
+</body>
+</html>

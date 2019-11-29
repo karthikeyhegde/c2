@@ -1,0 +1,23 @@
+<tbody>         
+<%@its.each{|r| %>
+              <tr>
+                <td>
+                   <%=link_to r[1] , rep_txnitems_item_url(r[0])%>
+                </td>
+                <td>
+                   <%=Utility.indian_number r[2]%>
+                   <br>
+                   <span class='greytext11'> <%=Utility.indian_number r[3]%></span>
+                </td>
+                <% j =4%>
+               <% for  i in 1.. ( (r.length - 4)/2) do %>
+                <td>
+                   <%= Utility.indian_number r[j]%><br>
+                   <span class='greytext11'><%= Utility.indian_number r[j+1]%></span>
+                </td>
+                <%
+                 j += 2
+                end %>
+              </tr>
+            <%}%>
+        </tbody>    

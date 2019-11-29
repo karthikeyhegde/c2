@@ -1,0 +1,21 @@
+ 
+<% payment_row ||= PaymentRow.new() 
+   payment_row.id ||= row_no.to_i %>
+
+<%= fields_for "payment_rows[]", payment_row do |p| %>
+   <tr  id="pay_<%=row_no%>">
+       <td>
+        <%=p.select  :pay_type,  options_for_select(["Cash","Cheque/DD", "Bank Transaction"],[payment_row.pay_type,payment_row.pay_type]),{},{style:'width:150px;'} %>
+
+    </td>
+    <td >
+      <%=p.text_field  :note, style:"height:30px;", :placeholder => "Payment Info" %>
+    </td>
+    <td>
+       <%=p.text_field  :amount, id:"amount_#{row_no}", class:"each_amount", style:"height:30px;", :placeholder => "Amount" %>
+
+      <%=link_to_function  (image_tag "cross_circle.png", :size=>"12x12"), "removeItem('#{row_no}')", style:'font-size:15px;font-weight:bold;'%>
+    </td>
+  </tr>  
+  
+ <%end%> 

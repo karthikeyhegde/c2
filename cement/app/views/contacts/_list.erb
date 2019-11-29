@@ -1,0 +1,89 @@
+
+
+<div style='position:absolute;right:12%;text-align:right;'>
+<span id='alpha_links'></span>
+   <span> <%=link_to "Regular", contacts_url(:condn=>'regular'),  :id=>'regular', :class=>'label'%>&nbsp</span>|
+   <span> <%=link_to "Non Regular", contacts_url(:condn=>'nonregular'),  :id=>'nonregular', :class=>'label'%>&nbsp</span>|
+   <span> <%=link_to "Supplier", contacts_url(:condn=>'supplier'),  :id=>'supplier', :class=>'label'%>&nbsp</span>|
+   <span> <%=link_to "All", contacts_url(:condn=>'all'),  :id=>'all',:class=>'label'%>&nbsp</span>
+
+</div>
+<br>
+<table class="table table-striped " style="font-size:12px;width:80%;" align="center">
+  <thead style="color:#FFF;background-color:#488AC7;">
+    <th>Contact</th>
+    <th>View</th>
+    <th>Regular</th>
+    <th>Supplier</th>
+    <th>Balance</th>
+
+    <th style="color:#A9F5F2">Action</th>
+  </thead>
+  <% 
+     htmllink = {}
+    %>
+  <tbody>
+   <% @contacts.each{|c| %>
+    <tr>
+    <% if   !htmllink.key?(c.name[0].upcase)
+
+         
+           htmllink[c.name[0].upcase] = "n_"+c.id.to_s
+       end
+      %>
+     <td> <b><%=link_to c.name,  report_page_contact_path(:id => c.id), {:name => 'n_'+c.id.to_s}%></b> &nbsp; Ph:<%=c.contact_number%>
+        <br>
+        <%=c.subname%>  <span class="greytext"><%=c.contact_type%> <%=c.place%></span>
+
+     </td>
+     <td>
+      <%=link_to report_page_contact_path(:id => c.id, :show_val => 'trs') do %>
+        <i class="icon-truck fa-lg" ></i>
+      <%end%><%=space(2)%>
+      <%=link_to  report_page_contact_path(:id => c.id, :show_val => 'itms') do %>
+        <i class="fa fa-shopping-cart fa-lg" ></i>
+      <%end%><%=space(2)%>
+      <%=link_to  report_page_contact_path(:id => c.id, :show_val => 'pays') do %>
+        <i class="icon-suitcase fa-lg"></i>
+      <%end%><%=space(2)%>
+      <%if c.supplier == 1%>
+             <%=link_to  report_page_contact_path(:id => c.id, :show_val => 'stcks') do %>
+        <i class="fa fa-cubes fa-lg"></i>
+      <%end%>
+      <%end%>
+
+     </td>
+
+     <td><%if c.regular == 1%>&#10003<%else%>&#10007<%end%></td>
+     <td><%if c.supplier == 1%>&#10003<%else%>&#10007<%end%></td>
+     <td><%=Utility.indian_number(c.balance)%></td>
+    
+    <td>
+        <span id ='t1'>
+          <%=link_to "Edit", edit_contact_url(c.id), :class=>"label label-info"%><%=space(5).html_safe%>
+        </span>
+        <span id='t2'>
+          <%=link_to "Delete", remove_contact_url(c.id), :method => :post, :onclick => "return confirm('Are you sure?')", :class=>"label label-warning"%>
+        </span>
+    </td>
+   </tr>
+   <%}%>
+  </tbody>
+
+</table>
+
+<script>
+  var htmlstr = "";
+  $(document).ready(function(){
+
+   <% htmllink.each{|key,val|%>
+      htmlstr += '<a href="#'+"<%=val%>"+'">'+"<%=key%>"+'</a> | '
+
+    <%}%>
+   
+    $("#alpha_links").html(htmlstr);
+  });
+    var elem = "#<%=params[:condn]%>"
+    $(elem).addClass(' label label-info');
+  
+</script>

@@ -1,0 +1,174 @@
+
+<style>
+
+
+  .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+    background-color: #488AC7;
+
+  }
+
+  .navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #488AC7;
+    color:#FDEEF4;
+  }
+
+</style>
+<div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#151B54;">
+ <div   #4863A0 >
+
+    <ul class="nav" >
+    <li >&nbsp;&nbsp;&nbsp;  <i class="fa fa-home brand" style="color:#FFF;padding-right:1px;"></i></li>
+     <li> <%=link_to " Cement",  transactions_url, :class=>"brand",:style =>"font-size:14px;color:#FFF;padding-left:10px;"%>
+
+      
+     </li>
+
+ 
+      <li  <% if params[:controller]  == "contacts"%> class='active'<%end%>  style="color:#FDEEF4;"><%=link_to "Contacts", contacts_url %></li>
+      <li class="dropdown">
+        <a href="#"  class="dropdown-toggle" id="menu_click"><span style="color:#FDEEF4;font-size:22px;" >&#9776;</span> </a>
+          <ul class="dropdown-menu" style="width:500px;">
+
+            <div class="row-fluid" style="padding:5px">
+   
+                <div class="span4"style="text-align:left" id="contacts">
+                   <li <% if params[:controller]  == "transactions"%> class='active'<%end%>><%=link_to "Transactions", transactions_url %></li>
+            <li <% if params[:controller]  == "payments"%> class='active'<%end%>><%=link_to "Payments", payments_url %></li>
+             <li <% if params[:controller]  == "items"%> class='active'<%end%>><%=link_to "Items", items_url%></li>
+            <li <% if params[:controller]  == "sites"%> class='active'<%end%>><%=link_to "Sites", sites_url%></li>
+           <hr style="margin:5px;">
+            <li <% if params[:controller]  == "users"%> class='active'<%end%>><%=link_to "Users", users_url %></li>
+             
+                </div>
+                <div class="span8"style="text-align:left" id="contacts">
+                    <li <% if params[:controller]  == "transactions"%> class='active'<%end%>><%=link_to "Transactions", transactions_url %></li>
+            <li <% if params[:controller]  == "payments"%> class='active'<%end%>><%=link_to "Payments", payments_url %></li>
+             <li <% if params[:controller]  == "items"%> class='active'<%end%>><%=link_to "Items", items_url%></li>
+            <li <% if params[:controller]  == "sites"%> class='active'<%end%>><%=link_to "Sites", sites_url%></li>
+           <hr style="margin:5px;">
+            <li <% if params[:controller]  == "users"%> class='active'<%end%>><%=link_to "Users", users_url %></li>
+             
+                </div>
+            </div>    
+
+            
+             
+          </ul>
+       </li>
+
+               <a class="btn btn-small btn-warning" style="color:#FFF" href="<%=new_stock_entry_url%>"> 
+                    <span style='font-weight :bold;font-size:16px;'>+</span><span> Stock</span>
+               </a>
+                  <a class="btn btn-small btn-success" style="color:#FFF" href="<%=new_payment_url%>">
+                    <span style='font-weight :bold;font-size:16px;'>+</span><span> Payment</span>
+               </a>
+
+               <a class="btn btn-small btn-primary " style="color:#FFF" href="<%=quick_add_form_transactions_url%>">
+                  <span style='font-weight :bold;font-size:16px;'> + </span>  <span> Transaction</span>
+                </a>
+
+             
+    </ul>
+    <ul class="nav navbar-nav pull-right" >
+        <li>
+            <form class="navbar-search" action="<%=all_search_items_url%>">
+                <input name='search' type="text" class="search-query span2" style="background-color:#FAFAFA;color:#585858;height:25px;" placeholder="Search">    
+            </form>
+        </li>
+
+       <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color:#FFF"> <%=@auser.full_name%>  <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+               <li><%=link_to "Details", self_details_user_url(:id => @auser.id) %></li>
+             <li><%=link_to "Log Out", logout_user_url(:id => @auser.id) %> </li> 
+          </ul>
+      </li>
+          
+    </ul>
+
+  </div>
+
+</div>
+<br><br>
+<div id='mn_dropdown' class='menu-top-hide' style="color:#FFF;font-family: 'Lato',Calibri,Arial,sans-serif;font-size:24px;">
+    <div class="row-fluid" style="padding:0px;margin:0px;height:100%;">
+   
+      <div class="span2 mn-hd-scn" >
+         <i id='cog-menu' class="fa fa-cog"></i><%=space(2)%>Menu
+      </div>
+
+      <div class="span2 mn-section" >
+          <span class='mn-hd'><i class="fa fa-truck"></i><%=space(2)%>Transactions</span><br>
+          <%=link_to "Transaction List", transactions_url, {:style=>"line-height:40px;"} %> <br>
+          <%=link_to "Add Transaction", quick_add_form_transactions_url %>    
+          <br><br><br>
+          <div class='mn-hd'> <i class="fa fa-briefcase"></i><%=space(2)%> Payment</div>
+          <div ><%=link_to "Payment List", payments_url %> </div>
+          <%=link_to "Add Payment", new_payment_url %>   
+      </div>
+
+
+      <div class="span2 mn-section" >
+          <span class='mn-hd'><i class="fa fa-cart-arrow-down"></i><%=space(2)%>Items</span><br>
+          <%=link_to "Items List", items_url%><br>
+          <%=link_to "Item Sales-Stocks", aggrigated_summary_items_url %> <br>
+          <%=link_to "Add Item", new_item_url%>
+          <br><br>
+          <div class='mn-hd'> <i class="fa  fa-cubes"></i><%=space(2)%> Stock Entry</div>
+          <div ><%=link_to "Stock Entry List", stock_entries_url %> </div>
+          <%=link_to "Add Stock Entry", new_stock_entry_url %>   
+      </div>
+
+      <div class="span2 mn-section" >
+          <span class='mn-hd'><i class="fa fa-users"></i><%=space(2)%>Contacts</span><br>
+          <%=link_to "Contact List", contacts_url%><br>
+          <%=link_to "Quick-All Edit", quick_edit_contacts_url%> <br>
+          <%=link_to "Add New Contact", new_contact_url%>
+          <br><br>
+          <div class='mn-hd'> <i class="fa  fa-bank"></i><%=space(2)%> Sites</div>
+          <div ><%=link_to "Sites List", sites_url %> </div>
+          <%=link_to "Add New Site", new_site_url %>   
+      </div>
+
+      <div class="span2 mn-section" style="border-left: 1px solid #5BB7EE">
+          <span class='mn-hd'><i class="fa fa-cogs fa-spin"></i><%=space(2)%>Ananlytics</span><br><br>
+          <i class="fa fa-dashboard"></i> <%=link_to "Balance Status", status_url %><br>
+          <i class="fa fa-line-chart"></i> <%=link_to "Sales Report", sales_analytics_url%> <br>
+         <br>
+         <i class="fa fa-child"></i><%=link_to "Users", users_url %>
+         
+      </div>
+
+    </div>
+
+    
+             
+</div>
+
+
+
+<script type="text/javascript">
+$('#menu_click').click(function(event) {
+   if( $('#mn_dropdown').hasClass('menu-top-hide')){
+
+      $('#mn_dropdown').removeClass('menu-top-hide');
+      $('#mn_dropdown').addClass('menu-top-show');
+     
+
+   }else{
+      $('#mn_dropdown').removeClass('menu-top-show');
+      $('#mn_dropdown').addClass('menu-top-hide');
+      
+
+   }
+
+});
+
+$('#mn_dropdown a').click(function(event) {
+
+   $("#cog-menu").addClass("fa-spin");
+})
+
+
+  </script>
+               

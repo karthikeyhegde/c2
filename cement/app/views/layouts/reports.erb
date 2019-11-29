@@ -1,0 +1,121 @@
+<html>
+<head>
+     <title>Cement</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<%=render :template => "layouts/nav.erb" %>
+
+<div id="sidebar" class="row-fluid" style="padding:0px;margin:0px">
+<br>
+<%= form_for "report",  :url => generate_reports_url, :remote => true, :html =>{:id=>'report_form'} do |f| %>
+ <div class="span12">
+     <h6>Select Item(s)</h6>
+     <%=hidden_field_tag 'report[r_value]', @r_value%>
+    <%=f.select  :item_ids, options_for_select(["Select .."]+Item.picklist), {},{ :multiple => true} %>
+ </div>
+ <div class="span12">
+    <h6>Select Contacts</h6>
+    <%=f.select  :contact_ids, options_for_select(Contact.picklist), {},{:multiple => true} %>
+ </div>
+ <hr>
+ <div class="span12">
+   <h6>Select Site</h6>
+    <%=f.select  :site_ids, options_for_select(["Select .."]+Site.picklist),  {}, {:multiple => true} %>
+ <hr class="style-one">
+ </div>
+ 
+ <div class="span12">
+   <h6>Select Dates</h6>
+    <span class='sub_head'> Custom Fixed Date</span>
+     <br>
+    <%=f.text_field :from_date,  {class: 'report-date', style:'height:30px;width:120px;', :placeholder => "From Date"}%>
+      <br>
+    <%=f.text_field :to_date,  {class: 'report-date', style:'height:30px;width:120px;', :placeholder => "To Date"}%>
+      <br>
+      <span class='sub_head' style="color:white"> OR</span>
+      <br>
+      <span class='sub_head'> Dynamic Dates</span>
+      <br>
+      Last <%=f.text_field  :number_of, {:style => 'width:60px;height:30px;'} %>
+      <%=f.select  :dynamic_date_value,  options_for_select([ "Days","Weeks","Months","Year"]) %>
+     
+        <hr class="style-one">
+
+        
+ </div>
+
+ <div id='group_div' class="span12">
+   <h6>Group Aggrigate</h6>
+    <%=f.select  :group_order, options_for_select(["Contact", "Item","Timeline","Site
+
+
+      "]), {},{:multiple => true} %>
+
+        <hr class="style-one">
+ </div>
+ <div id='timeline'  class="span6" style="display:none">
+   <h6>Timeline</h6>
+    <%=f.select  :time_line_value, options_for_select(["Daily", "Weekly","ByWeekly","Monthly","Quaterly", "Yearly"])%>
+ </div>
+   <h6> Report Name</h6>
+    <%=f.text_field :name %>
+    
+ <div id='show_div' class="span12">
+ <%=submit_tag "Show" , {class:'btn btn-warning btn-xs', style:'vertical-align: top;'}%>
+ <%=submit_tag "Save" , {class:'btn btn-error btn-xs', style:'vertical-align: top;'}%>
+ <br><br>
+ </div>
+</div>
+<%end%>
+
+<div id="main" class="row-fluid">
+   <div class="span12">
+   <br><br>
+       <%=yield%>
+   </div>
+  </div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+ $('#report_item_ids').select2({
+    width:'95%',
+
+ });
+  $('#report_contact_ids').select2({
+    width:'95%',
+
+ });
+   $('#report_site_ids').select2({
+    width:'95%',
+
+ });
+
+$('#report_group_order').select2({
+    width:'95%',
+    maximumSelectionSize: 3,
+ });
+
+$('.report-date').datepicker({ dateFormat: 'dd-mm-yy' });
+
+
+
+ $(document).ready(function(){
+
+
+            $('#report_group_order').change(function(){
+               if($('#report_group_order').val().indexOf("Timeline") >= 0){
+                $('#timeline').show();
+
+               }else{ $('#timeline').hide(); }
+            });
+
+           $('#report_time_line_value').width('80%');
+           $('#report_dynamic_date_value').width('40%');
+        });    
+
+ </script>

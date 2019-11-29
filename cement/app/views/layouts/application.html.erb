@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <%=render :template => "layouts/header.erb" %>
+    
+</head>
+<body link="blue">
+<%=render :template => "layouts/nav.erb" %>
+
+<div class="container-fluid">
+
+  <div class="row-fluid" style="padding:5px">
+
+    <div class="span12"style="text-align:left" id="contacts">
+          
+            <%=yield%>
+    </div>
+
+
+  </div>
+
+</div>
+</body>
+</html>

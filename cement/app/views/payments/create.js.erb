@@ -1,0 +1,3 @@
+
+<% @trans = @p %>
+$('#new_payment').before("<%= j(render  :template => 'transactions/_trans_error.erb', :locals => {:trans => @trans} ) %>");

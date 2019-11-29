@@ -1,0 +1,11 @@
+<div id="index_head" class="row-fluid" style="padding:0px;margin:0px">
+ <div class="span8">
+   <h5>Items List</h5>
+ </div>
+</div>
+
+<div id="index_list" class="row-fluid">
+   <div class="span12">
+    
+   </div>
+  </div>

@@ -1,0 +1,32 @@
+
+<script type="text/javascript">
+  function contact_selected(id,name,num){
+
+
+    $('#transaction_contact_id').val(id);
+    $('#txn_contact').val(name);
+    $('#contact_number').html("Ph: "+num);
+    $('#contact-modal-window').modal('toggle');
+  }
+
+</script>
+
+<table class="table table-bordered table-striped " style="font-size:12px;">
+  <thead>
+    <th>Name</th>
+    <th>Label</th>
+    <th>Contact#</th>
+  </thead>
+  <tbody>
+   <% @contacts.each{ |c| %>
+    <tr>
+     <td><%=link_to_function "#{c.name} #{c.subname}",  "contact_selected('#{c.id}','#{c.name} #{c.subname}','#{c.contact_number}') " %></td>
+     <td><%=c.contact_type%></td>
+     <td><%=c.contact_number%></td>
+   </tr>
+   <%}%>
+  </tbody>
+
+</table>
+
+

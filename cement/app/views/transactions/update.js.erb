@@ -1,0 +1,2 @@
+$('#form_elements').before("<%= j(render  :template => 'transactions/_trans_error.erb', :locals => {:trans => @trans} ) %>");
+$('#txn-btn').removeAttr("disabled");

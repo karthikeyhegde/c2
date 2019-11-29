@@ -1,0 +1,26 @@
+
+<div class="row-fluid" style="padding:1px">
+    <div class="span8 offset2"style="text-align:left" id="users">
+        <div  class="well" style="background-color:#6F5499;color:#ffffff">
+        	<span style="font-size:22px;font-weight:bolder;">Personal Reminders</span>&nbsp;&nbsp;
+        	<span style="color:#CDBFE3;font-size:14px;">C.P Bazar, Sirsi (Uttara Kannada)</span>
+        </div>
+		<div class="well well-lg">
+		 
+		 <%= form_tag enter_in_users_path do %>
+		 		<h4 class="form-signin-heading">Please sign in</h4>
+		 		<span style="color:red;"><%=flash[:error]%></span>
+		 		<br>
+		<input name="username" type="text" class="form-control" placeholder="User name" required="" autofocus="" style="height:30px;"/>
+		 <br>
+		<input name="password" type="password" class="form-control" placeholder="Password" required=""  style="height:30px;"/>
+		<label class="checkbox">
+		<input type="checkbox" value="remember-me"/>
+		Remember me
+		</label>
+		<button class="btn  btn-success" type="submit">Sign in</button>
+		<%end%>
+		</div>
+
+</div>
+</div>

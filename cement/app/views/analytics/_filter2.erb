@@ -1,0 +1,64 @@
+  <div id="block2_filters" class="block_filters filter-left-pos" >
+    <%= form_for @report,  :url => filter_block2_analytics_url, :remote => true, :html =>{:id=>'report_form2'} do |f| %>
+    <div class="row-fluid"  id='sales_filter_block_2'  style="font-size:11px;margin:0px;padding:0px;">
+       
+       <div id='' class="span2" style="margin:3px;">
+           <i class="fa fa-filter fa-lg" style="color:#806517"></i> <b>Sales Graph Filter</b> 
+        </div>
+        <div id='button_ids' class="span4" style="margin:2px;border-right: 2px solid #FFF">
+           <%=submit_tag 'Show',  class:'btn  btn-info btn-small', :data => {disable_with: "Saving ..."}, id:'tx-btn'%><%=space(5).html_safe%>
+           <%=submit_tag 'Save as',  class:'btn btn-info btn-small', :data => {disable_with: "Saving ..."}, id:'tx-btn'%>
+           <%=f.text_field :name,  { style:'height:25px;width:150px;padding-top:2px;margin:0px;', :placeholder => "Filter Name"}%>
+        </div>
+        <div id='button_ids2' class="span6" style="margin-left:20px;font-size:13px;">
+            <b>Saved Filters</b>
+        </div>
+    </div>   <hr style="margin:1px;">
+    <div class="row-fluid"  id='sales_filter_block_2'  style="font-size:10px;">
+       <div id='' class="span3" style="margin:3px;">
+          <span class='sub_head'> Custom Fixed Date</span>
+          <br>
+          <%=f.text_field :from_date,  {id: "rpdate2", class: 'report-date2', style:'height:30px;width:100px;', :placeholder => "From Date"}%>
+
+         - <%=f.text_field :to_date,  {id: "rpdate21", class: 'report-date2', style:'height:30px;width:100px;', :placeholder => "To Date"}%>
+           <span class='sub_head' style="color:brown"> OR</span>
+           <br>
+          <span class='sub_head'> Dynamic Dates</span>
+          <br>
+          Last <%=f.text_field  :number_of, {:style => 'width:60px;height:30px;'} %>
+         
+          <%=f.select  :dynamic_date_value,  options_for_select([ "","Days","Weeks","Months","Year"], @report.dynamic_date_value), {},{style:'height:30px;width:120px;'}%>
+              <br><hr style="margin:1px;">
+              <% tl = @report.item_ids.blank? ? '' : @report.dynamic_date_value %>
+              TimeLine <%=f.select  :time_line_value, options_for_select(["","Daily", "Weekly","Monthly","Quaterly", "Yearly"],@report.time_line_value),{}, { style:'height:30px;width:100px;'}%>
+              <br>
+        </div>
+
+        <div id='' class="span3" style="margin:1px;border-right: 2px solid #FFF">
+           <span class='sub_head'> Filter Criteria</span><br>
+           <span style="font-weight:bold;">Select Items<br>
+             <% t_arr  = @report.item_ids.blank? ? [] : @report.item_ids.split(",") %>
+             <%=f.select  :item_ids, options_for_select(["Select .."]+Item.picklist,t_arr), {},{ :multiple => true} %>
+             <br>
+             Select Contacts<br>
+             <% c_arr  = @report.contact_ids.blank? ? [] : @report.contact_ids.split(",") %>
+             <%=f.select  :contact_ids, options_for_select(Contact.picklist,c_arr), {},{:multiple => true} %>
+             <br>
+             Select Sites<br>
+             <% st_arr  = @report.site_ids.blank? ? [] : @report.site_ids.split(",") %>
+             <%=f.select  :site_ids, options_for_select(["Select .."]+Site.picklist,st_arr),  {}, {:multiple => true} %>
+           </span>
+        </div>  
+
+        <div id='saved_reports_block2' class="span6" style="margin-left:10px;font-size:13px;font-weight:bold;">
+          <%Report.where(:tag => "analytics_block2").each{|a| %>
+            <%=link_to a.name,  filter_block1_analytics_url(:id => a.id), :remote => true, :method => "post" %>
+            <br>
+             
+          <%}%>
+           
+        </div>  
+        
+     </div>
+               <%end%>  
+    </div> 

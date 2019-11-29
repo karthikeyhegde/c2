@@ -1,0 +1,143 @@
+
+<div class="row-fluid" style="margin:1px;">
+
+    <div class="span7" style="margin:0px;" >
+			 <canvas id="chart-area" width="400" height="200"/>
+   </div>
+   <div class="span5" style="margin:0px;"> 
+    <% its_s = @its.sort{|a,b| b[2] <=> a[2]} %>
+
+     <table class="table  table-condensed" style="font-size:12px;margin:2px;line-height:6px;">
+             <thead>
+      
+                <th>Top Item Name</th>
+                <th>Amount</th>
+                <th>Number</th>
+             </thead>
+             <tbody>
+                <% i = 0 %>
+                <% its_s[0..7].each{|it| %>
+                <% c = Item.color_code i+1 %>
+                <tr>
+                  
+                  <td><span style="background-color:<%=c%> ;color:<%=c%>;line-height:6px; ">...</span> &nbsp;<%=it[1]%></td>
+                  <td><%= Utility.indian_number it[2]%></td>
+                  <td><%=Utility.indian_number it[3]%></td>
+                </tr>
+                <%i += 1 %>
+                <%}%>
+             </tbody>   
+
+     </table>
+
+   </div>
+</div>
+
+
+	<script>
+
+	var ccode = ["#26CEBF",
+"#F2B54D",
+"#E8ACE9",
+"#ADEC6E",
+"#F99394",
+"#6AC2F2",
+"#BCD395",
+"#6DEFA6",
+"#C8E3E8",
+"#F2E95D",
+"#E3AF76",
+"#E7C9DF",
+"#EF95BA",
+"#75C69C",
+"#9DEAD6",
+"#87C270",
+"#9CB1EC",
+"#C3BB6B",
+"#8AB1C4",
+"#53F7CF",
+"#E0F380",
+"#4FD7F2",
+"#F0B0A6",
+"#9FC29F",
+"#DCCC5F",
+"#B4F1C3",
+"#EF9C66",
+"#E2EC96",
+"#C8F7AE",
+"#D0B7E5",
+"#46E3E8",
+"#CBD4EF",
+"#46CF9E",
+"#3DF6E6",
+"#D1EC5F",
+"#DDD292",
+"#ADC56D",
+"#8AC6BC",
+"#E7ABB8",
+"#F4A68C",
+"#9DDFEA",
+"#B1D363",
+"#99E880",
+"#9DEEAB",
+"#9BCDEF",
+"#B4C0C9",
+"#CFAE5D",
+"#73D091",
+"#CAEF8D",
+"#A5E191",
+"#9FD499",
+"#8DEEC5",
+"#74BFD2",
+"#E8CE7F",
+"#A5B9E2",
+"#79DCDF",
+"#76EFDF",
+"#C0B579",
+"#C6CE5A",
+"#EEC759",
+"#86D9F5",
+"#7AE890",
+"#A8CCDE",
+"#5EF5BC",
+"#46D3B3",
+"#BAEADC",
+"#8BD0B1",
+"#EFA5CF",
+"#F4AE59",
+"#5DD5C2"];
+
+
+
+
+		var doughnutData = [
+		    <%  i = 0
+		        its_s.each{|irs| 
+                 i += 1
+		    	%>
+				{
+
+					value: <%=irs[2]%>,
+					color: ccode[<%=i%>],
+					label: "<%=irs[1]%>"
+				}
+				<%if irs != its_s.last %>
+				 ,
+				<%end%>
+
+			<%}%>	
+				
+
+			];
+
+
+     var ctx = $("#chart-area").get(0).getContext("2d");
+        //This will get the first returned node in the jQuery collection.
+        var myNewChart = new Chart(ctx);
+
+        new Chart(ctx).Doughnut(doughnutData);
+
+
+
+
+	</script>

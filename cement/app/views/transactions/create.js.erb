@@ -1,0 +1,7 @@
+
+$('#first_row_fields').before("<%= j(render  :template => 'transactions/_trans_error.erb', :locals => {:trans => @trans} ) %>");
+
+<%if @save_success and params[:commit] == 'Save and +New' %>
+	window.location.href = "<%= quick_add_form_transactions_path %>"
+<%end%>
+$('#txn-btn').removeAttr("disabled");

@@ -1,0 +1,194 @@
+
+<div id='contact-modal-window' class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  Loading ...
+</div>
+<%= form_for @payment, :remote => true do |f| %>
+
+<div id='div_item_table' class="row-fluid txn-form" style="border:0;">
+   <div class="span2" >
+   </div>
+ <div class="span8">
+    <table id='item_tb' class='paymnt' style="border:1px solid #e6e6e6; background-color: #f1f1f1;">
+      <thead style="font-size:12px;">
+      </thead> 
+      <tbody style='font-size:13px;'>
+         <tr id='first_row_fields'>
+           <%if @payment.new_record?%>
+               <td>
+               <br>  
+                 <%=f.select  :recieved, options_for_select([["Recieved From:", 1],["Paid To:",0]], ["Recieved From:", 1]),{},{style:'width:150px;'}%>
+
+              </td>
+             <td>
+                Contact: <%= link_to '+New', add_txn_contacts_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;font-weight:bold;'}  %> &nbsp;|
+        <%=link_to ((image_tag "find.png", :size=>"16x16")+" List"), window_list_contacts_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;font-weight:bold;'}  %> 
+          <br>
+        <%=text_field  :txn, :contact, class:'autocomplete', style:"height:30px;", value: @payment.name_subname%>
+        <%=f.hidden_field :contact_id %>
+        <br>
+        <span id='contact_number' style='color:grey;font-size:14px;'></span>
+        </td>
+    <td style="padding:20px;padding-bottom:10px;">
+        Date : <br><%= f.text_field :on_date, class:'input', style:'height:30px;width:150px'%>
+     </td>
+    
+       
+           <%else%>
+                <td style="padding:20px;padding-bottom:10px;">
+                  <%if @payment.recieved? %>
+                      Recieved From:
+                 <%else%>
+                      Paid To:
+                 <%end%>
+
+                </td>
+                <td>
+                   Contact: <%= @payment.contact.name_subname%>
+                   <br>
+                   <span id='contact_number' style='color:grey;font-size:14px;'><%=@payment.contact.contact_number%></span>
+               </td>
+                 <td>
+                 Date : <%=@payment.on_date%>
+                 </td>
+
+            <%end%>
+             
+          </tr>
+          
+           <tr class ='bottom_line'>
+             <td colspan='3'>
+     <b><span id='ptype_link' style="font-size:11px;"> <%=link_to ((image_tag "add.png", :size=>"11x11")+'Payment Type'), add_payment_row_payments_path(:row_no => 1 ), :remote => true%></span></b>
+    </td>
+             
+
+           </tr>
+    
+
+  <%if !@payment.payment_rows.blank? %>
+    <% @payment.payment_rows.each{|prow| %>
+     <%=render :partial => 'payment_row_2', :locals => {:row_no => prow.id, :payment_row => prow}%>
+    <%}%>
+  <%else%>
+
+      <%=render :partial => 'payment_row_2', :locals => {:row_no => "1", :payment_row => PaymentRow.new(),:is_first => true}%>
+  <%end%>
+
+ 
+ <tr id='add_payment_link' class="bottom_line">
+    
+    <td >
+        Discount Amount<br>
+       <%=f.text_field  :discount, id: "discount_amount", class:"keyup_amount", style:"height:30px;width:100px;" %>
+    </td>
+     <td style="padding-left:10px;">Site:  <%=link_to ((image_tag "find.png", :size=>"12x12")+" List"), window_list_sites_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;'}  %> <br> 
+        <%=text_field  :txn, :site, class:'autocomplete', style:"height:30px;", :value => @site_name%> <br>
+        <%=f.hidden_field :site_id %></td>
+    <td >
+      Total Amount: <%=space(3)%>
+
+       <span id ='total_amnt' style='color:blue;font-weight:600;'> 
+        <%=Utility.indian_number (@payment.payment_amount + @payment.discount)%>
+      </span>
+    </td>
+</tr>
+
+
+ <tr   id='note_div' class='bottom_line'>
+    
+    <td colspan=3>
+      Note:<br>
+      <%=f.text_area  :descri,  :size => '3x2'%>
+
+    </td>
+    
+ </tr>
+ <tr>
+   <td colspan="3">
+       <%=f.submit "Add Payment",:id => "button_id", :class => 'btn btn-warning', :data => {disable_with: "Submitting..."}  %><%=space(5).html_safe%> <%=link_to "Cancel", payments_url, :style=>"font-weight:bold"%>
+   </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+
+
+
+<div class="row-fluid">
+  <div class="span12">
+     <hr>
+    <%=space(10).html_safe%> 
+  </div>
+</div>
+<% end %>
+
+
+
+<script type="text/javascript">
+  
+
+  $('#payment_on_date').datepicker({ dateFormat: 'dd-mm-yy' });
+  $("#payment_on_date").datepicker('setDate', new Date());
+
+  var contact_names = [];
+  var search_contacts = {};
+  var search_sites = {}
+  var site_names = []
+
+   <% @cont.each{|c| %>
+
+                    n_name = "<%=(c.subname == nil ? c.name : c.name+' '+c.subname)%>"
+                    contact_names.push(n_name);
+                    var cnt = {
+                      id :"<%=c.id%>",
+                      contact_number : "<%=c.contact_number%>",
+                      balance : "<%= Utility.indian_number c.balance%>"
+                    }
+                    search_contacts[n_name] = cnt;
+   <%}%>
+
+  <% @sites.each{|c| %>
+                    site_names.push("<%=c.name%>");
+                    search_sites["<%=c.name%>"] = <%=c.id%>;
+   <%}%>
+
+
+  $('#txn_contact').autocomplete({
+    minLength: 1,
+    source: function (request,response){
+               a =  $("#txn_contact")[0].value;
+                c_names = []
+               $.each(contact_names, function( index, value ) {
+
+                 if(value.toLowerCase().startsWith(a.toLowerCase())){
+                  c_names.push(value)
+                 }
+              });
+              response(c_names); 
+           },
+    select: function( event, ui ) { 
+              
+                $('#payment_contact_id').val(search_contacts[ui.item.value].id.toString());
+                $('#contact_number').html("Ph: "+search_contacts[ui.item.value].contact_number+ " <br> Balance: "+search_contacts[ui.item.value].balance);
+              }       
+
+  });
+
+ $('#txn_site').autocomplete({
+    minLength: 1,
+    source: function (request,response){
+               a =  $("#txn_site")[0].value;
+               s_names = []
+             $.each(site_names, function( index, value ) {
+            
+                 if(value.toLowerCase().startsWith(a.toLowerCase())){
+                  s_names.push(value)
+                 }
+              });
+              response(s_names);
+           },
+     select: function( event, ui ) { 
+      $('#payment_site_id').val(search_sites[ui.item.value].toString());}       
+
+  });
+</script> 

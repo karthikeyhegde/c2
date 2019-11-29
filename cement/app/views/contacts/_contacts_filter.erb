@@ -1,0 +1,94 @@
+
+    <div class="row-fluid"  id='contact_filter_block'  style="font-size:12px;margin:3px;">
+      
+       <div id='' class="span6" style="margin:4px;border-right: 2px solid #FFF;">
+       <%= form_for @report,  :url => filter_contacts_url, :remote => true, :html =>{:id=>'report_form1',:method => 'post'} do |f| %>
+          <div class="row-fluid"  >
+                
+            <div class="span6">
+               <span style='font-size:15px;font-weight:bold;'><i class="fa fa-filter fa-lg" style="color:#806517"></i><%=space(2)%>Filter</span> 
+                 <br><br>
+                 <%=hidden_field_tag('contact_id', @contact.id)%>
+                 <%=hidden_field_tag('show_val', @show_val)%>
+                 <%=f.hidden_field(:contact_ids, :multiple => true, :value => @contact.id)%>
+                <span> Custom Fixed Date</span>
+                 <br>
+               <%=f.text_field :from_date,  {class: 'report-date', style:'height:25px;width:100px;', :placeholder => "From Date"}%>
+
+         - <%=f.text_field :to_date,  {class: 'report-date', style:'height:25px;width:100px;', :placeholder => "To Date"}%>
+           <div class='sub_head' style="color:brown;padding:10px;"> OR</div>
+  Dynamic Dates
+          <br>
+          Last <%=f.text_field  :number_of, {:style => 'width:60px;height:25px;'} %>
+          <%=f.select  :dynamic_date_value,  options_for_select([ "","Days","Weeks","Months","Year"],@report.dynamic_date_value), {},{style:'height:30px;width:120px;'}%>
+              
+        </div>
+
+        <div id='' class="span6" style="margin:0px;">
+            <br><br>
+           <span >Select Items<br>
+             <% t_arr  = @report.item_ids.blank? ? [] : @report.item_ids.split(",") %>
+             <%=f.select  :item_ids, options_for_select(["Select .."]+Item.picklist,t_arr), {},{ :multiple => true} %>
+             <br><br>
+             Select Sites<br>
+             <% st_arr  = @report.site_ids.blank? ? [] : @report.site_ids.split(",") %>
+             <%=f.select  :site_ids, options_for_select(["Select .."]+Site.picklist,st_arr),  {}, {:multiple => true} %>
+           </span>
+           <br><br>
+           <%
+            @report.report_type.to_s.include?('ALL CONTACT')?  t = true : t = false %>
+           <%=check_box_tag('all_contacts', "true", t ) %>  Apply to All Contacts
+        </div>  
+
+         <div class="row-fluid"  >
+            <div id='' class="span12" style="margin:0px;">
+            <br><br>
+                <%=submit_tag "Show" , class:'btn btn-primary btn-xs', style:'vertical-align: top;',  :onclick => "$('#flt_icon').addClass('fa-spin')"%>
+          <%=submit_tag "Print View" ,{class:'btn btn-warning btn-xs', style:'vertical-align: top;'}  %>     
+           <span class='sub_head' style="color:brown;padding:10px;"> OR</span>
+          
+          <%=submit_tag 'Save as',  class:'btn btn-info btn-xs', :data => {disable_with: "Saving ..."}, id:'tx-btn', :onclick => "$('#flt_icon').addClass('fa-spin')"%>
+           <%=f.text_field :name,  { style:'height:25px;width:150px;padding-top:2px;margin:0px;', :placeholder => "Filter Name"}%>
+            </div>
+         </div>
+        <%end%>  
+        </div>
+        </div>
+        <div id='saved_reports_block1' class="span6" style="margin:1px;font-size:13px;padding-left:5px;">
+        <b>Saved Filters</b>
+        <hr>
+
+          <%Report.where("tag = 'contact_filter' and (contact_ids = '#{@contact.id}' or report_type = 'ALL CONTACT')").each{|a| %>
+            <%=a.name%> <%=space(2)%> <%=link_to filter_contacts_path(:id => a.id,:commit => 'Show Report',:contact_id => @contact.id,:show_val => @show_val),remote: 'true' , class:"label", :method => :post do %>
+             <i class="fa fa-eye fa-sm" ></i><%end%>
+            </span>
+                        <%=space(1)%>
+                        <%=link_to filter_contacts_path(:id => a.id,:commit => 'Print View',:contact_id => @contact.id,:show_val => @show_val),remote: 'true' , class:"label",:method => :post do %><i class="icon-print fa-lg" ></i><%end%>
+            <br>
+             
+          <%}%>
+           
+        </div>  
+        
+     </div>
+               
+    </div>
+
+
+
+<script type="text/javascript">
+
+$('.report-date').datepicker({ dateFormat: 'dd-mm-yy' });
+
+$('#report_item_ids').select2({
+    width:'210px',
+
+ });
+
+$('#report_site_ids').select2({
+    width:'210px',
+
+ });
+
+
+</script>

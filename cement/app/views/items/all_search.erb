@@ -1,0 +1,30 @@
+
+<br><br>
+<h5>Search Results For : <span style='color:#666'><%=params[:search]%></span></h5>
+
+<div class="row-fluid">
+
+  <div class="span12">
+    <% if !@contacts.blank? %>
+       <%=render :template => 'contacts/_list.erb'%>
+        <br><hr>
+    <%end%>
+    
+     <% if !@items.blank? %>
+       <%=render :template => 'items/_list.erb'%>
+       <br><hr>
+    <%end%>
+     
+     <% if !@sites.blank? %>
+       <%=render :template => 'sites/_list.erb'%>
+        <br><hr>
+    <%end%>
+    
+
+     <% if !@transaction.blank? %>
+       <%=render :template => 'transactions/_list.erb'%>
+        <br><hr>
+    <%end%>
+
+  </div>
+ </div>

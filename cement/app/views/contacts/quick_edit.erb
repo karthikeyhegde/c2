@@ -1,0 +1,49 @@
+ <h5> Quick Edit </h5>
+<table class="table table-striped " style="font-size:12px;width:90%;" align="center">
+  <thead style="color:#FFF;background-color:#8A0829;">
+    <th>Name</th>
+    <th>Subname</th>
+    <th>Contact#</th>
+    <th>Start Balance</th>
+    <th>Place</th>
+    <th>Contact# 2</th>
+    <th>Email</th>
+    <th>Type</th>
+    <th>Address</th>
+  </thead>
+  <tbody>
+   <% @contacts.each{|c| %>
+    <tr>
+     <td><a class = 'ceditable' href="#" data-pk="<%=c.id%>"  id="name" data-type="text"><%=c.name%></a></td>
+     <td><a class = 'ceditable' href="#" data-pk="<%=c.id%>"  id="subname" data-type="text"><%=c.subname%></a></td>
+     <td><a class = 'ceditable' href="#" data-pk="<%=c.id%>"  id="contact_number" data-type="text"><%=c.contact_number%></a></td>
+     <td><a class = 'ceditable' href="#" data-pk="<%=c.id%>"  id="starting_balance" data-type="text"><%=c.starting_balance%></a></td>
+     <td><a class = 'ceditable' href="#" data-pk="<%=c.id%>"  id="place" data-type="text"><%=c.place%></a></td>
+     <td><a class = 'ceditable' href="#" data-pk="<%=c.id%>"  id="contact_number2" data-type="text"><%=c.contact_number2%></a></td>
+     <td><a class = 'ceditable' href="#" data-pk="<%=c.id%>" id="email" data-type="text"><%=c.email%></a></td>
+     <td><a class = 'ceditable' href="#" data-pk="<%=c.id%>" id="contact_type" data-type="text"><%=c.contact_type%></a></td>
+     <td><a class = 'ceditable' href="#" data-pk="<%=c.id%>" id="address" data-type="text"><%=c.address%></a></td>
+   </tr>
+   <%}%>
+  </tbody>
+
+</table> 
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    
+    $('.ceditable').editable({
+       url: "<%=quick_update_contacts_path%>"
+
+    });
+
+
+  
+
+   });
+
+
+
+
+</script>

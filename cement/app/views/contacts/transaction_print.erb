@@ -1,0 +1,116 @@
+<html>
+   <head>
+       <style type="text/css">
+          .tx-table-print{
+            width :100%;
+            font-size: 12px;
+            background-color: #FFF;
+            color: #000;
+
+          }
+
+          .tx-table-print td{
+             border: none;
+             padding-left: 10px;
+             padding-top: 10px;
+             max-width: 350px;
+          }
+       </style>
+   </head>
+  <body>
+
+     
+<table class="tx-table-print" >
+ <tr>    
+     <td colspan="3"  >
+           <h4><%=@contact.name%></h4>
+     </td>
+     <td  colspan="3">
+        Account Balance:
+        <%=@contact.balance%>
+     </td>
+     
+  </tr>
+<% @transactions.each{|t| %>
+
+  <tr class='back-aqua' >    
+     <td style='font-weight:bold;border-top:2px solid #990033 ' colspan='3'  >
+       Date: <%=t.on_date%>     
+     </td>
+     <td  style='font-weight:bold;border-top:2px solid #990033 ' colspan="3">
+        <%if !t.site_name.blank? %>Site: <%=t.site_name%><%end%>
+     </td>
+     
+  </tr>
+
+
+    <%if t.txn_items.size() > 0%>
+    <tr class="back-azure" style="font-weight:bold;">
+     <td >Item</td>
+     <td >Description</td>
+     <td >Price</td>
+     <td >Qunatity</td>
+     <td >Amount (&#8377)</td>
+     <td></td>
+    </tr>
+     <%t.txn_items.each{|ti| %>
+     <tr>
+     <td ><%=ti.item.name%></td>
+     <td><%=ti.item_descri%></td>
+     <td ><%=ti.price%></td>
+     <td ><%=ti.number%></td>
+     <td ><%=ti.amount%></td>
+     <td></td>
+     </tr>
+     
+    <%}%>
+    <%end%>
+    <%if !t.vehicle_charges.blank? %>
+    <tr>
+        <td >Vehicle Charges</td>
+     <td></td>
+     <td ><%=t.vehicle_charges%></td>
+     <td ></td>
+     <td ><%=t.vehicle_charges%></td>
+     <td></td>
+     </tr>
+    <%end%>
+     <%if !t.hamaali.blank? %>
+    <tr>
+        <td >Hamaali</td>
+     <td></td>
+     <td ><%=t.hamaali%></td>
+     <td ></td>
+     <td ><%=t.hamaali%></td>
+     <td></td>
+     </tr>
+    <%end%>
+    <tr><td colspan="6" style = 'border-top: 1px solid #9999FF'></td></tr>
+    <tr>
+     
+     <td  colspan="2" ><%=t.payment_type%> Payment: &#8377 <%=t.payment_amount%> </td>
+     <td colspan="2"> Total Amount:</td>
+     <td>  &#8377 <%=t.amount%></td>
+     
+    <tr >
+      <td colspan="2" ><%if !t.payment_note.blank? %> Payment Info: <%=t.payment_note%> <%end%></td>
+      <td  colspan="2">Account Balance<br>(After Transaction):  </td>
+      <td>&#8377 <%=t.contact_balance%></td>
+    </tr>
+    <tr >
+     <td colspan="4" rowspas='2'><%=t.descri%></td>
+     <td colspan="2" ></td>
+    </tr>
+    <tr >
+     <td colspan="6" rowspas='2' ></td>
+     
+    </tr>
+   
+ 
+   <%}%>
+
+
+</table>
+
+	</body>
+</html>

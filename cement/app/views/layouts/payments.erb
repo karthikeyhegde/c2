@@ -1,0 +1,69 @@
+<html>
+<head>
+   <%=render :template => "layouts/header.erb" %>
+   <script type="text/javascript">
+     
+     var search_contacts = [];
+     var contact_names = []
+    $(document).on('keyup','input.each_amount', {} ,function(e){ 
+       
+      calculate_payment_amount();
+     
+        
+    });
+
+    $(document).on('keyup','input.keyup_amount', {} ,function(e){ 
+       
+      calculate_payment_amount();
+     
+        
+    });
+
+
+    function calculate_payment_amount(){
+
+    	var total = 0.0;
+      
+
+      $(".each_amount").each(function(){
+           
+          if($(this)[0].value  != ''){
+            var a = parseFloat($(this)[0].value);
+            total = total+a;
+          }
+       });
+
+       if($("#discount_amount")[0].value != '') {
+        total = total + parseFloat($("#discount_amount")[0].value);
+         $("#total_amnt").html(indianFormat(parseFloat(total).toFixed(2)) );
+      }
+
+
+    }
+
+
+
+    function removeItem(row_no){
+     $("#pay_"+row_no).remove();
+     calculate_payment_amount();
+
+   }  
+   </script> 	
+</head>
+<body>
+<%=render :template => "layouts/nav.erb" %>
+
+<div class="container-fluid">
+
+  <div class="row-fluid" style="padding:5px">
+
+    <div class="span12"style="text-align:left" id="contacts">
+            <%=yield%>
+    </div>
+
+
+  </div>
+
+</div>
+</body>
+</html>

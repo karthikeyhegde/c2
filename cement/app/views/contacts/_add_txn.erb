@@ -1,0 +1,44 @@
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h5 id="myModalLabel">Quick Add - Contact</h5>
+  </div>
+   <%= form_for(:contact, url: ajax_create_contacts_path, remote: true, html:{id: 'quick_contact_form'}) do |f| %>
+      <div class="modal-body">
+        <div class='row-fluid'>
+        	<div class='span6'>
+        	  Name:<br>
+        	  <%= f.text_field :name, style:'height:30px;' %> 
+        	  <br><br/>
+               Type:<br>
+        	   <%= f.text_field :contact_type, style:'height:30px;' %>      		
+        	</div>
+        	<div class= "span6">
+        		
+        		 Tag Name:<br>
+        	  <%= f.text_field :subname, style:'height:30px;' %> 
+        	  <br><br/>
+               Contact#:<br>
+        	   <%= f.text_field :contact_number, style:'height:30px;' %> 
+        	</div>
+        </div>
+
+         
+
+     </div>
+     <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary" type="submit">Save contact</button>
+   </div>
+
+   <% end %>
+
+  <script type="text/javascript">
+   
+
+
+  </script>
+
+
+
+  

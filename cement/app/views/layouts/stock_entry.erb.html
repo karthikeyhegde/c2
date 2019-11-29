@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Stock-Cement</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+   <%= csrf_meta_tag %>
+</head>
+<body>
+<%=render :template => "layouts/nav.erb" %>
+<div class="container-fluid">
+  <div class="row-fluid" style="padding:1px">
+    <div class="span12"style="text-align:left">
+          <%=yield%>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+
+
+<div id='contact-modal-window' class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  Loading ...
+</div>
+<%= form_for @stock_entry, :remote => true do |f| %>
+ 
+     <div id='Header' class="row-fluid txn-form">
+     <div class="span10 offset2" >
+     <h4>Stock Entry</h4>
+     </div>
+   </div>
+
+<div id='div_item_table' class="row-fluid txn-form" style="border:0;">
+   <div class="span2" >
+   </div>
+ <div class="span8">
+    <table id='item_tb' class=' nb-table' style="border:1px solid #e6e6e6; background-color: #f1f1f1;">
+      <thead style="font-size:12px;">
+      </thead> 
+      <tbody style='font-size:13px;'>
+
+          <tr id='first_row_fields'>
+           <td style="padding:20px;padding-bottom:10px;"> Date : <br><%= f.text_field :on_date, class:'input', style:'height:20px'%></td>
+           <td  style="width:20%;padding-bottom:1px;">
+              Contact: <%= link_to ((image_tag "add.png", :size=>"10x10")+' New'), add_txn_contacts_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;'}  %> &nbsp;|
+        <%=link_to ((image_tag "find.png", :size=>"12x12")+" List"), window_list_contacts_path(:type => 'stock'),  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;'}  %> 
+              <br>
+              <%vl = ( @stock_entry.contact_id.blank? ? '': @stock_entry.contact.name_subname) %>
+             <%=text_field :stk, :contact, class:'autocomplete', style:"height:20px;", :value =>vl%>
+             <br>
+             <span id='contact_number' style='color:grey;font-size:11px;font-weight:bold;'></span>
+             <%=f.hidden_field :contact_id %>
+           </td>
+    
+         </tr>
+     
+
+          <tr id='gap_row_1' class='borderless'>
+            <td style="padding:5px;"></td>
+           </tr> 
+         <tr class='item_area'>
+           <td style="padding:1px;padding-top:8px;border:0;padding-left:20px;" class='item_arr_no' colspan=''> 
+              <%=f.select  :item_id, options_for_select(["Select Item"]+Item.picklist), :style=>"width:100px;"%>
+          </td>
+        <td style="padding:1px;padding-top:8px;border:0;" class='item_arr_no' colspan=''> 
+             <%=f.text_field :numbers,  :id => "item_number", :class =>"item_numbers", :style=>"height:20px;width:150px;" , :placeholder =>"Numbers" %>
+
+    </td><td>
+             <%=f.text_field :price, class:"item_numbers", :style=>"height:20px;width:150px;", :placeholder => "Price" %>
+      </td>
+      </tr>
+      <tr id='gap_row_2' class='borderless'>
+            <td ></td>
+           </tr>
+
+      <tr>
+          <td id='a_note' style="padding-left:20px;">
+          <span id='add_note'>
+            <%=link_to ((image_tag "add.png", :size=>"11x11")+' Note'),"#", {:onclick => "$('#s_note').show();$('#add_note').hide()"}%>
+          </span>
+
+           <span id='s_note' style="display:none;">Note:<br><%=f.text_area   :note , :size=>'2X10' %></span>
+          </td>
+          <td style="padding-left:20px;"><span class="label">Return: <%=f.check_box  :is_return %></td>
+        </tr>
+        <tr id='gap_row_3' >
+            <td style="padding:10px;border-bottom: 1px solid #E6E6E6;" colspan="3"></td>
+           </tr> 
+        <tr>
+          <td style="padding:20px;" colspan="3"><%=submit_tag 'Save Stock Entry',  class:'btn btn-warning', :data => {disable_with: "Saving ..."}, id:'tx-btn'%><%=space(5).html_safe%>
+     <%=submit_tag 'Save and +New',  class:'btn btn-success', :data => {disable_with: "Saving ..."}, id:'tx-btn'%><%=space(5).html_safe%>
+      <%=link_to "Cancel", transactions_url, :style=>"font-weight:bold"%>
+</td>
+       
+
+        </tr>
+        </tbody>
+        </table>
+
+ <%end%>
+ 
+
+ <script type="text/javascript">
+$('#stock_entry_on_date').datepicker({ dateFormat: 'dd-mm-yy' });
+$("#stock_entry_on_date").datepicker('setDate', new Date());
+
+
+
+  var contact_names = [];
+  var search_contacts = {};
+
+   
+   <% @cont.each{|c| %>
+
+                    n_name = " <%=(c.subname == nil ? c.name : c.name+' '+c.subname)%> "
+                    contact_names.push(n_name);
+                    var cnt = {
+                      id :"<%=c.id%>",
+                      contact_number : "<%=c.contact_number%>",
+                    }
+                    search_contacts[n_name] = cnt;
+   <%}%>
+
+
+  $('#stk_contact').autocomplete({
+    minLength: 1 ,
+    source: contact_names,
+    select: function( event, ui ) { 
+                $('#stock_entry_contact_id').val(search_contacts[ui.item.value].id.toString());
+                 $('#contact_number').html("Ph: "+search_contacts[ui.item.value].contact_number)
+
+              }       
+
+  });
+
+  $('#stock_entry_item_id').select2({
+    width:'210px',
+
+ });
+
+ 
+
+
+ </script>

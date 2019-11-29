@@ -1,0 +1,17 @@
+
+       <tr id="trow_<%=@row_no%>">
+           <td style="padding:2px;" >
+           <% 
+             
+              txitem ||= TxnItem.new 
+
+           %>
+
+           <%=array_select  "arr_txn_items", "item_id", "", options_for_select(Item.all.collect{|c| [c.name,c.id]}, txitem.item_id.to_s), @row_no.to_s%></td>
+           <td style="padding:2px;padding-left:8px;width:32%" class='item_arr_no'><%= array_text_field  "arr_txn_items", "number", "height:30px;width:100px;",txitem.number.to_s, @row_no.to_s %></td>
+           <td style="padding:2px;" class='item_arr_no'><%= array_text_field  "arr_txn_items", "price", "height:30px;width:100px", txitem.price.to_s, @row_no.to_s %></td>
+           <td ><div id='item_val_<%=@row_no%>' class='item_total'></div></td>
+           <td><%=link_to_function "-", "removeItem('#{@row_no}')", style:'font-size:15px;font-weight:bold;'%></td>
+       </tr>
+
+

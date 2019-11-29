@@ -1,0 +1,21 @@
+
+<div id="index_head" class="row-fluid" style="padding:0px;margin:0px">
+ <div class="span8">
+   <h5>Payments</h5>
+   <%if !flash[:notice].blank? %>
+   <div class="alert alert-success">
+   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;
+   </button>
+    <%=flash[:notice]%></div>
+    <%end%>
+ </div>
+</div>
+
+<div id="index_list" class="row-fluid">
+
+   <div class="span12">
+    
+     <%=render :partial => "list" %>
+
+ </div>
+  </div>

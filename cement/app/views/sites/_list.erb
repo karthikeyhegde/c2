@@ -1,0 +1,35 @@
+<table class="table " style='font-size:13px;'>
+  <thead style="background-color:#C0C0C0;">
+    <th>Name</th>
+    <th>Place</th>
+    <th>Address</th>
+    <th>Start Date</th>
+    <th style="color:#330099">Action</th>
+  </thead>
+  <tbody>
+   <% i = 0
+    @sites.each{|c|
+     i+= 1 %>
+    <%if i%2 == 0%>
+       <tr>
+    <%else%>
+       <tr class="info">
+    <%end%>
+
+    <td><%=link_to c.name, rep_txnitems_site_url(c.id)%></td>
+    <td><%=c.place%></td>
+    <td><%=c.address%></td>
+    <td><%=c.start_date%>
+    <td>
+          <span id ='t1'>
+          <%=link_to "Edit", edit_site_url(c.id), :class=>"label label-info"%><%=space(5).html_safe%>
+         </span>
+         <span id='t2'>
+          <%=link_to "Delete", remove_site_url(c.id), :method => :post, :onclick => "return confirm('Are you sure?')", :class=>"label label-warning"%>
+         </span>
+      </td>
+   </tr>
+   <%}%>
+  </tbody>
+
+</table>

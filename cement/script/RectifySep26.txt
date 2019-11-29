@@ -1,0 +1,66 @@
+" A.L.Rayakar -  Sbal - 0.0 |  8552 -  Total Amount : 4310.0 - RunningCbalance: 4310.0 - TransContactbalance 4335.0 "
+" Difference In Balance"
+" Contact =  687  Prakash Bhat Bilachikattu"
+" Caluculated -0.000000000007275957614183425"
+" Balance  0.0"
+"----------------------"
+3
+["A.L.Rayakar", 687, "Prakash Bhat Bilachikattu"]
+"779,68"
+ A.L.Rayakar  ---- 7803 ------- 1500.0  0.0 ------  1500.0 ---- 1500.0
+#<TxnItem id: 7006, item_id: 81, number: 5, price: #<BigDecimal:4c4cff8,'0.3E3',9(18)>, amount: #<BigDecimal:4c4cf58,'0.15E4',9(18)>, transaction_id: 7803, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-09 14:37:37", contact_id: nil, item_descri: nil>
+"CALCULATE AMOUNT"
+1500
+"here ---"
+0
+ A.L.Rayakar  ---- 7809 ------- 0.0  1500.0 ------  0.0 ---- 0.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+*********************************************
+ A.L.Rayakar  ---- 8552 ------- 4310.0  0.0 ------  4335.0 ---- 4310.0
+******
+#<TxnItem id: 7556, item_id: 79, number: 1, price: #<BigDecimal:398f0c8,'0.35E3',9(18)>, amount: #<BigDecimal:398f000,'0.35E3',9(18)>, transaction_id: 8552, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-22 04:53:16", contact_id: 779, item_descri: nil>
+#<TxnItem id: 7557, item_id: 98, number: 55, price: #<BigDecimal:398edd0,'0.72E2',9(18)>, amount: #<BigDecimal:398ec40,'0.396E4',9(18)>, transaction_id: 8552, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-09-16 05:04:35", contact_id: 779, item_descri: nil>
+"CALCULATE AMOUNT"
+4310
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6320 ------- 1400.0  0.0 ------  1400.0 ---- 1400.0
+#<TxnItem id: 5848, item_id: 79, number: 4, price: #<BigDecimal:3386c08,'0.35E3',9(18)>, amount: #<BigDecimal:3385f88,'0.14E4',9(18)>, transaction_id: 6320, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-28 04:24:16", contact_id: 687, item_descri: nil>
+"CALCULATE AMOUNT"
+1400
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6337 ------- 0.0  1400.0 ------  0.0 ---- 0.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6498 ------- 17201.0  0.0 ------  17201.0 ---- 17201.0
+#<TxnItem id: 5984, item_id: 84, number: 21, price: #<BigDecimal:31fe2c8,'0.501E3',9(18)>, amount: #<BigDecimal:31fe110,'0.10521E5',9(18)>, transaction_id: 6498, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 13:23:22", contact_id: 687, item_descri: nil>
+#<TxnItem id: 5985, item_id: 82, number: 20, price: #<BigDecimal:31fdc88,'0.334E3',9(18)>, amount: #<BigDecimal:31fdaf8,'0.668E4',9(18)>, transaction_id: 6498, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 13:23:22", contact_id: 687, item_descri: nil>
+"CALCULATE AMOUNT"
+17201
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6476 ------- 0.0  10000.0 ------  7201.0 ---- 7201.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6479 ------- 17150.01  0.0 ------  24351.01 ---- 24351.01
+#<TxnItem id: 5968, item_id: 79, number: 3, price: #<BigDecimal:1e1c408,'0.345E3',9(18)>, amount: #<BigDecimal:1e1c2a0,'0.1035E4',9(18)>, transaction_id: 6479, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 06:00:53", contact_id: 687, item_descri: nil>
+#<TxnItem id: 5969, item_id: 84, number: 10, price: #<BigDecimal:1e1bc60,'0.501E3',9(18)>, amount: #<BigDecimal:1e1bad0,'0.501E4',9(18)>, transaction_id: 6479, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 06:00:53", contact_id: 687, item_descri: nil>
+#<TxnItem id: 5970, item_id: 83, number: 17, price: #<BigDecimal:1e1b738,'0.41747E3',18(18)>, amount: #<BigDecimal:1e1b6c0,'0.709701E4',18(18)>, transaction_id: 6479, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 06:00:53", contact_id: 687, item_descri: nil>
+#<TxnItem id: 5971, item_id: 82, number: 12, price: #<BigDecimal:1e1b1e8,'0.334E3',9(18)>, amount: #<BigDecimal:1e1b008,'0.4008E4',9(18)>, transaction_id: 6479, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 06:00:53", contact_id: 687, item_descri: nil>
+"CALCULATE AMOUNT"
+17150
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6499 ------- -1.01  24350.0 ------  0.0 ---- 0.0
+"CALCULATE AMOUNT"
+-1
+"here ---"
+0

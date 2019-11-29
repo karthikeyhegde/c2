@@ -1,0 +1,51 @@
+<h4><%=@site.name%>  <span style="font-size:16px;color:blue"> X </span><%=@contact.name_subname%> &nbsp;&nbsp; <%=space(5).html_safe%></h4>
+<div id="trs" class="row-fluid">
+   <div class="offset1 span11">
+     <h5>Transaction Item </h5>
+      
+
+<table class="table zebra-striped " style='font-size:13px;width:90%;'>
+  <thead style="background-color:#CD5C5C;color:#FFFFFF">
+    <th>Date</th>
+    <th>Item</th>
+    <th>Number</th>
+    <th>Price</th>
+    <th>Amount</th>
+    
+  </thead>
+  <tbody>
+   <% i = 0
+      total_amount = 0
+    @txn_items.each{|c|
+
+     i+= 1 %>
+     <% if c.transaction.buyback == 0
+         total_amount += c.amount
+        else
+          total_amount -= c.amount
+        end %>
+    <%if i%2 == 0 %>
+       <tr>
+    <%else%>
+       <tr class="info">
+    <%end%>
+    <td><%=c.transaction.on_date%></td>
+    <td><%=c.item.name%></td>
+    <td><%=c.number%></td>
+    <td><%=c.price%></td>
+    <td><%= Utility.indian_number c.amount%></td>
+          
+   </tr>
+   <%}%>
+   <tr style="background-color:#B0E0E6;font-weight:bold;">
+    <td>Total </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><%= Utility.indian_number total_amount%></td>
+   </tr>
+  </tbody>
+
+</table>
+   </div>
+</div>

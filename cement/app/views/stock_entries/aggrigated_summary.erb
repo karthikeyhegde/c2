@@ -1,0 +1,52 @@
+
+<h4>Sales Aggrigation</h4>
+<div class="row-fluid" style="margin-left:0%;">
+
+    <div class="offset1 span5"style="text-align:left; background-color:#A52A2A;margin-left:10%;padding-top:5px;color:#FFFFFF" id="items">
+       <b> &nbsp;Item </b>
+    </div>
+    <div class="span2"style="text-align:left;background-color:#A52A2A;margin-left:0%;padding-top:5px;color:#FFFFFF" id="items">
+        <b>No of items</b>
+    </div>
+    <div class="span3"style="text-align:left;background-color:#A52A2A;margin-left:0%;padding-top:5px;color:#FFFFFF" id="items">
+        <b>Total amount</b>
+    </div>
+
+  </div>
+<% i = 0%>
+  <% @summary.each {|s| %>
+  <% if i%2 != 1
+     clsname = " cell-b"
+   else
+    clsname = ""
+   end 
+    i += 1
+
+   %>
+  <div class="row-fluid info " style="margin-left:0%;line-height:10px;font-size:12px;">
+
+    <div class="offset1 span5 cell-a <%=clsname%>"style="text-align:left;margin-left:10%;" id="items">
+        &nbsp;<%=s.name%>
+    </div>
+    <div class="span2 cell-a <%=clsname%>"style="text-align:left;margin-left:0%;" id="items">
+        <%=s['t_no']%>
+    </div>
+    <div class="span3 cell-a <%=clsname%>"style="text-align:left;margin-left:0%" id="items">
+        <%=s['t_sum']%>
+    </div>
+
+  </div>
+  <%}%>
+   <div class="row-fluid info " style="margin-left:0%;line-height:10px;">
+
+    <div class="offset1 span5 cell-a"style="text-align:left;margin-left:10%;background-color:#FFF0F5;" id="items">
+      <b>  &nbsp;Total </b>
+    </div>
+    <div class="span2 cell-a "style="text-align:left;margin-left:0%;background-color:#FFF0F5;" id="items">
+       
+    </div>
+    <div class="span3 cell-a"style="text-align:left;margin-left:0%;background-color:#FFF0F5;" id="items">
+      <b>  <%=@all_sum%></b>
+    </div>
+
+  </div>

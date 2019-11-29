@@ -1,0 +1,8 @@
+<div id='success_' class="alert alert-success">
+       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;
+       </button>
+        Transaction  <%=link_to '#'+@trans.id.to_s, edit_transaction_url(@trans.id)%> added successfully.
+        <br>
+        Contact: <%=link_to @trans.contact.name, report_page_contact_path(:id => @trans.contact.id)%>   <%=space(5)%> Ph:<%=@trans.contact.contact_number%><%=space(5)%>
+        Current Balance: <%=(@trans.contact.balance + @trans.contact.starting_balance)%>
+</div>

@@ -1,0 +1,39 @@
+<h4><%=@site.name%></h4>
+<div id="trs" class="row-fluid">
+   <div class="span12">
+     <h5>Item Transactions</h5>
+      
+
+<table class="table zebra-striped " style='font-size:13px;'>
+  <thead style="background-color:#C0C0C0;">
+    <th>Date</th>
+    <th>Site</th>
+    <th>Contact</th>
+    <th>Number</th>
+    <th>Price</th>
+    <th>Amount</th>
+    
+  </thead>
+  <tbody>
+   <% i = 0
+    @txn_items.each{|c|
+     i+= 1 %>
+    <%if i%2 == 0%>
+       <tr>
+    <%else%>
+       <tr class="info">
+    <%end%>
+    <td><%=c.transaction.on_date%></td>
+    <td><%=c.transaction.site_name%></td>
+    <td><%=c.contact.name_subname%>
+    <td><%=c.number%></td>
+    <td><%=c.price%></td>
+    <td> <%=c.amount%></td>
+          
+   </tr>
+   <%}%>
+  </tbody>
+
+</table>
+   </div>
+</div>

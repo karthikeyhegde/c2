@@ -1,0 +1,3 @@
+$("#contact-modal-window").addClass('list-modal');
+
+$("#contact-modal-window").html("<%= escape_javascript(render 'sites/quick_list', :locals => {:sitess => @contacts} ) %>");

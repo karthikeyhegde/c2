@@ -1,0 +1,99 @@
+
+
+<div>
+ <div class="span10 offset1 " style="background-color:#FFFFFF;padding-left:10px;border:1px solid #CACACA"> 
+  <span  class="h5" style=";color:#4C4646;">Monthly - Total Amount,Payment and Balance Amount</span> <%=space(5)%> <span class ='label' style='background-color:rgba(51,153,255,0.7);line-height:10px;font-size:9px;'>Amount</span>&nbsp;
+   <span class ='label' style='background-color:rgba(234, 193, 23, 1);line-height:10px;font-size:9px;'>Payment</span>&nbsp;
+   <span class ='label' style='background-color:rgba(255,51,51,1);line-height:10px;font-size:9px;'>Balance</span>&nbsp;<br>
+   <br>
+   <canvas id="bal_trend_line" height="100"></canvas>
+   <br>
+   
+ </div>
+ 
+<script>
+
+label_arr = [];
+running_payment= [];
+running_amount= [];
+running_balance = [];
+total_amount_till = [] ;
+total_payment_till = [] ;
+
+
+<% 
+months = ["","Jan","Feb","March","April","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+@balance_trend.each{|bt| 
+   
+   mn  = bt[5][4..(bt[5].size-1)]
+   month_no = mn.to_i 
+   str = months[month_no]+" "+bt[5][0..3].to_s
+ %>
+
+   label_arr.push("<%=str%>");
+   running_balance.push(<%=bt[4]%>);
+   running_amount.push(<%=bt[1]%>);
+   running_payment.push(<%=bt[0]%>);
+
+   total_amount_till.push(<%=bt[3]%>)
+   total_payment_till.push(<%=bt[2]%>)
+
+<%}%>
+
+		var lineChartData = {
+			labels : label_arr,
+			datasets : [
+
+            {          
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.3)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+			data : running_amount
+				},
+
+			{
+			
+			fillColor: "rgba(154, 112, 44, 0.3)",
+            strokeColor: "rgba(234, 193, 23, 1)",
+            pointColor: "rgba(234, 193, 23, 1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+		    data : running_payment
+
+				},
+
+				{
+					label: "My third dataset",
+					fillColor : "rgba(151,187,205,0.0)",
+					strokeColor : "rgba(255,51,51,1)",
+					pointColor : "rgba(255,51,51,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data : running_balance,
+					multiTooltipTemplate: 'My Test Temp'
+				}
+				
+			]
+
+		}
+
+
+
+	window.onload = function(){
+		var ctx = document.getElementById("bal_trend_line").getContext("2d");
+		window.myLine = new Chart(ctx).Line(lineChartData, {
+			responsive: true,
+			pointDot : true
+		});
+
+	
+	}
+
+
+	</script>

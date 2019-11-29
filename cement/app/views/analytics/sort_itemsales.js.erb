@@ -1,0 +1,15 @@
+$("#bal_details_tb").html("<%=j (render :partial=>'tr_itmsales') %>");
+
+  
+$(".ord_spn").each(function(){
+        $(this).html('');
+        $(this).removeClass("hd-desc");
+        $(this).removeClass("hd-asc");
+    });
+<%if params[:ord] == "ASC" %>
+  $("#ord_<%=params[:i]%>").html('&nbsp;&#8673');
+  $("#ord_<%=params[:i]%>").addClass("hd-asc");
+<%else%>
+  $("#ord_<%=params[:i]%>").html('&nbsp;&#8675');
+  $("#ord_<%=params[:i]%>").addClass("hd-desc");
+<%end%>

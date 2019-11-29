@@ -1,0 +1,149 @@
+<div id='block3' class="span10 offset1" style="background-color:#FFFFFF;padding:1%;border:1px solid #CACACA;">
+    <div class="row-fluid" id='filter_head3' >
+           <div class="span12" style="margin-bottom:0px;" >
+              <span id="block3_filter_icon" class='block_filter_icon'><i class="fa fa-wrench"></i><i class="fa fa-cog"></i></span>&nbsp;&nbsp;
+             <%if @act == 'filter_block3' %> 
+               <i class="fa fa-filter " style="color:#806517"></i> <%end%> <%if !@report.name.blank? %><span style="color:#659EC7"><%=@report.name%></span> <%end%><span style="font-size:14px;margin:4px;">&nbsp;&nbsp;Item - Total Sales</span><hr style="line-height:0px;margin:2px;">
+            <%=render :partial => 'filter3' %>
+    </div>
+   <div  id="item_sales_tb" class="row-fluid" >
+     <div id='table_show' class="span12" >
+        <div class="Headers">
+             <div id='errors'></div>
+              <table id='header_tb' class="table" style='font-size:13px;width:100%;margin-bottom:1px;background-color:#848482;color:#FFFFFF' align="center">
+                 <thead>
+                   <th id="bld_0" class='click_header ' style='cursor:pointer;'>Item <span id="ord_0" class='ord_spn ' ></span></th>
+                   <th id="bld_1" class='click_header ' style='cursor:pointer;'>Toatal Sales <span id="ord_1" class='ord_spn ' ></span></th>
+                  <% 
+                      i = 0
+                      @itemsales.headers.each {|h| %> 
+                              
+                           <th id="bld_<%=i+2%>" class='click_header ' style='cursor:pointer;'>
+                               <span id="hd_<%=i+2%>"> <%=h[0]%> </span>
+                               <span id="shd_<%=i+2%>" class='greytext10' style="font-weight:normal;"><%=h[1]%></span>
+                               <span id="ord_<%=i+2%>" class='ord_spn' ></span>
+                          </th>
+                          <% i += 1%>
+                  <%}%>
+                </thead>
+              </table>
+        </div>
+        <div class="Table" style="height:600px;overflow:auto;" id='itemsales_data'>  
+            <table id='bal_details_tb' class="table  table-striped " style='font-size:13px;width:100%;margin-bottom:1px;' align="center">
+              <%=render :partial => "tr_itmsales" %>
+            </table>
+        </div>
+      </div>
+    </div>  
+  </div>
+  </div>
+  
+ <script>
+
+  function getParams(elm){
+    idstr =  elm.id ;
+    i =  idstr.split('_')[1];
+    colname = $('#hd_'+i).text();
+    ord = $('#ord_'+i).hasClass('hd-asc') ? 'DESC' : "ASC"
+
+    return {ord: ord, i:i} ;
+  }
+
+  function alterHeader(elm){
+       idstr = elm.id;
+       i =  idstr.split('_')[1];
+       $("#ord_"+i).html("<img alt='Loding..' src='/assets/ajax-loader.gif' />");
+       return true;
+  }
+
+  $(document).ready(function(){
+    var counter = 0;
+    $("#header_tb th").each(function(){
+        var width = $('#bal_details_tb tr:last td:eq(' + counter + ')').width();
+         this.width = width ;
+         counter++;
+    });
+
+
+
+    $('.click_header').click(function() {
+      var element = this ;
+   $.ajax({
+      url: "<%=sort_itemsales_analytics_url%>",
+      data: getParams(element),
+      beforeSend: function(){
+        idstr = element.id;
+       i =  idstr.split('_')[1];
+       $("#ord_"+i).html("<img alt='Loding..' src='/assets/ajax-loader.gif' />");
+       return true;
+
+
+      },
+       dataType : 'script',
+        error: function (request, status, error) {
+        alert(request.responseText);
+        alert(status);
+        alert(error);
+    },
+      type: 'GET'
+   });
+});
+
+
+});
+
+
+
+   $('#block3_filter_icon').click(function(event) {
+   if( $('#block3_filters').hasClass('filter-left-pos')){
+
+      $('#block3_filters').removeClass('filter-left-pos');
+      $('#block3_filters').addClass('filter-right-pos');
+      $('#block3_filter_icon').addClass('block_filter_icon_click');
+     
+
+   }else{
+      $('#block3_filters').removeClass('filter-right-pos');
+      $('#block3_filters').addClass('filter-left-pos');
+       $('#block3_filter_icon').removeClass('block_filter_icon_click');
+     
+
+   }
+
+});
+
+    jQuery.fn.cssInt = function (prop) {
+    return parseInt(this.css(prop), 10) || 0;
+};
+      $(document).ready(function(){
+        var x = $("#block3").position();
+        $("#block3_filters").position({top:x.top+20})
+
+      });
+      
+
+      $('#report_form3 #report_item_ids').select2({
+    width:'60%',
+
+ });
+  $('#report_form3 #report_contact_ids').select2({
+    width:'60%',
+
+ });
+   $('#report_form3 #report_site_ids').select2({
+    width:'60%',
+
+ });
+
+$('#report_form3 #report_group_order').select2({
+    width:'95%',
+    maximumSelectionSize: 3,
+ });
+
+$('.report-date2').datepicker({ dateFormat: 'dd-mm-yy' });
+
+
+
+
+  </script>
+        

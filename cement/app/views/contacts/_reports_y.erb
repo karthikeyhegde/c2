@@ -1,0 +1,118 @@
+
+<%if params[:commit] == 'Print View'%>
+<div id="amnt1"  style="width:70%;font-size:12px;" align ="center">
+   <div>
+     <b> <%=@contact.name%></b>
+      <span style="color:#b8b8b8"> &nbsp;Account details </span>
+      <span style="color:#b8b8b8">
+        <%if params[:from_date] != '2000-01-01' and !params[:from_date].blank?%> From <%=params[:from_date]%> <%end%>
+          <%if params[:to_date] != '2100-01-01' and !params[:to_date].blank? %>  Up to <%=params[:to_date]%> <%end%>
+          </span>
+
+        <div id="amnt" class="row-fluid" >
+
+   <div class="span2 offset1"  style="padding-left:20px;">
+     Total Amount : <%=@contact.total_purchase%>
+   </div>
+    <div class="span2" >
+      Total Payment : <%=@contact.total_payment%>
+   </div>
+   <div class="span3" >
+    Baaki/Starting Amount : <%=@contact.starting_balance%>
+   </div>
+   <div class="span2" >
+      Total Balance : <%=@contact.balance%>
+   </div>
+</div>
+   </div>
+</div>
+<%end%>
+<table class="table  table-stripped table-condensed " style='font-size:13px;width:80%;text-align:left;' align="center" rules="rows">
+  <thead style="background-color:#FE2E9A;">
+    <th class="col-sm-1">Trans#</th>
+    <th class="col-sm-1">Date</th>
+    <th class="col-sm-7">Item</th>
+    <th class="col-sm-1">Total</th>
+    <th class="col-sm-1">Payment</th>
+    <th class="col-sm-1" style="color:#330099">Balance</th>
+  </thead>
+  <tbody>
+   <% i = 0
+
+    @transactions.each{|c|
+     i+= 1 %>
+    <%if i%2 == 0%>
+       <tr>
+    <%else%>
+       <tr class="info">
+    <%end%>
+    <td><%=c.id%>
+    </td>
+    <td><%=c.on_date%></td>
+    <td>
+      <table   style='font-size:12px;width:100%;text-align:left;padding:0px;' align="left">
+        <%c.txn_items.each{|tx|%>
+        <tr>
+          <td class='col-sm-8'> <%=tx.item.name%> </td>
+          <td class='col-sm-2'> <%=tx.number%> &nbsp; x</td>
+          <td class='col-sm-3'><%=tx.price%> </td>
+         <tr>
+        <%}%>
+        <%if c.trans_type == "payment" and c.recieved == 1%><tr>
+          <td class='col-sm-5'> Payment Recieved </td></tr><%end%>
+        <%c.payment_rows.each{|p|%>
+          <tr>
+          <td class='col-sm-5'> <%=p.pay_type%> </td>
+          <td class='col-sm-3'>  <%=p.amount%> </td>
+           </tr>
+          <%}%>
+        
+      
+      
+      <%if c.hamaali.to_i > 0%>
+        <tr>
+          <td class='col-sm-4'>Hamaali </td><td></td><td></td><td> <%=c.hamaali%></td>
+        </tr>
+      <%end%>
+      <%if c.vehicle_charges.to_i > 0%>
+      <tr>
+         <td>Vehicle charges</td><td></td><td></td><td> <%=c.vehicle_charges%></td>
+        </tr>
+      <%end%>
+      <%if c.discount.to_i > 0%>
+      <tr>
+         <td>Discount</td><td></td><td> <%=c.discount%></td>
+        </tr>
+      <%end%>
+      </table>
+    <td> <% if c.trans_type != 'payment' %>
+          <%=c.amount%>
+        <%end%>
+    </td>
+    <td>
+       <%=c.payment_amount%></td>
+    <td>
+         <%=c.contact_balance%>
+      </td>
+   </tr>
+   <%}%>
+   <tr>
+  
+   <% tx = @transactions[0]  if @transactions.size > 0 %>
+         <td>  <b>Total  </b>
+          
+          
+
+         </td>
+      <td><%if params[:from_date] != '2000-01-01' and !params[:from_date].blank?%> From <%=params[:from_date]%> <%end%></td>
+      <td><%if params[:to_date] != '2100-01-01' and !params[:to_date].blank? %>  Up to <%=params[:to_date]%> <%end%></td>
+     
+      <td><b><%=Transaction.total_amount @transactions%></b></td>
+      <td><b><%=Transaction.total_payment @transactions%></b></td>
+      <td><b><%=Transaction.total_balance @transactions%></b></td>
+
+   <tr>
+
+  </tbody>
+
+</table>

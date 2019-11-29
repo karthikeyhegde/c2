@@ -1,0 +1,111 @@
+
+  <script type="text/javascript">
+    
+    
+  </script>
+
+<div class="row-fluid" style="padding:5px">
+  <div class="span6"><span style="font-size: 14px;font-weight: bold;"> Quick Item Edit</span> </div>
+  <divclass="span6"><span>
+  <%=form_tag set_default_date_items_url do%>
+        <%=text_field_tag :d_date, @default_date.value, { id:'id_se_date', class: 'report-date', style:'height:25px;width:120px;'}%>
+     
+
+          <%=submit_tag "Set default Date" , {class:'btn btn-primary btn-xs', style:'vertical-align: top;', :onclick => "$('#myspinner').show()"}%>
+           
+          
+         
+          <span id='myspinner' style="display:none;"><%=image_tag "ajax-loader.gif"%></span>
+      <%end%>
+</span></div>
+</div>  
+
+
+
+<table class="table zebra-striped table-condensed" style='font-size:12px;width:80%' align="center">
+        
+
+
+  <thead style="background-color:#C0C0C0;">
+    <th>Item Name</th>
+    <th>Item Type</th>
+    <th>Starting Stock</th> 
+    <th>Entry Start Date </th> 
+    <th>Current Stock</th>
+
+    <th style="color:#330099">Action</th>
+  </thead>
+  <tbody>
+   <% i = 0
+    @items.each{|c|
+     i+= 1 %>
+    <%if i%2 == 0%>
+       <tr>
+    <%else%>
+       <tr class="info">
+    <%end%>
+      <td><%=c.name%></td>
+      <td><%=c.item_type%></td>
+      <td><%=text_field_tag :sstock, c.starting_stock, {id:'cst_'+c.id.to_s,style:'height:25px;width:120px;'}%></td>
+
+      <td><%=text_field_tag :estartdate, c.start_date, {id:'starting_date_'+c.id.to_s, class: 'report-date', style:'height:25px;width:120px;', :placeholder => "To Date"}%></td>
+      <td id='current_stock_<%=c.id%>'><%=c.current_stock%></td>
+    <td>
+          <span id ='t1'>
+          
+          <span id='saveid_<%=c.id.to_s%>' class="label label-info save-data" style="cursor: pointer;">Save</span>
+         </span>
+         
+      </td>
+   </tr>
+   <%}%>
+  </tbody>
+
+
+
+<script type="text/javascript">
+
+$('.report-date').datepicker({ dateFormat: 'dd-mm-yy',
+    beforeShow: function (textbox, instance) {   
+                instance.dpDiv.css({
+                    marginTop: (-textbox.offsetHeight+30) + 'px'
+                    
+                });
+            }
+
+ });
+
+
+ $('.save-data').click(function() {
+       var element = $(this).attr('id'); ;
+         var id = $(this).attr('id').split('_')[1];
+         console.log('abcd');
+         console.log(id);
+         console.log($(this).attr('id'));
+
+         var stock_val = document.getElementById('cst_'+id).value ;
+         var date_value = document.getElementById('starting_date_'+id).value;
+         console.log(stock_val);
+         console.log(date_value);
+        $('#myspinner').show()
+
+         $.ajax({
+               type:"post",
+               dataType: 'json',
+               url: "<%=quick_save_item_items_url%>",
+               data: { id: id, start_date: date_value, start_stock: stock_val } ,
+               success: function(data){
+                
+                  console.log(data);
+                  console.log(data.current_stock);
+                  document.getElementById('current_stock_'+id).innerHTML = ""+data.current_stock;
+                  $('#myspinner').hide();
+
+                }
+                 });
+                   
+               
+             });
+
+</script>
+

@@ -1,0 +1,66 @@
+
+<% sum = 0 %>
+<table class="table zebra-striped table-condensed" style='font-size:12px;width:80%' align="center">
+  <thead style="background-color:#ff9999;">
+    <th>Payment#</th>
+    <th>Date</th>    
+    <th>Details</th>
+    <th>Contact</th>
+    <th>Amount</th>
+    <% if params[:commit] != 'Print View' %>
+     <th>Account Balance</th>
+     <th style="color:#330099">Action</th>
+     <%end%>
+  </thead>
+  <tbody>
+   <% i = 0
+    @payments.each{|c|
+     i+= 1
+
+     sum += c.payment_amount if c.recieved == 1
+     sum -= c.payment_amount if c.recieved != 1
+      %>
+    <%if i%2 == 0%>
+       <tr>
+    <%else%>
+       <tr class="info">
+    <%end%>
+
+    <td><%=c.id%></td>
+    <td><%=c.on_date%></td>
+    <td><%c.payment_rows.each {|p| %>
+
+       <%=p.pay_type%> : <%if !p.note.blank?%> <%=p.note%>  : <%end%> <%=p.amount%> <br>
+     <% }%>
+     <% if ( c.discount.to_i > 0)  %>Discount : <%=c.discount%><br> <%end%><%=c.payment_note%></td>
+    <td><%=c.tofrom_contact%>
+        <%if !c.site_id.blank? %>
+           <br>Site: <%=c.site.name%>
+        <%end%>
+    </td>
+    <td><%if c.recieved != 1%> -<%end%><%=Utility.indian_number c.payment_amount %></td>
+    <% if params[:commit] != 'Print View' %>
+    <td><% if !c.contact.nil?%><%=Utility.indian_number (c.contact_balance.to_s.to_f + c.contact.starting_balance.to_s.to_f)%><%end%></td>
+    <td>
+          <span id ='t1'>
+          <%=link_to "Edit", edit_payment_url(c.id), :class=>"label label-info"%><%=space(5).html_safe%>
+         </span>
+         <span id='t2'>
+          <%=link_to "Delete", remove_payment_url(c.id), :method => :post, :onclick => "return confirm('Are you sure?')", :class=>"label label-warning"%>
+         </span>
+      </td>
+      <%end%>
+   </tr>
+   <%}%>
+   <tr><td></td></tr>
+   <tr class ='success' ><td></td>
+    <td><b>Total </b></td>
+    <td><b><%=@payments.size%> Payments </b></td>
+    <td></td>
+    <td><b><%= Utility.indian_number sum%></b></td>
+    <td></td>
+    <td></td>
+    </tr>
+  </tbody>
+
+</table>

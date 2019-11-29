@@ -1,0 +1,531 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ *= require_self
+ *= require_tree .
+ *= require bootstrap_and_overrides
+ *= require jquery.ui.datepicker
+ *= require jquery.ui.autocomplete
+ *= require select2
+ *= require select2-bootstrap
+ *= require font-awesome
+ */
+
+
+ .item_total{
+
+ 	font-size: 12px;
+ 	font-weight: bold;
+ 	color: #505050  ;
+ 	text-align: left;
+ }
+
+ #items_total_value{
+    font-size: 13px;
+ 	font-weight: bold;
+ 	color: #101010 ;
+
+ }
+
+
+#contact_quick{
+    
+	border: 5px #FBB917 ridge;
+}
+
+
+table.s-table {
+	background-color: transparent;
+	font-size :11px;
+	border-spacing: 2px;
+
+
+}
+
+
+.list-modal {
+ overflow: auto !important; 
+      height: 500px;
+}
+
+.label-primary {
+  background-color:#428BCA;
+}
+
+.label-clicked {
+  background-color:#87CEEB;
+}
+
+.h4-class{
+	font-size :17px;
+	font-weight: bold;
+}
+
+.back-pearl{
+	background-color:#FDEEF4
+}
+
+.back-aqua{
+	background-color:#00FFFF
+}
+
+
+
+.back-azure{
+	background-color:#F0FFFF
+}
+
+.borderless td {
+    border: none;
+}
+
+
+.contact-tx-table{
+	width: 80%;
+	margin: 0px auto;
+	font-size: 13px;
+}
+
+.contact-tx-table td{
+
+    border: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    max-width: 450px;
+
+}
+
+
+#username{
+	margin-left: 10px;
+	font-size :12px;
+	color :#FFF;
+
+}
+.greytext{
+	color :#B8B8B8;
+}
+
+
+.greytext11{
+  color :#B8B8B8;
+  font-size: 11px;
+}
+
+.greytext10{
+  color :#B8B8B8;
+  font-size: 11px;
+}
+
+.subinfo{
+  color :#004d99;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+.sborder.table.td { border-bottom: 1px solid #000 }
+
+
+.table-fixed thead {
+  width: 97%;
+}
+.table-fixed tbody {
+  height: 800px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+nb-table td{
+
+  border:0;
+
+
+}
+
+a#inifiniteLoader{
+    position: fixed;  
+    z-index: 2;  
+    bottom: 15px;   
+    right: 10px; 
+    display:none;
+}
+
+.cell-a {
+    border-bottom: 1px solid #dddddd;
+    line-height: 10px;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;}
+
+ .cell-b{ background-color: #d9edf7;}   
+
+
+ #sidebar {
+  width: inherit;
+  min-width: 20%px;
+  max-width: 220px;
+  color: #FFFFFF;
+  background-color:#357EC7;
+  font-size: 10px;
+  float: left;
+  height:100%;
+  position:relative;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#main {
+  height:100%;
+  width :79%;
+  overflow:auto;
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    line-height: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+
+.sub_head{
+  font-size: 10px;
+  font-weight: bold;
+  color: blue;
+  text-align: left;
+}
+
+tr.item_area td{
+  background-color: #E6E6E6;
+
+}
+
+table.paymnt td{
+  padding:10px;
+}
+
+tr.bottom_line td{
+  border-bottom: 1px solid #E6E6E6;
+}
+
+a {
+  color : #00FFFF ;
+}
+
+.box-notice{
+
+     padding:1.5%;
+     color: #6A5ACD;
+     font-weight: bold;
+
+}
+
+
+
+#ana_mn {
+  background: rgba(41,128,185,0.5);
+  padding-right: .25em;
+  position: absolute;
+  right: 0em;
+  top: 8em;
+  padding-top: 5em;
+  box-sizing: border-box;
+  z-index: 10;
+  height: 80%;
+  width: 10%;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  display: none;
+}
+
+#mnclick{
+  position: fixed;
+  right: 1em;
+  top: 8%;
+  font-size: 20px;
+  z-index:80;
+  font-size:2em;
+  cursor:pointer;
+  
+}
+
+.h4{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.h5{
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+
+#slider
+{
+
+   position: fixed;
+   top: 6%;
+   width: 20em;
+   height: 100%;
+   background-color: rgba(255,255,255, 0.96);
+   border-left: 1px solid #D1D0CE;
+
+}
+.left-pos
+{
+    right: -21em;
+    transition-property: right;
+    transition-duration: 0.5s;
+    transition-timing: ease;
+    transition-delay: 0;
+}
+.right-pos
+{
+    right: 1em;
+    transition-property: right;
+    transition-duration: 0.5s;
+    transition-timing: ease;
+    transition-delay: 0;
+}
+
+.highlight{
+    background: rgba(56,56,56,0.3);
+}
+
+.menu_links{
+
+   font-size: 12px;
+   color: #837E7C;
+   padding-left: 2px;
+   margin-top: 1em;
+   margin-left: 1.5em;
+   cursor:pointer;
+  
+
+}
+
+.menu_links:hover{
+
+  color: #5C5858;
+  border-bottom: 0.5px solid #ADDFFF;
+
+}
+
+.block_filters{
+   position: absolute;
+   width: 75%;
+   min-height: 30%;
+   background-color: rgba( 239, 238, 236, 0.95);
+   
+    border-color: #ddd;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 2px
+   
+}
+
+.filter-left-pos{
+
+    left: -110%;
+    transition-property: left;
+    transition-duration: 0.5s;
+    transition-timing: ease;
+    transition-delay: 0;
+    
+
+}
+
+.filter-right-pos{
+
+    left: 10em;
+    transition-property: left;
+    transition-duration: 0.5s;
+    transition-timing: ease;
+    transition-delay: 0;    
+
+}
+
+.block_filter_icon{
+  color: #82CAFA;
+  border: 1px solid #9F9E9C;
+   -webkit-border-radius: 5px; /* Safari prototype */
+-moz-border-radius: 5px; /* Gecko browsers */
+border-radius: 5px;
+cursor:pointer;
+
+}
+
+.block_filter_icon:hover{
+  color: #1589FF;
+  border: 1px solid #1589FF;
+}
+
+.block_filter_icon_click{
+  
+  color: #7E3817;
+  border: 1px solid #7E3817;
+}
+
+#mn_dropdown{
+  position: fixed;
+  width: 100%;
+  height: 250px;
+  left: 0%;
+  z-index: 1000;
+  overflow: hidden;
+  background-color: rgba(71,163,218,0.96);
+  transition: all 0.2s ease;
+  //border-bottom: 2px solid #0041C2;
+}
+
+
+.menu-top-hide{
+    position: fixed;
+    top: -260px;
+    transition-property: down;
+    transition-duration: 0.2s;
+    transition-timing: ease;
+    transition-delay: 0;
+    
+
+}
+
+.menu-top-show{
+
+    top: 40px;
+    transition-property: up;
+    transition-duration: 0.5s;
+    transition-timing: ease;
+    transition-delay: 0;    
+
+}
+
+
+
+.mn-hd{
+
+}
+
+.mn-lnk{
+
+}
+
+.mn-section{
+  text-align:left;
+  color:#FFF;
+  height:100%;
+  padding:20px;
+  font-size:18px;
+ // margin:0 !important;
+}
+
+.mn-section a{
+line-height:30px !important;
+color: #57FEFF !important;
+font-size:16px !important;}
+
+.mn-section a:hover{
+
+color: #0d77b6 !important;
+font-size:17px !important;}
+
+
+.mn-hd-scn{
+  text-align:left;
+  background-color: #0d77b6;
+  color:#afdefa;
+ // width: 3% !important;
+  height:100%;
+  padding:10px;
+  padding-top:20px;
+  font-size:26px;
+}
+
+
+#mn_filter_cnt{
+  width: 90%;
+  left: 1%;
+  background-color: rgba(0,0,0,0.1);
+  border-bottom: 2px solid #0041C2;
+}
+
+
+.menu-flt-top-hide{
+    position: fixed;
+    top: -160px;
+    transition-property: down;
+    transition-duration: 0.2s;
+    transition-timing: ease;
+    transition-delay: 0;
+    
+
+}
+
+.menu-flt-top-show{
+
+    top: 40px;
+    transition-property: up;
+    transition-duration: 0.5s;
+    transition-timing: ease;
+    transition-delay: 0;    
+
+}
+
+.bst-link{
+  background-color:#E5F9FF;
+  color: #0BB5FF;
+  font-weight: 400;
+  cursor: pointer;
+  cursor: hand;
+
+
+  vertical-align: middle;;
+  text-align: center;
+  
+    font-size: 16px;
+  opacity: 0.65;
+  border: 2px;
+  padding-bottom: 2px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+
+.bst-link-selected{
+  color: #33001a;
+  font-weight: 400;
+  opacity: 0.9;
+  background-color:#ffffff;
+}
+
+
+tr.tt td{
+  font-weight: 500;
+}
+
+

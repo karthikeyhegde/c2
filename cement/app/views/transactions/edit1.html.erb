@@ -1,0 +1,181 @@
+<h5> Edit Transaction </h5>
+
+<div id='contact-modal-window' class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+aaa
+
+</div>
+
+
+<%= form_for @trans,  :method => @form_method, :html =>{:id=>'transaction_form'} do |f| %>
+
+  <div  class="row-fluid txn-form">
+
+     <div class="span3" >
+        Date : <br><%= f.text_field :on_date, class:'input', style:'height:30px;width:150px'%>
+     </div>
+     <div class="span3">
+        Customer: <%= link_to '+New', add_txn_contacts_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;font-weight:bold;'}  %> &nbsp;|
+        <%=link_to ((image_tag "find.png", :size=>"16x16")+" List"), add_txn_contacts_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;font-weight:bold;'}  %> 
+          <br>
+       
+        <%=text_field :txn, :contact, class:'autocomplete', style:"height:30px;", :value => @contact_name%>
+        <%=f.hidden_field :contact_id %>
+        <br>
+        <span id='contact_number' style='color:grey;font-size:14px;'></span>
+ <br>
+     </div>
+     &nbsp;&nbsp;
+     <div class="span3">
+        Site: [ <%=link_to_function "+New", "add_new_txn_contact" , style: 'font-size:12px;font-weight:bold;'%>]<br>
+        <%=text_field  :txn, :site, class:'autocomplete', style:"height:30px;", :value => @site_name%> <br>
+        <%=f.hidden_field :site_id %>
+     </div>
+  </div>
+   <% @row_no ||= -1 %>
+<div id='div_item_table' class="row-fluid txn-form">
+ <div class="span10">
+    <table id='item_tb' class='table' border='0' >
+      <thead style="font-size:12px;">
+         <th id='item_th' style="padding:2px;width:30%;"><%=link_to '+ Item', add_item_row_transactions_path(:no => @row_no ), :remote => true%></th>
+         <th tyle="padding:2px;width:30%;">Quantity</th>
+         <th style="padding:2px;">Rate</th>
+         <th style="padding:2px;">Amount</th>
+         <th></th>
+      </thead> 
+      <tbody style='font-size:13px;'>
+        <% row_no = 1%>
+        <%= fields_for :txn_item  do |it| %>
+         <%@trans.txn_items.each  do |item| %>
+
+             <%=render partial:  'add_item_row.erb', locals: {row_no: item.id.to_s, it: it, :txitem => item}%>
+         <%end%>
+       <%end%>
+        <tr id='gap_row' >
+          <td style='border-top:0px;'></td>
+        </tr>
+        <tr>
+          <td style='border-top:0px;padding:2px;'> Other Charges: <br> 
+             <%=text_field :transaction, :other_charges, style:'height:30px;', :value => @trans.other_charges%>
+          </td>
+
+          <td style='border-top:0px;padding:2px;padding-left:8px;'> Amount: <br> 
+             <%=text_field :transaction, :other_charges_amount, style:'height:30px;', :value => @trans.other_charges_amount%>
+          </td>
+        
+         <td style="font-size:13px;"><br><b>Total Amount</b></td>
+         <td> <div id='items_value' class='item-total' style='padding-top:20px;'>0</div></td>
+         <td></td>
+       </tr>
+      </tbody>  
+
+  </table>
+  </div>
+</div> 
+
+<div class="row-fluid txn-form">
+   <div class="span3" >
+      Amount Recieved:
+      <br>
+      <%=text_field :pay, :amount, style:'height:30px;' , :value => @trans.payment.amount%>
+   </div>
+   <div class="span2"><br>
+     <%=select :pay, :payment_type, [['Cash','Cash'],['Check','Check']],{},{style:'width:150px;'}%>
+   </div>
+
+</div>  
+
+<div class="row-fluid txn-form">
+   <div class="span1" style="padding:0px;" >
+      Note: <span><%=f.text_area  :descri , :size=>'2X10' %></span>
+   </div>
+
+
+  </div>
+
+<div class="row-fluid txn-form">
+
+  <div class="span12">
+     <hr>
+     <%= f.submit %><%=space(5).html_safe%> <%=link_to "Cancel", transactions_url, :style=>"font-weight:bold"%>
+
+  </div>
+</div>
+<% end %>
+
+<script type="text/javascript">
+
+$('#transaction_on_date').datepicker();
+
+$('#transaction_other_charges_amount').on('keyup', function(){
+    
+     calc_total_value();
+
+   });
+  var contact_names = [];
+  var search_contacts = {};
+  var site_names = [];
+  var search_sites = [];
+
+  $('#txn_contact').autocomplete({
+    minLength: 2,
+    source: function (request,response){
+               a =  $("#txn_contact")[0].value;
+               $.ajax({
+               type:"Get",
+               dataType: 'json',
+               url: "<%=search_names_contacts_path()%>",
+               data:"str="+a ,
+               success: function(data){
+                contact_names = [];
+                search_contacts = {};
+                 $.each(data, function(i,val){
+                    contact_names.push(val.name+" "+val.subname);
+                    search_contacts[val.name+" "+val.subname] = val;
+                 });
+                   
+               }
+             });
+              response(contact_names);
+           },
+    select: function( event, ui ) { 
+              
+                $('#transaction_contact_id').val(search_contacts[ui.item.value].id.toString());
+                 $('#contact_number').html("Ph: "+search_contacts[ui.item.value].contact_number)
+
+              }       
+
+  });
+
+
+  $('#txn_site').autocomplete({
+    minLength: 2,
+    source: function (request,response){
+               a =  $("#txn_site")[0].value;
+               $.ajax({
+               type:"Get",
+               dataType: 'json',
+               url: "<%=search_names_sites_path()%>",
+               data:"str="+a ,
+               success: function(data){
+                site_names = [];
+                search_sites = {};
+                 $.each(data, function(i,val){
+                    site_names.push(val.name);
+                    search_sites[val.name] = val.id;
+                 });
+                   
+               }
+             });
+              response(site_names);
+           },
+     select: function( event, ui ) { 
+       alert(ui.item.value);
+       alert(search_sites[ui.item.value]);
+      $('#transaction_site_id').val(search_sites[ui.item.value].toString());}       
+
+  });
+
+
+ 
+</script>
+

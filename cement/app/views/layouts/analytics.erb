@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>Cement-Analytics</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag  "Chart.min.js"%>
+
+  <%= csrf_meta_tag %>
+
+		
+</head>
+<body>
+<%=render :template => "layouts/nav.erb" %>
+<div class="container-fluid" style="background-color:#f1f1f1;">
+  <div class="row-fluid" style="padding:5px">
+   
+    <div class="span12"style="text-align:left" id="contacts">
+          
+            <div id='mnclick' class=" pull-right" style="">
+              <span id='menu_arrow' style="color:blue">&#9783<br></span>
+            </div>    
+            <div id='slider' class='left-pos' style="color:#4c4c4c;">
+                     <h5><%=space(5)%>Report Links</h5>
+                      <hr style=''>
+                      <div class='menu_links'>Balance Report</div>
+                      <div class='menu_links'><%=link_to 'Sales Report', sales_analytics_url %></div>
+                      <div class='menu_links'>Stock Report</div>
+
+
+            </div>
+               
+
+       <%=yield%>
+    </div>
+
+
+  </div>
+      <br><br><span style="color:#f1f1f1;">...</span>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+$('#mnclick').click(function(event) {
+   if( $('#slider').hasClass('left-pos')){
+
+      $('#slider').removeClass('left-pos');
+      $('#slider').addClass('right-pos');
+      $('#menu_arrow').html("<span style='font-size:35px;color:grey;'>&raquo;</span>");
+
+   }else{
+      $('#slider').removeClass('right-pos');
+      $('#slider').addClass('left-pos');
+      $('#menu_arrow').html('&#9776');
+
+   }
+
+});
+
+
+  </script>

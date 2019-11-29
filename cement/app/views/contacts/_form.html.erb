@@ -1,0 +1,11 @@
+
+<%= form_for @contact do |f| %>
+   <%=render :partial => 'form_elements', locals:{f:f}%>
+<div class="row-fluid">
+  <div class="span12">
+     <hr>
+     <%= f.submit %><%=space(5).html_safe%> <%=link_to "Cancel", contacts_url, :style=>"font-weight:bold"%>
+
+  </div>
+</div>
+<% end %>

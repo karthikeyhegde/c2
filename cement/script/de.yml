@@ -1,0 +1,40 @@
+
+ Object: 
+   item:
+     delimiter: '#'
+     primary_field: id
+     subject: "action,item,primary_id"
+     actions:
+       create: CREATE
+       update: UPDATE
+     fields:
+       name: 
+         label: Name
+         mandatory: 'True'
+       item_type: 
+         label: Item_Type 
+         mandatory: false
+       description:
+         label: Description
+         mandatory: True
+   site:
+     delimiter: '#'
+     primary_field: id
+     subject: "action,site,primary_id"
+     actions:
+       create: CREATE
+       update: UPDATE
+     fields:
+       name: 
+         label: Name
+         mandatory: 'True'
+       address: 
+         label: Address
+         mandatory: false
+       place:
+         label: Place
+         mandatory: True
+
+
+
+ 

@@ -1,0 +1,32 @@
+
+<% txitem = TxnItem.new() 
+   txitem.id = row_no.to_i
+%>
+<tr id="trow_<%=row_no%>">
+<%= fields_for "txn_items[]", txitem do |t| %>
+
+<td style="padding:1px" class='item_arr_no'>
+     <%=t.select  :item_id, options_for_select(["Select .."]+Item.picklist), :style=>"width:100px;"%>
+</td>
+<td style="padding:1px;" class='item_arr_no' > 
+     <%=t.text_field :number,  id:"item_number_#{row_no}",class:"item_numbers", :style=>"height:30px;width:100px;" , :placeholder =>"Numbers" %>
+
+     <%=space(5)%>
+     <%=t.text_field :price, id:"item_price_#{row_no}", class:"item_numbers", :style=>"height:30px;width:100px;", :placeholder => "Price" %>
+</td>
+
+ <td><div id='item_val_<%=row_no%>' class='item_total'></div></td>
+ <td><%=link_to_function "x", "removeItem('#{row_no}')", style:'font-size:15px;font-weight:bold;'%></td>
+ 
+ <%end%>
+ <tr>
+
+ <script type="text/javascript">
+
+ $('#txn_items_<%=txitem.id%>_item_id').select2({
+    width:'210px',
+
+ });
+
+
+ </script>

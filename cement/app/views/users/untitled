@@ -1,0 +1,2 @@
+<h5> Edit User <%=@user.full_name%> </h5>
+<%= render :partial => 'form'%>

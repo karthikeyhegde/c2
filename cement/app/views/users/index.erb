@@ -1,0 +1,58 @@
+<%=render :template => "users/_header.erb" %>
+<h4>Users</h4>
+<%if !flash[:info].blank?%>
+ <div class="alert alert-warning"><%=flash[:info]%></div>
+<%end%>
+<table class="table zebra-striped table-condensed" style='font-size:13px;'>
+  <thead style="background-color:#C0C0C0;">
+    <th>Username</th>
+    <th>Name</th>    
+    <th>Email</th>
+    <th>Active</th>
+    <th></th>
+    <%if @auser.role == 'Admin'%>
+    <th style="color:#330099">Action</th>
+    <%end%>
+  </thead>
+  <tbody>
+   <% i = 0
+    @users.each{|c|
+     i+= 1 %>
+    <%if i%2 == 0%>
+       <tr>
+    <%else%>
+       <tr class="info">
+    <%end%>
+
+    <td><%=c.username%></td>
+    <td><%=c.full_name%></td>
+    <td><%=c.email%></td>
+    <td><%= (c.active == 1 ? 'Active': 'Inactive')%></td>
+    <td></td>
+    <%if @auser.role == 'Admin'%>
+
+    <td>
+          <span id ='t1'>
+          <%=link_to "Edit", edit_user_url(c.id), :class=>"label label-info"%><%=space(5).html_safe%>
+         </span>
+         <span id='t2'>
+          <%=link_to "Delete", remove_user_url(c.id), :method => :post, :onclick => "return confirm('Are you sure?')", :class=>"label label-warning"%>
+         </span>
+         <%if c.active == 1 %>
+
+            <%=link_to "Inctivate", inactivate_user_url(c.id), :class=>"label label-danger"%><%=space(5).html_safe%>
+          <%else%>
+            <%=link_to "Activate", activate_user_url(c.id), :class=>"label label-success"%><%=space(5).html_safe%>  
+         <%end%>
+         <%if c.id == @auser.id%>
+           <%=link_to "Change Password", change_password_user_url(c.id), :class=>"label label-success"%><%=space(5).html_safe%>  
+         <%else%>  
+          <%=link_to "Reset Password", reset_password_user_url(c.id), :class=>"label label-success"%><%=space(5).html_safe%>  
+          <%end%>
+      </td>
+     <%end%> 
+   </tr>
+   <%}%>
+  </tbody>
+
+</table>

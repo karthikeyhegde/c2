@@ -1,0 +1,8 @@
+<%=render :template => "users/_header.erb" %>
+<h5> Add New User </h5>
+<%if !@user.errors.blank? %>
+<%@user.errors.each{|e| %>
+  <div class="alert alert-warning"><%=e.to_s%></div>
+  <%}%>
+<%end%>
+<%= render :partial => 'form'%>

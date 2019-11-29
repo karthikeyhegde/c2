@@ -1,0 +1,234 @@
+<br><br>
+<h5> Edit Transaction <%=@trans.id%> </h5>
+<hr>
+<div id='contact-modal-window' class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+aaa
+
+</div>
+
+<%= form_for @trans, :remote => true, :html =>{:id=>'transaction_form'} do |f| %>
+   
+  <div  class="row-fluid txn-form" id="form_elements">
+
+     <div class="span3" >
+        Date : <br><%=@trans.on_date%>
+     </div>
+     <div class="span3">
+        Customer: <%=@trans.contact.name_subname%>
+        <%=f.hidden_field :contact_id %>
+        <br>
+        <span id='contact_number' style='color:grey;font-size:14px;'><%=@trans.contact.contact_number%></span>
+ <br>
+     </div>
+     &nbsp;&nbsp;
+     <div class="span3">
+        Site:  <%=link_to ((image_tag "find.png", :size=>"16x16")+" List"), window_list_sites_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;font-weight:bold;'}  %> <br>
+        <%=text_field :txn, :site, class:'autocomplete', style:"height:30px;", :value => @site_name%> <br>
+        <%=f.hidden_field :site_id %>
+     </div>
+  </div>
+   <% @row_no ||= -1 %>
+<div id='div_item_table' class="row-fluid txn-form">
+ <div class="span10">
+    <table id='item_tb' class='table' border='0' >
+      <thead style="font-size:12px;">
+          <% @row_no = 0%>
+         <th id='item_th' style="padding:2px;width:30%;"><%=link_to '+ Item', add_item_row_transactions_path(:no => @row_no ), :remote => true%></th>
+         <th style="padding:2px;">Description</th>
+         <th tyle="padding:2px;width:30%;">Quantity</th>
+         <th style="padding:2px;">Rate</th>
+         <th style="padding:2px;">Amount</th>
+         <th></th>
+      </thead> 
+      <tbody style='font-size:13px;'>
+       
+        
+        <%@trans.txn_items.each  do |item| %>
+           <%= fields_for "txn_items[]", item do |t| %>
+            <tr id="trow_<%=item.id%>">
+                <td style="padding:2px;" class='item_arr_no'>
+                    <%=t.select  :item_id,  options_for_select(["Select ..",'']+Item.all.collect{|c| [c.name,c.id]},["#{item.item.name} ", item.item_id ]), {}, {id:"item_select_#{item.id}",class:'item-select'}%>
+
+                </td>
+                <td style="padding:2px;padding-left:8px"><%=t.text_field :item_descri,  id:"item_descri_#{item.id}", :style=>"height:30px;" %></td>
+               <td style="padding:2px;" class='item_arr_no'> 
+                 <%=t.text_field :number, id:"item_number_#{item.id}", class:"item_numbers", :style=>"width:100px;height:30px;" %>
+               </td>
+
+               <td style="padding:2px;" class='item_arr_no'>
+                   <%=t.text_field :price, id:"item_price_#{item.id}",  class:"item_numbers", :style=>"height:30px;width:100px;"%></td>
+              <td ><div id='item_val_<%=item.id%>' class='item_total'><%=item.amount%></div></td>
+              <td><%=link_to_function "x", "removeItem('#{item.id}')", style:'font-size:15px;font-weight:bold;'%></td>
+              <td style="padding-left:75px"></td>
+             </tr>
+         <%end%>
+       <%end%>
+        
+
+         <tr id='gap_row' class='borderless'>
+          <td ></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        
+        
+        <tr>
+          <td style='border-top:0px;padding:2px;'> Vehicle Rental: <br> 
+             <%=f.text_field :vehicle_charges, style:'height:30px;', :class=>'calc-amount'%>
+          </td>
+          <td style='border-top:0px;padding:2px;padding-left:8px;'> Hamaali: <br> 
+             <%=f.text_field :hamaali, style:'height:30px;', :class=>'calc-amount'%>
+          </td>
+           <td style='border-top:0px;padding:2px;'>Discount:
+           <br> 
+             <%=f.text_field :discount, style:'height:30px;width:100px;', :class=>'calc-amount'%>
+
+          </td>
+             <td style="border-top:0px;font-size:13px;"><br><b>Total Amount</b></td>
+         <td style="border-top:0px;"> <div id='items_total_value' style='padding-top:20px;'><%=@trans.amount%></div></td>
+         <td style="border-top:0px;"></td>
+        </tr>
+
+        <tr>
+        
+        
+      
+       </tr>
+      </tbody>  
+
+  </table>
+  <hr>
+  </div>
+</div> 
+
+<div class="row-fluid txn-form">
+   <div class="span3" >
+      Payment Type
+     <br>
+     <%=f.select  :payment_type, options_for_select([['Cash','Cash'],['Cheque','Cheque'],['Bank Transaction']],[@trans.payment_type,@trans.payment_type] ),{},{style:'width:150px;'}%>
+     
+   </div>
+   <div class="span3">
+        Payment Note
+      <br>
+      <%=f.text_field :payment_note, style:'height:30px;'%>
+   </div>
+
+   <div class="span2">
+     Paid Amount 
+     <br>
+     <%=f.text_field  :payment_amount, style:'height:30px;'%>
+   </div>
+</div>  
+
+<div class="row-fluid txn-form">
+   <div class="span4" style="padding:0px;" >
+      Note: <br> <span><%=f.text_area  :descri , :size=>'2X10' %></span>
+   </div>
+
+   <div  class="span3" style="padding-left:1px;padding-top:40px;" >
+
+      <span class="label label-info"> Vapas: <%=f.check_box :buyback %> </span>
+   </div>
+
+  </div>
+
+<div class="row-fluid txn-form">
+
+  <div class="span12">
+     <hr>
+     <%=submit_tag 'Update Transaction',  class:'btn btn-warning', :data => {disable_with: "Saving ..."}, id:'tx-btn'%><%=space(5).html_safe%> <%=link_to "Cancel", transactions_url, :style=>"font-weight:bold"%>
+
+  </div>
+</div>
+<% end %>
+
+<script type="text/javascript">
+
+$('.item-select').select2({
+    width:'280px',
+
+ });
+
+$('#transaction_on_date').datepicker({ dateFormat: 'dd-mm-yy' });
+
+$('.calc-amount').on('keyup', function(){
+    
+     calc_total_value();
+
+   });
+  var contact_names = [];
+  var search_contacts = {};
+  var site_names = [];
+  var search_sites = [];
+
+  $('#txn_contact').autocomplete({
+    minLength: 2,
+    source: function (request,response){
+               a =  $("#txn_contact")[0].value;
+               $.ajax({
+               type:"Get",
+               dataType: 'json',
+               url: "<%=search_names_contacts_path()%>",
+               data:"str="+a ,
+               success: function(data){
+                contact_names = [];
+                search_contacts = {};
+                 $.each(data, function(i,val){
+                    n_name = (val.subname == null ? val.name:val.name+" "+val.subname)
+                    contact_names.push(n_name);
+                    search_contacts[n_name] = val;
+                 });
+                   
+               }
+             });
+              response(contact_names);
+           },
+    select: function( event, ui ) { 
+              
+                $('#transaction_contact_id').val(search_contacts[ui.item.value].id.toString());
+                 $('#contact_number').html("Ph: "+search_contacts[ui.item.value].contact_number)
+
+              }       
+
+  });
+
+
+  $('#txn_site').autocomplete({
+    minLength: 2,
+    source: function (request,response){
+               a =  $("#txn_site")[0].value;
+               $.ajax({
+               type:"Get",
+               dataType: 'json',
+               url: "<%=search_names_sites_path()%>",
+               data:"str="+a ,
+               success: function(data){
+                site_names = [];
+                search_sites = {};
+                 $.each(data, function(i,val){
+                    site_names.push(val.name);
+                    search_sites[val.name] = val.id;
+                 });
+                   
+               }
+             });
+              response(site_names);
+           },
+     select: function( event, ui ) { 
+      $('#transaction_site_id').val(search_sites[ui.item.value].toString());}       
+
+  });
+
+
+$('#txn-btn').click(function(){
+    $(this).attr('disabled', true);
+});
+ 
+ 
+</script>
+

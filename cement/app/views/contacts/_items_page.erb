@@ -1,0 +1,36 @@
+<%=render :template => 'txn_items/list.erb'%>
+<hr>
+<div class="h4-class" style='padding-left:8em;'> Item Sales</div>
+<table class="table zebra-striped table-condensed " style='font-size:12px;width:80%' align="center">
+  <thead style="background-color:#05E9FF;">
+    <th>Item</th>
+    <th>Number</th>
+    <th>Amount</th>    
+  </thead>
+  <tbody>
+   <% i = 0
+      sum = 0
+      num = 0
+    @item_aggr.each{|c|
+     i+= 1
+     sum += c['sum_amount']
+     num +=  c['sum_number'] %>
+    <%if i%2 == 0%>
+       <tr>
+    <%else%>
+       <tr class="info">
+    <%end%>
+    <td><%=c.name%></td>
+    <td><%=Utility.indian_number c['sum_number']%></td>
+    <td><%= Utility.indian_number c['sum_amount']%></td>
+   </tr>
+   <%} unless @item_aggr.blank?%>
+   <% if sum != 0 %>
+       <tr style="background-color:#B2D0B4;" class='tt'><td> Total </td>
+           <td> <%=Utility.indian_number num %></td>
+           <td><%=Utility.indian_number sum %></td>
+       </tr>
+   <%end%>
+  </tbody>
+
+</table>

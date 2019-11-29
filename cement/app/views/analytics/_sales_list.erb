@@ -1,0 +1,81 @@
+<% heads = ['Name','Balance', 'Last Payment','Last Trans', '#Days']
+  i = 0
+ %>
+<div class="Headers">
+ <div id='errors'></div>
+<table id='header_tb' class="table" style='font-size:13px;width:100%;margin-bottom:1px;background-color:#7D0541;color:#FFFFFF' align="center">
+   <thead>
+    <% heads.each {|h| %> 
+     <th id="bld_<%=i%>" class='click_header ' style='cursor:pointer;'>
+         <span id="hd_<%=i%>"> <%=h %> </span><span id="ord_<%=i%>" class='ord_spn ' ></span>
+    </th>
+    <% i += 1%>
+    <%}%>
+    </thead>
+</table>
+</div>
+<div class="Table" style="height:500px;overflow:auto;" id='baldet_data'>  
+
+     <table id='bal_details_tb' class="table  table-striped " style='font-size:13px;width:100%;margin-bottom:1px;' align="center">
+         
+             <%=render :partial => "tr_baldetails" %>
+      </table>
+           
+
+</div>
+
+ <script>
+
+  function getParams(elm){
+    idstr =  elm.id ;
+    i =  idstr.split('_')[1];
+    colname = $('#hd_'+i).text();
+    ord = $('#ord_'+i).hasClass('hd-asc') ? 'DESC' : "ASC"
+
+    return {col_name: colname, ord: ord, i:i} ;
+  }
+
+  function alterHeader(elm){
+       idstr = elm.id;
+       i =  idstr.split('_')[1];
+       $("#ord_"+i).html("<img alt='Loding..' src='/assets/ajax-loader.gif' />");
+       return true;
+  }
+
+  $(document).ready(function(){
+    var counter = 0;
+    $("#header_tb th").each(function(){
+        var width = $('#bal_details_tb tr:last td:eq(' + counter + ')').width();
+         this.width = width ;
+         counter++;
+    });
+
+
+
+    $('.click_header').click(function() {
+      var element = this ;
+   $.ajax({
+      url: "<%=sort_baldtls_analytics_url%>",
+      data: getParams(element),
+      beforeSend: function(){
+        idstr = element.id;
+       i =  idstr.split('_')[1];
+       $("#ord_"+i).html("<img alt='Loding..' src='/assets/ajax-loader.gif' />");
+       return true;
+
+
+      },
+       dataType : 'script',
+        error: function (request, status, error) {
+        alert(request.responseText);
+        alert(status);
+        alert(error);
+    },
+      type: 'GET'
+   });
+});
+
+
+});
+  </script>
+        

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contacts-Cement</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+   <%= csrf_meta_tag %>
+   <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+</head>
+<body>
+<%=render :template => "layouts/nav.erb" %>
+
+<div class="container-fluid">
+
+  <div class="row-fluid" style="padding:1px">
+
+    <div class="span12"style="text-align:left" id="contacts">
+      <%=yield%>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

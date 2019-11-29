@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h3>Welcome to Vardhan Agencies, <%= @user.full_name %></h3>
+    <p>
+      An account has been created for you on <%=MySetting.find_by_name('host').value%> <br>
+      Your username is: <%= @user.username %>.<br>
+      Your temparary password is <%=@user.password%> (Case Sensitive)
+    </p>
+
+    <p>
+       Go to  <%=MySetting.find_by_name('host').value%> and enter the username and password given.
+       It will immediatly redirect you to change the password.
+       After changing the defualt password  you will be able to access the application.
+    </p>
+
+    Have a great day!<br><br>
+
+    Regards<br>
+    Vardhan Agencies, Sirsi
+
+  </body>
+</html>

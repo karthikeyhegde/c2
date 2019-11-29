@@ -1,0 +1,3 @@
+
+$('#add_payment_link').before("<%= j(render  :template => 'payments/_payment_row_2.erb', :locals => {:row_no => @row_no, :payment_row => @payment_row} ) %>");
+$('#ptype_link').html("<%=j (link_to ((image_tag 'add.png', :size=>'12x12')+'Payment Type'), add_payment_row_payments_path(:id => '0',:row_no => @row_no ), :remote => true)%></td>")

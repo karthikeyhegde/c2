@@ -1,0 +1,21 @@
+<div id='payment_form' class="row-fluid" >
+    <div class="span3">
+    <br>  
+        <%=f.select  :recieved, options_for_select([["Recieved From:", 1],["Paid To:",0]], ["Recieved From:", 1]),{},{style:'width:150px;'}%>
+
+    </div>
+    <div class="span3">
+        Contact: <%= link_to '+New', add_txn_contacts_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;font-weight:bold;'}  %> &nbsp;|
+        <%=link_to ((image_tag "find.png", :size=>"16x16")+" List"), window_list_contacts_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;font-weight:bold;'}  %> 
+          <br>
+        <%=text_field  :txn, :contact, class:'autocomplete', style:"height:30px;", value: @payment.name_subname%>
+        <%=f.hidden_field :contact_id %>
+        <br>
+        <span id='contact_number' style='color:grey;font-size:14px;'></span>
+         <br>
+    </div>
+    <div class="span3" >
+        Date : <br><%= f.text_field :on_date, class:'input', style:'height:30px;width:150px'%>
+     </div>
+    
+ </div>

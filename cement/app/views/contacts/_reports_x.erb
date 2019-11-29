@@ -1,0 +1,159 @@
+
+
+
+<table class="contact-tx-table" >
+  <tr><td colspan="4"><%=link_to "Download Excel" ,excel_export_contact_path(:id => params[:id],:from_date => params[:from_date], :to_date => params[:to_date]), {class:'label label-info', style:'vertical-align: top;'} %> </td></tr>
+ <tr>    
+     <td colspan="3"  >
+           <h4><%=@contact.name%></h4>
+     </td>
+     <td  colspan="3">
+        Account Balance:
+        <%=@contact.balance%>
+     </td>
+     
+  </tr>
+  <tr>
+     <td colspan="6"  >
+     <%if params[:from_date].blank? and params[:to_date].blank?%>
+        Report of all transactions.
+     <%else%>    
+        Transactions - &nbsp;
+        <%if !params[:from_date].blank? %>
+             From <%=params[:from_date]%> &nbsp;&nbsp;
+        <%end%>
+         <%if !params[:to_date].blank? %>
+             up to <%=params[:to_date] %>
+        <%end%>
+             
+     <%end%>
+        
+     </td>
+  <tr>
+<% @transactions.each{|t| %>
+
+   
+    <tr class='back-aqua' > 
+     <%if t.site_name.blank? %>   
+     <td style='font-weight:bold;border-top:2px solid #990033 ' colspan='6'  >
+       Date: <%=t.on_date%>  &nbsp;&nbsp;   <%if t.buyback == 1%>(Vaapas)<%end%>
+     </td>
+     
+     <%else%>
+        <td style='font-weight:bold;border-top:2px solid #990033 ' colspan='3'  >
+       Date: <%=t.on_date%>     
+     </td>
+     <td  style='font-weight:bold;border-top:2px solid #990033 ' colspan="3">
+        Site: <%=t.site_name%>
+     </td>
+     <%end%>
+  </tr>
+
+    <% if t.trans_type == 'payment' %>
+
+         <tr>
+           <td colspan="3"><%=t.tofrom %> <%=t.payment_type%>  Payment:</td>
+           <td colspan="3"> &#8377 <%=t.payment_amount_s%></td>
+
+         </tr>
+         <tr>
+            
+              <td colspan="3"> Account Balanace: </td>
+               <td colspan="3"> &#8377 <%=t.contact_balance%> </td>
+               
+           </tr>
+         <%if !t.payment_note.blank? %>
+           <tr>
+              <td  colspan="6"> Payment Info:  <%=t.payment_note%> </td>
+              
+           </tr>
+         <%end%>
+         <%if !t.descri.blank? %>
+            <tr>
+              <td colspan="6"> Note:  <%=t.descri%> </td>
+           </tr>
+
+         <%end%>
+
+           
+
+    <%else %>
+            
+   
+         
+
+    <%if t.txn_items.size() > 0%>
+    <tr class="back-azure" style="font-weight:bold;">
+     <td >Item</td>
+     <td >Description</td>
+     <td >Price</td>
+     <td >Qunatity</td>
+     <td >Amount (&#8377)</td>
+     <td></td>
+    </tr>
+     <%t.txn_items.each{|ti| %>
+     <tr>
+     <td ><%=ti.item.name%></td>
+     <td><%=ti.item_descri%></td>
+     <td ><%=ti.price%></td>
+     <td ><%=ti.number%></td>
+     <td ><%=ti.amount%></td>
+     <td></td>
+     </tr>
+     
+    <%}%>
+    <%end%>
+    <%if !t.vehicle_charges.blank? %>
+    <tr>
+        <td >Vehicle Charges</td>
+     <td></td>
+     <td ><%=t.vehicle_charges%></td>
+     <td ></td>
+     <td ><%=t.vehicle_charges%></td>
+     <td></td>
+     </tr>
+    <%end%>
+     <%if !t.hamaali.blank? %>
+    <tr>
+        <td >Hamaali</td>
+     <td></td>
+     <td ><%=t.hamaali%></td>
+     <td ></td>
+     <td ><%=t.hamaali%></td>
+     <td></td>
+     </tr>
+    <%end%>
+    <tr><td colspan="6" style = 'border-top: 1px solid #9999FF'></td></tr>
+    <tr>
+     
+     <td  colspan="2" ><%=t.payment_type%> Payment: &#8377 <%=t.payment_amount%> </td>
+     <td colspan="2">  Total Amount: </td>
+     <td  colspan="2">  &#8377 <%=t.amount%>  </td>
+     
+    <tr >
+      <td colspan="2" ><%if !t.payment_note.blank? %> Payment Info: <%=t.payment_note%> <%end%></td>
+      <%if t.amount != 0 and t.payment_amount != 0 %>
+      <td  colspan="2">Account Balance:  </td>
+      <td colspan="2" >&#8377 <%=t.contact_balance%></td>
+      <%end%>
+    </tr>
+    <tr >
+     <td colspan="4" rowspas='2'><%=t.descri%></td>
+     <td colspan="2" ></td>
+    </tr>
+    <tr >
+     <td colspan="6" rowspas='2' ></td>
+     
+    </tr>
+   
+
+
+    <%end%>
+
+
+ 
+   <%}%>
+
+
+</table>
+<hr>

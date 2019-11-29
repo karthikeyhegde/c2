@@ -1,0 +1,212 @@
+<div id='contact-modal-window' class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+</div>
+
+<%= form_for @trans, :remote => true, :html =>{:id=>'transaction_form'} do |f| %>
+  
+   <div id='Header' class="row-fluid txn-form">
+     <div class="span10 offset2" >
+     <h4>Edit Transaction <%=@trans.id%></h4>
+     </div>
+   </div> 
+
+ <div id='div_item_table' class="row-fluid txn-form" style="border:0;">
+    <div class="span2" ></div>
+    <div class="span8">
+
+        <table id='item_tb' class=' nb-table' style="border:1px solid #e6e6e6; background-color: #f1f1f1;">
+      <thead style="font-size:12px;">
+      </thead> 
+      <tbody style='font-size:13px;'>
+         <tr id='first_row_fields'>
+             <td style="padding:20px;padding-bottom:10px;"> Date : <%=@trans.on_date%></td>
+             <td  style="width:20%;padding-bottom:1px;">  <%=@trans.contact.name_subname%>
+                <%=f.hidden_field :contact_id %>
+                <br>
+                <span id='contact_number' style='color:grey;font-size:14px;'><%=@trans.contact.contact_number%></span>
+             </td>
+             <td style="padding-left:80px;padding-top:10px;">Site:  <%=link_to ((image_tag "find.png", :size=>"16x16")+" List"), window_list_sites_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;font-weight:bold;'}  %> <br>
+               <%=text_field :txn, :site, class:'autocomplete', style:"height:30px;", :value => @site_name%> <br>
+               <%=f.hidden_field :site_id %>
+             </td>
+          </tr>
+             
+
+
+       <% @row_no ||= -1 %>
+         <tr>
+           <td id='item_th' style="padding:4px;width:35%;">&nbsp;<%=link_to ((image_tag "add.png", :size=>"10x10")+' Item'), add_item_row_transactions_path(:no => @row_no ), :remote => true%></td>
+          </tr> 
+       
+        
+        <%@trans.txn_items.each  do |item| %>
+           <%= fields_for "txn_items[]", item do |t| %>
+            <tr id="trow_<%=item.id%>" class='item_area'>
+                <td style="padding:4px;" class='item_arr_no'>
+                 <%=link_to_function  (image_tag "cross_circle.png", :size=>"12x12"), "removeItem('#{item.id}')", style:'font-size:15px;font-weight:bold;'%>
+                    <%=t.select  :item_id,  options_for_select(["Select ..",'']+Item.all.collect{|c| [c.name,c.id]},["#{item.item.name} ", item.item_id ]), {}, {id:"item_select_#{item.id}",class:'item-select'} %>
+
+                </td>
+                
+               <td style="padding:1px;padding-top:8px;border:0;" class='item_arr_no' colspan='2'> 
+                 <%=t.text_field :number, id:"item_number_#{item.id}", class:"item_numbers", :style=>"width:100px;height:30px;" %>
+                   <%=space(4)%>
+                   <%=t.text_field :price, id:"item_price_#{item.id}",  class:"item_numbers", :style=>"height:30px;width:100px;"%> 
+              <%=space(23)%>
+               <span id='item_val_<%=item.id%>' class='item_total'> <%= Utility.indian_number item.amount%></span></td>
+
+             </tr>
+         <%end%>
+       <%end%>
+        
+        
+        <tr id='others_row'>
+          <td style='border-top:0px;padding:10px;padding-left:16px;'> Vehicle Rental: <br> 
+             <%=f.text_field :vehicle_charges, style:'height:30px;', :class=>'calc-amount'%>
+          </td>
+          <td style='border-top:0px;padding:2px;' colspan="2">
+             Hamaali: <%=space(20)%> Discount: <br>
+             <%=f.text_field :hamaali, style:'height:30px;width:100px;', :class=>'calc-amount'%>
+            
+              <%=space(5)%>
+             <%=f.text_field :discount, style:'height:30px;width:100px;', :class=>'calc-amount'%>
+
+          </td>
+          </tr>
+          <tr>
+             <td style="border-top:0px;"></td>
+             <td style="border-top:0px;font-size:13px;text-align:right;"><br><b>Total Amount</b></td>
+             <td style="padding-left:100px;"> <span id='items_total_value'  style='padding-top:20px;'><%= Utility.indian_number @trans.amount%></span></td>
+         
+        </tr>
+
+    <tr>
+
+    <tr id='gap_row_3' >
+            <td style="padding:10px;border-bottom: 1px solid #E6E6E6;" colspan="3"></td>
+           </tr> 
+      <td style="padding:20px;">
+      Payment Type
+       <br>
+     <%=f.select  :payment_type, options_for_select([['Cash','Cash'],['Cheque','Cheque'],['Bank Transaction']],[@trans.payment_type,@trans.payment_type] ),{},{style:'width:150px;'}%>
+     
+      </td>
+
+     <td>
+       Paid Amount 
+        <br>
+        <%=f.text_field  :payment_amount, style:'height:30px;'%>
+   </td>
+     <td style="padding-left:80px;">
+       <span  class="label "> Return: <%=f.check_box :buyback %> </span>
+     </td>
+</tr>  
+
+    <tr>
+             <td id='t_note' style="padding-left:20px;" colspan="3">
+                Note: <br> <span><%=f.text_area  :descri , :size=>'2X10' %></span>
+             </td>
+         
+        </tr>
+
+
+ <tr id='gap_row_3' >
+            <td style="padding:10px;border-bottom: 1px solid #E6E6E6;" colspan="3"></td>
+           </tr> 
+
+<tr>
+    <tr>
+     <td style="padding:20px;padding-right:0px;" colspan="3">
+        <%=submit_tag 'Update Transaction',  class:'btn btn-warning', :data => {disable_with: "Saving ..."}, id:'tx-btn'%><%=space(5).html_safe%> <%=link_to "Cancel", transactions_url, :style=>"font-weight:bold"%>
+       </td>
+       <td  colspan="2"><%=link_to "X Delete", remove_transaction_url(:id => @trans.id, :show_page => 'report_page'), :method => :post,  :confirm => "Transaction #{@trans.id} will be deleted permanently !!  Are you Sure ?", :class=>"label label-warning"%></td>
+       <tr>
+      </tbody>  
+
+  </table>
+<% end %>
+
+<script type="text/javascript">
+
+$('.item-select').select2({
+    width:'210px',
+
+ });
+
+$('#transaction_on_date').datepicker({ dateFormat: 'dd-mm-yy' });
+
+$('.calc-amount').on('keyup', function(){
+    
+     calc_total_value();
+
+   });
+  var contact_names = [];
+  var search_contacts = {};
+  var site_names = [];
+  var search_sites = [];
+
+  $('#txn_contact').autocomplete({
+    minLength: 2,
+    source: function (request,response){
+               a =  $("#txn_contact")[0].value;
+               $.ajax({
+               type:"Get",
+               dataType: 'json',
+               url: "<%=search_names_contacts_path()%>",
+               data:"str="+a ,
+               success: function(data){
+                contact_names = [];
+                search_contacts = {};
+                 $.each(data, function(i,val){
+                    n_name = (val.subname == null ? val.name:val.name+" "+val.subname)
+                    contact_names.push(n_name);
+                    search_contacts[n_name] = val;
+                 });
+                   
+               }
+             });
+              response(contact_names);
+           },
+    select: function( event, ui ) { 
+              
+                $('#transaction_contact_id').val(search_contacts[ui.item.value].id.toString());
+                 $('#contact_number').html("Ph: "+search_contacts[ui.item.value].contact_number)
+
+              }       
+
+  });
+
+
+  $('#txn_site').autocomplete({
+    minLength: 2,
+    source: function (request,response){
+               a =  $("#txn_site")[0].value;
+               $.ajax({
+               type:"Get",
+               dataType: 'json',
+               url: "<%=search_names_sites_path()%>",
+               data:"str="+a ,
+               success: function(data){
+                site_names = [];
+                search_sites = {};
+                 $.each(data, function(i,val){
+                    site_names.push(val.name);
+                    search_sites[val.name] = val.id;
+                 });
+                   
+               }
+             });
+              response(site_names);
+           },
+     select: function( event, ui ) { 
+      $('#transaction_site_id').val(search_sites[ui.item.value].toString());}       
+
+  });
+
+
+$('#txn-btn').click(function(){
+    $(this).attr('disabled', true);
+});
+ 
+ 
+</script>
+

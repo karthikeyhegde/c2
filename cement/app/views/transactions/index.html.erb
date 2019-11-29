@@ -1,0 +1,24 @@
+  <div id="index_head" class="row-fluid" style="padding:0px;margin:0px">
+     <div class="span5">
+           <%=link_to "+  New ", new_transaction_url, :class=>'label-success label'%><%=space(2)%>
+           <span class='h4-class'>Transaction List</span>
+     </div>
+
+       <%=render :partial => "paging_links" %>
+
+    
+ </div>
+ 
+   <%if !flash[:notice].blank? %>
+     <div class="alert alert-success">
+       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;
+       </button>
+        <%=flash[:notice]%>
+     </div>
+    <%end%>
+
+<div id="index_list" class="row-fluid">
+   <div  id='trans_list' class="span12" style="min-height:400px;">
+    <%=render :partial => 'list'%>
+   </div>
+</div>

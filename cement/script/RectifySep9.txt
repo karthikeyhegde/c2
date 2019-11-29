@@ -1,0 +1,2923 @@
+" Prashant Datta Traders -  Sbal - 61486.0 |  8719 -  Total Amount : 84500.0 - RunningCbalance: 166405.0 - TransContactbalance 165405.0 "
+" Prashant Datta Traders -  Sbal - 61486.0 |  8844 -  Total Amount : -7839.0 - RunningCbalance: 158566.0 - TransContactbalance 157566.0 "
+" Prashant Datta Traders -  Sbal - 61486.0 |  8731 -  Total Amount : -80000.0 - RunningCbalance: 78566.0 - TransContactbalance 77566.0 "
+" Prashant Datta Traders -  Sbal - 61486.0 |  8733 -  Total Amount : -339.0 - RunningCbalance: 78227.0 - TransContactbalance 77227.0 "
+" Prashant Datta Traders -  Sbal - 61486.0 |  8813 -  Total Amount : -12204.0 - RunningCbalance: 66023.0 - TransContactbalance 65023.0 "
+" Prashant Datta Traders -  Sbal - 61486.0 |  8814 -  Total Amount : 11240.0 - RunningCbalance: 77263.0 - TransContactbalance 76263.0 "
+" Prashant Datta Traders -  Sbal - 61486.0 |  8831 -  Total Amount : 8750.0 - RunningCbalance: 86013.0 - TransContactbalance 85013.0 "
+" Prashant Datta Traders -  Sbal - 61486.0 |  8838 -  Total Amount : -50000.0 - RunningCbalance: 36013.0 - TransContactbalance 35013.0 "
+" Prashant Datta Traders -  Sbal - 61486.0 |  8849 -  Total Amount : 105000.0 - RunningCbalance: 141013.0 - TransContactbalance 140013.0 "
+" Difference In Balance"
+" Contact =  687  Prakash Bhat Bilachikattu"
+" Caluculated -0.000000000007275957614183425"
+" Balance  0.0"
+"----------------------"
+3
+["Prashant Datta Traders", 687, "Prakash Bhat Bilachikattu"]
+"473,68"
+ Prashant Datta Traders  ---- 409 ------- 15960.0  0.0 ------  15960.0 ---- 15960.0
+#<TxnItem id: 1386, item_id: 79, number: 40, price: #<BigDecimal:5f50ca8,'0.399E3',9(18)>, amount: #<BigDecimal:5f50c30,'0.1596E5',9(18)>, transaction_id: 409, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-01 05:10:40", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+15960
+"here ---"
+0
+ Prashant Datta Traders  ---- 427 ------- 4788.0  0.0 ------  20748.0 ---- 20748.0
+#<TxnItem id: 1400, item_id: 79, number: 12, price: #<BigDecimal:5d20618,'0.399E3',9(18)>, amount: #<BigDecimal:5d20578,'0.4788E4',9(18)>, transaction_id: 427, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-02 05:18:07", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+4788
+"here ---"
+0
+ Prashant Datta Traders  ---- 433 ------- 19950.0  0.0 ------  40698.0 ---- 40698.0
+#<TxnItem id: 1406, item_id: 79, number: 50, price: #<BigDecimal:5ce6378,'0.399E3',9(18)>, amount: #<BigDecimal:5ce6238,'0.1995E5',9(18)>, transaction_id: 433, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-02 12:07:46", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+19950
+"here ---"
+0
+ Prashant Datta Traders  ---- 586 ------- 4092.0  0.0 ------  36606.0 ---- 36606.0
+#<TxnItem id: 1536, item_id: 81, number: 12, price: #<BigDecimal:5cb7d98,'0.326E3',9(18)>, amount: #<BigDecimal:5cb7cd0,'0.3912E4',9(18)>, transaction_id: 586, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-13 11:04:16", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+4092
+"here ---"
+0
+ Prashant Datta Traders  ---- 461 ------- 39900.0  0.0 ------  76506.0 ---- 76506.0
+#<TxnItem id: 1435, item_id: 79, number: 100, price: #<BigDecimal:5c7b4d8,'0.399E3',9(18)>, amount: #<BigDecimal:5c7b460,'0.399E5',9(18)>, transaction_id: 461, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-04 10:13:06", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+39900
+"here ---"
+0
+ Prashant Datta Traders  ---- 468 ------- 0.0  14000.0 ------  62506.0 ---- 62506.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 497 ------- 23700.0  0.0 ------  86206.0 ---- 86206.0
+#<TxnItem id: 1459, item_id: 79, number: 60, price: #<BigDecimal:5c23f80,'0.395E3',9(18)>, amount: #<BigDecimal:5c23eb8,'0.237E5',9(18)>, transaction_id: 497, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-07 11:45:30", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+23700
+"here ---"
+0
+ Prashant Datta Traders  ---- 511 ------- 0.0  30000.0 ------  56206.0 ---- 56206.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 534 ------- 35000.0  0.0 ------  91206.0 ---- 91206.0
+#<TxnItem id: 1492, item_id: 80, number: 100, price: #<BigDecimal:5b82ec8,'0.35E3',9(18)>, amount: #<BigDecimal:5b82dd8,'0.35E5',9(18)>, transaction_id: 534, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-13 09:50:56", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+35000
+"here ---"
+0
+ Prashant Datta Traders  ---- 584 ------- 7920.0  0.0 ------  83286.0 ---- 83286.0
+#<TxnItem id: 1535, item_id: 79, number: 20, price: #<BigDecimal:5b225a0,'0.396E3',9(18)>, amount: #<BigDecimal:5b22528,'0.792E4',9(18)>, transaction_id: 584, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-13 10:52:14", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+7920
+"here ---"
+0
+ Prashant Datta Traders  ---- 585 ------- 0.0  750.0 ------  82536.0 ---- 82536.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 537 ------- 3960.0  0.0 ------  78576.0 ---- 78576.0
+#<TxnItem id: 1495, item_id: 79, number: 10, price: #<BigDecimal:5ac4ba8,'0.396E3',9(18)>, amount: #<BigDecimal:5ac4b30,'0.396E4',9(18)>, transaction_id: 537, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-10 03:46:47", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3960
+"here ---"
+0
+ Prashant Datta Traders  ---- 580 ------- 0.0  60000.0 ------  18576.0 ---- 18576.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 591 ------- 4740.0  0.0 ------  23316.0 ---- 23316.0
+#<TxnItem id: 1543, item_id: 79, number: 12, price: #<BigDecimal:4c27910,'0.395E3',9(18)>, amount: #<BigDecimal:4c27898,'0.474E4',9(18)>, transaction_id: 591, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-13 14:07:11", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+4740
+"here ---"
+0
+ Prashant Datta Traders  ---- 595 ------- 32500.0  0.0 ------  55816.0 ---- 55816.0
+#<TxnItem id: 1545, item_id: 98, number: 500, price: #<BigDecimal:4ba1fe0,'0.65E2',9(18)>, amount: #<BigDecimal:4ba1ef0,'0.325E5',9(18)>, transaction_id: 595, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-21 14:24:51", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+32500
+"here ---"
+0
+ Prashant Datta Traders  ---- 607 ------- 51350.0  0.0 ------  107166.0 ---- 107166.0
+#<TxnItem id: 1554, item_id: 79, number: 130, price: #<BigDecimal:4b389a0,'0.395E3',9(18)>, amount: #<BigDecimal:4b386f8,'0.5135E5',9(18)>, transaction_id: 607, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-16 06:02:14", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+51350
+"here ---"
+0
+ Prashant Datta Traders  ---- 622 ------- 0.0  40000.0 ------  67166.0 ---- 67166.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 628 ------- 92000.0  0.0 ------  159166.0 ---- 159166.0
+#<TxnItem id: 1567, item_id: 79, number: 230, price: #<BigDecimal:4a3f4b8,'0.4E3',9(18)>, amount: #<BigDecimal:4a3f148,'0.92E5',9(18)>, transaction_id: 628, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-16 06:05:57", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+92000
+"here ---"
+0
+ Prashant Datta Traders  ---- 638 ------- 3510.0  0.0 ------  155656.0 ---- 155656.0
+#<TxnItem id: 1580, item_id: 80, number: 10, price: #<BigDecimal:49be6b0,'0.351E3',9(18)>, amount: #<BigDecimal:49be638,'0.351E4',9(18)>, transaction_id: 638, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-16 07:31:22", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3510
+"here ---"
+0
+ Prashant Datta Traders  ---- 645 ------- 800.0  0.0 ------  156456.0 ---- 156456.0
+#<TxnItem id: 1584, item_id: 100, number: 1, price: #<BigDecimal:494a8a0,'0.8E3',9(18)>, amount: #<BigDecimal:494a7d8,'0.8E3',9(18)>, transaction_id: 645, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-17 04:32:18", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+800
+"here ---"
+0
+ Prashant Datta Traders  ---- 672 ------- 0.0  24000.0 ------  132456.0 ---- 132456.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 683 ------- 0.0  100000.0 ------  32456.0 ---- 32456.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 687 ------- 32500.0  0.0 ------  64956.0 ---- 64956.0
+#<TxnItem id: 1620, item_id: 81, number: 100, price: #<BigDecimal:4811268,'0.325E3',9(18)>, amount: #<BigDecimal:4811150,'0.325E5',9(18)>, transaction_id: 687, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-20 10:45:12", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+32500
+"here ---"
+0
+ Prashant Datta Traders  ---- 694 ------- 41600.0  0.0 ------  106556.0 ---- 106556.0
+#<TxnItem id: 1625, item_id: 79, number: 100, price: #<BigDecimal:4794e98,'0.4E3',9(18)>, amount: #<BigDecimal:4794e20,'0.4E5',9(18)>, transaction_id: 694, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-21 10:38:33", contact_id: 473, item_descri: "">
+#<TxnItem id: 1626, item_id: 100, number: 2, price: #<BigDecimal:4794b00,'0.8E3',9(18)>, amount: #<BigDecimal:47949e8,'0.16E4',9(18)>, transaction_id: 694, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-21 10:38:33", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+41600
+"here ---"
+0
+ Prashant Datta Traders  ---- 695 ------- 26000.0  0.0 ------  80556.0 ---- 80556.0
+#<TxnItem id: 1627, item_id: 79, number: 65, price: #<BigDecimal:46f05a0,'0.4E3',9(18)>, amount: #<BigDecimal:46f0500,'0.26E5',9(18)>, transaction_id: 695, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-21 10:40:26", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+26000
+"here ---"
+0
+ Prashant Datta Traders  ---- 728 ------- 16000.0  0.0 ------  96556.0 ---- 96556.0
+#<TxnItem id: 1654, item_id: 79, number: 40, price: #<BigDecimal:4643148,'0.4E3',9(18)>, amount: #<BigDecimal:4642ec8,'0.16E5',9(18)>, transaction_id: 728, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-23 05:33:45", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+16000
+"here ---"
+0
+ Prashant Datta Traders  ---- 742 ------- 0.0  35000.0 ------  61556.0 ---- 61556.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 746 ------- 1600.0  0.0 ------  63156.0 ---- 63156.0
+#<TxnItem id: 1668, item_id: 100, number: 2, price: #<BigDecimal:4554ed0,'0.8E3',9(18)>, amount: #<BigDecimal:4554e58,'0.16E4',9(18)>, transaction_id: 746, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-24 07:20:10", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1600
+"here ---"
+0
+ Prashant Datta Traders  ---- 757 ------- 40000.0  0.0 ------  103156.0 ---- 103156.0
+#<TxnItem id: 1676, item_id: 79, number: 100, price: #<BigDecimal:44d8178,'0.4E3',9(18)>, amount: #<BigDecimal:44d80d8,'0.4E5',9(18)>, transaction_id: 757, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-24 10:17:58", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+40000
+"here ---"
+0
+ Prashant Datta Traders  ---- 760 ------- 4000.0  0.0 ------  107156.0 ---- 107156.0
+#<TxnItem id: 1679, item_id: 79, number: 10, price: #<BigDecimal:4475f28,'0.4E3',9(18)>, amount: #<BigDecimal:4475e38,'0.4E4',9(18)>, transaction_id: 760, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-24 10:48:56", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+4000
+"here ---"
+0
+ Prashant Datta Traders  ---- 772 ------- 0.0  12680.0 ------  94476.0 ---- 94476.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 797 ------- 6015.0  0.0 ------  88461.0 ---- 88461.0
+#<TxnItem id: 1708, item_id: 79, number: 15, price: #<BigDecimal:3046b10,'0.401E3',9(18)>, amount: #<BigDecimal:3046980,'0.6015E4',9(18)>, transaction_id: 797, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-27 05:32:39", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+6015
+"here ---"
+0
+ Prashant Datta Traders  ---- 808 ------- 26000.0  0.0 ------  114461.0 ---- 114461.0
+#<TxnItem id: 1717, item_id: 79, number: 65, price: #<BigDecimal:2e8e070,'0.4E3',9(18)>, amount: #<BigDecimal:2e8dad0,'0.26E5',9(18)>, transaction_id: 808, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-27 09:56:39", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+26000
+"here ---"
+0
+ Prashant Datta Traders  ---- 820 ------- 0.0  80000.0 ------  34461.0 ---- 34461.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 823 ------- 38000.0  0.0 ------  72461.0 ---- 72461.0
+#<TxnItem id: 1728, item_id: 79, number: 95, price: #<BigDecimal:2a478b8,'0.4E3',9(18)>, amount: #<BigDecimal:2a477f0,'0.38E5',9(18)>, transaction_id: 823, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-04-29 15:45:42", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+38000
+"here ---"
+0
+ Prashant Datta Traders  ---- 843 ------- 12000.0  0.0 ------  60461.0 ---- 60461.0
+#<TxnItem id: 1743, item_id: 79, number: 30, price: #<BigDecimal:25ec138,'0.4E3',9(18)>, amount: #<BigDecimal:25e3e70,'0.12E5',9(18)>, transaction_id: 843, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-04 06:47:14", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+12000
+"here ---"
+0
+ Prashant Datta Traders  ---- 913 ------- 76000.0  0.0 ------  136461.0 ---- 136461.0
+#<TxnItem id: 1810, item_id: 79, number: 190, price: #<BigDecimal:652d860,'0.4E3',9(18)>, amount: #<BigDecimal:652d7e8,'0.76E5',9(18)>, transaction_id: 913, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 13:48:58", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+76000
+"here ---"
+0
+ Prashant Datta Traders  ---- 914 ------- -200.0  0.0 ------  136261.0 ---- 136261.0
+"CALCULATE AMOUNT"
+-200
+"here ---"
+0
+ Prashant Datta Traders  ---- 915 ------- 55580.0  0.0 ------  191841.0 ---- 191841.0
+#<TxnItem id: 1811, item_id: 79, number: 140, price: #<BigDecimal:6499980,'0.397E3',9(18)>, amount: #<BigDecimal:6499908,'0.5558E5',9(18)>, transaction_id: 915, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 13:57:32", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+55580
+"here ---"
+0
+ Prashant Datta Traders  ---- 916 ------- 25870.0  0.0 ------  165971.0 ---- 165971.0
+#<TxnItem id: 1812, item_id: 79, number: 65, price: #<BigDecimal:645cc10,'0.398E3',9(18)>, amount: #<BigDecimal:645ca80,'0.2587E5',9(18)>, transaction_id: 916, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 13:58:08", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+25870
+"here ---"
+0
+ Prashant Datta Traders  ---- 917 ------- 57312.0  0.0 ------  108659.0 ---- 108659.0
+#<TxnItem id: 1813, item_id: 79, number: 144, price: #<BigDecimal:640c940,'0.398E3',9(18)>, amount: #<BigDecimal:640c8a0,'0.57312E5',9(18)>, transaction_id: 917, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 13:58:54", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+57312
+"here ---"
+0
+ Prashant Datta Traders  ---- 918 ------- 5100.0  0.0 ------  113759.0 ---- 113759.0
+#<TxnItem id: 1814, item_id: 81, number: 15, price: #<BigDecimal:63d45b8,'0.34E3',9(18)>, amount: #<BigDecimal:63d4518,'0.51E4',9(18)>, transaction_id: 918, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 13:59:24", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5100
+"here ---"
+0
+ Prashant Datta Traders  ---- 919 ------- 16407.0  55000.0 ------  75166.0 ---- 75166.0
+#<TxnItem id: 1815, item_id: 79, number: 8, price: #<BigDecimal:636ae10,'0.397E3',9(18)>, amount: #<BigDecimal:636ad48,'0.3176E4',9(18)>, transaction_id: 919, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 14:01:58", contact_id: 473, item_descri: "">
+#<TxnItem id: 1816, item_id: 98, number: 4, price: #<BigDecimal:636a960,'0.69E2',9(18)>, amount: #<BigDecimal:636a668,'0.276E3',9(18)>, transaction_id: 919, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 14:01:58", contact_id: 473, item_descri: "">
+#<TxnItem id: 1817, item_id: 79, number: 15, price: #<BigDecimal:636a348,'0.397E3',9(18)>, amount: #<BigDecimal:6369d30,'0.5955E4',9(18)>, transaction_id: 919, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 14:01:58", contact_id: 473, item_descri: "">
+#<TxnItem id: 1818, item_id: 98, number: 100, price: #<BigDecimal:6369a60,'0.7E2',9(18)>, amount: #<BigDecimal:63699c0,'0.7E4',9(18)>, transaction_id: 919, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 14:01:58", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+16407
+"here ---"
+0
+ Prashant Datta Traders  ---- 920 ------- 3300.0  18000.0 ------  60466.0 ---- 60466.0
+#<TxnItem id: 1819, item_id: 107, number: 400, price: #<BigDecimal:62dfa18,'0.2E1',9(18)>, amount: #<BigDecimal:62df978,'0.8E3',9(18)>, transaction_id: 920, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 14:03:08", contact_id: 473, item_descri: "">
+#<TxnItem id: 1820, item_id: 120, number: 10, price: #<BigDecimal:62df798,'0.25E3',9(18)>, amount: #<BigDecimal:62df720,'0.25E4',9(18)>, transaction_id: 920, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 14:03:08", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3300
+"here ---"
+0
+ Prashant Datta Traders  ---- 921 ------- 0.0  50000.0 ------  10466.0 ---- 10466.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 922 ------- 46695.0  0.0 ------  57161.0 ---- 57161.0
+#<TxnItem id: 1821, item_id: 79, number: 65, price: #<BigDecimal:625a750,'0.397E3',9(18)>, amount: #<BigDecimal:625a480,'0.25805E5',9(18)>, transaction_id: 922, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 14:05:36", contact_id: 473, item_descri: "">
+#<TxnItem id: 1822, item_id: 81, number: 50, price: #<BigDecimal:625a1d8,'0.335E3',9(18)>, amount: #<BigDecimal:625a0c0,'0.1675E5',9(18)>, transaction_id: 922, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 14:05:36", contact_id: 473, item_descri: "">
+#<TxnItem id: 1823, item_id: 98, number: 60, price: #<BigDecimal:6259b98,'0.69E2',9(18)>, amount: #<BigDecimal:6259a80,'0.414E4',9(18)>, transaction_id: 922, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-05 14:05:36", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+46695
+"here ---"
+0
+ Prashant Datta Traders  ---- 939 ------- -247.0  30000.0 ------  26914.0 ---- 26914.0
+"CALCULATE AMOUNT"
+-247
+"here ---"
+0
+ Prashant Datta Traders  ---- 972 ------- 0.0  30000.0 ------  -3086.0 ---- -3086.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 974 ------- 31760.0  0.0 ------  28674.0 ---- 28674.0
+#<TxnItem id: 1855, item_id: 79, number: 80, price: #<BigDecimal:6161c40,'0.397E3',9(18)>, amount: #<BigDecimal:6161ba0,'0.3176E5',9(18)>, transaction_id: 974, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-08 11:24:01", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+31760
+"here ---"
+0
+ Prashant Datta Traders  ---- 1020 ------- 3176.0  0.0 ------  31850.0 ---- 31850.0
+#<TxnItem id: 1891, item_id: 79, number: 8, price: #<BigDecimal:6134060,'0.397E3',9(18)>, amount: #<BigDecimal:6135168,'0.3176E4',9(18)>, transaction_id: 1020, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-11 06:46:20", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3176
+"here ---"
+0
+ Prashant Datta Traders  ---- 1024 ------- 0.0  40000.0 ------  -8150.0 ---- -8150.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1038 ------- 335.0  0.0 ------  -8485.0 ---- -8485.0
+#<TxnItem id: 1918, item_id: 81, number: 1, price: #<BigDecimal:60ac958,'0.335E3',9(18)>, amount: #<BigDecimal:60ac8e0,'0.335E3',9(18)>, transaction_id: 1038, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-12 11:30:40", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+335
+"here ---"
+0
+ Prashant Datta Traders  ---- 1043 ------- 51870.0  0.0 ------  43385.0 ---- 43385.0
+#<TxnItem id: 1922, item_id: 79, number: 130, price: #<BigDecimal:6077c30,'0.399E3',9(18)>, amount: #<BigDecimal:6077b68,'0.5187E5',9(18)>, transaction_id: 1043, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-13 11:51:11", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+51870
+"here ---"
+0
+ Prashant Datta Traders  ---- 1050 ------- 3990.0  0.0 ------  47375.0 ---- 47375.0
+#<TxnItem id: 1929, item_id: 79, number: 10, price: #<BigDecimal:6042df0,'0.399E3',9(18)>, amount: #<BigDecimal:6042d78,'0.399E4',9(18)>, transaction_id: 1050, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-13 12:00:45", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3990
+"here ---"
+0
+ Prashant Datta Traders  ---- 1058 ------- 1040.0  0.0 ------  48415.0 ---- 48415.0
+#<TxnItem id: 1936, item_id: 101, number: 25, price: #<BigDecimal:600fd38,'0.21E2',9(18)>, amount: #<BigDecimal:600fcc0,'0.525E3',9(18)>, transaction_id: 1058, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-13 12:21:26", contact_id: 473, item_descri: "">
+#<TxnItem id: 1937, item_id: 102, number: 5, price: #<BigDecimal:600fa40,'0.103E3',9(18)>, amount: #<BigDecimal:600f9c8,'0.515E3',9(18)>, transaction_id: 1058, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-13 12:21:26", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1040
+"here ---"
+0
+ Prashant Datta Traders  ---- 1171 ------- 39900.0  0.0 ------  88315.0 ---- 88315.0
+#<TxnItem id: 2029, item_id: 79, number: 100, price: #<BigDecimal:5fb7c78,'0.399E3',9(18)>, amount: #<BigDecimal:5fb7c00,'0.399E5',9(18)>, transaction_id: 1171, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-20 12:27:16", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+39900
+"here ---"
+0
+ Prashant Datta Traders  ---- 1080 ------- 16500.0  0.0 ------  104815.0 ---- 104815.0
+#<TxnItem id: 1952, item_id: 81, number: 50, price: #<BigDecimal:5f7b480,'0.33E3',9(18)>, amount: #<BigDecimal:5f7b3e0,'0.165E5',9(18)>, transaction_id: 1080, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-15 06:24:28", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+16500
+"here ---"
+0
+ Prashant Datta Traders  ---- 1093 ------- 102500.0  0.0 ------  207315.0 ---- 207315.0
+#<TxnItem id: 1959, item_id: 79, number: 250, price: #<BigDecimal:5f3ed50,'0.41E3',9(18)>, amount: #<BigDecimal:5f3ecd8,'0.1025E6',9(18)>, transaction_id: 1093, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-20 05:50:33", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+102500
+"here ---"
+0
+ Prashant Datta Traders  ---- 1169 ------- 13965.0  0.0 ------  193350.0 ---- 193350.0
+#<TxnItem id: 2027, item_id: 79, number: 35, price: #<BigDecimal:5efffb0,'0.399E3',9(18)>, amount: #<BigDecimal:5efff10,'0.13965E5',9(18)>, transaction_id: 1169, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-20 12:24:07", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+13965
+"here ---"
+0
+ Prashant Datta Traders  ---- 1115 ------- 55860.0  0.0 ------  249210.0 ---- 249210.0
+#<TxnItem id: 1979, item_id: 79, number: 140, price: #<BigDecimal:5ed16b0,'0.399E3',9(18)>, amount: #<BigDecimal:5ed3280,'0.5586E5',9(18)>, transaction_id: 1115, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-18 14:56:40", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+55860
+"here ---"
+0
+ Prashant Datta Traders  ---- 1170 ------- 4400.0  0.0 ------  244810.0 ---- 244810.0
+#<TxnItem id: 2028, item_id: 79, number: 11, price: #<BigDecimal:5e9e620,'0.4E3',9(18)>, amount: #<BigDecimal:5e9e5a8,'0.44E4',9(18)>, transaction_id: 1170, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-20 12:24:49", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+4400
+"here ---"
+0
+ Prashant Datta Traders  ---- 1124 ------- 0.0  65000.0 ------  179810.0 ---- 179810.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1167 ------- 4830.0  0.0 ------  184640.0 ---- 184640.0
+#<TxnItem id: 2025, item_id: 98, number: 70, price: #<BigDecimal:5e45778,'0.69E2',9(18)>, amount: #<BigDecimal:5e45688,'0.483E4',9(18)>, transaction_id: 1167, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-20 12:19:33", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+4830
+"here ---"
+0
+ Prashant Datta Traders  ---- 1168 ------- 20000.0  0.0 ------  164640.0 ---- 164640.0
+#<TxnItem id: 2026, item_id: 79, number: 50, price: #<BigDecimal:5e0a6f0,'0.4E3',9(18)>, amount: #<BigDecimal:5e0a5d8,'0.2E5',9(18)>, transaction_id: 1168, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-20 12:20:20", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+20000
+"here ---"
+0
+ Prashant Datta Traders  ---- 1172 ------- 0.0  20000.0 ------  144640.0 ---- 144640.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1183 ------- 3990.0  0.0 ------  148630.0 ---- 148630.0
+#<TxnItem id: 2037, item_id: 79, number: 10, price: #<BigDecimal:5daf020,'0.399E3',9(18)>, amount: #<BigDecimal:5daee68,'0.399E4',9(18)>, transaction_id: 1183, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-21 11:34:53", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3990
+"here ---"
+0
+ Prashant Datta Traders  ---- 1192 ------- 2424.0  0.0 ------  151054.0 ---- 151054.0
+#<TxnItem id: 2044, item_id: 79, number: 6, price: #<BigDecimal:5d6c590,'0.404E3',9(18)>, amount: #<BigDecimal:5d6c4a0,'0.2424E4',9(18)>, transaction_id: 1192, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-22 11:16:11", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+2424
+"here ---"
+0
+ Prashant Datta Traders  ---- 1207 ------- 0.0  60000.0 ------  91054.0 ---- 91054.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1208 ------- 51500.0  0.0 ------  142554.0 ---- 142554.0
+#<TxnItem id: 2056, item_id: 79, number: 25, price: #<BigDecimal:5cfe590,'0.404E3',9(18)>, amount: #<BigDecimal:5cfe3b0,'0.101E5',9(18)>, transaction_id: 1208, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-23 10:55:03", contact_id: 473, item_descri: "">
+#<TxnItem id: 2057, item_id: 98, number: 600, price: #<BigDecimal:5cfe1a8,'0.69E2',9(18)>, amount: #<BigDecimal:5cfe108,'0.414E5',9(18)>, transaction_id: 1208, created_by: 11, updated_by: 11, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-25 06:10:50", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+51500
+"here ---"
+0
+ Prashant Datta Traders  ---- 1217 ------- 3200.0  0.0 ------  145754.0 ---- 145754.0
+#<TxnItem id: 2065, item_id: 100, number: 4, price: #<BigDecimal:5cb60b0,'0.8E3',9(18)>, amount: #<BigDecimal:5cb5fc0,'0.32E4',9(18)>, transaction_id: 1217, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-24 05:56:09", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3200
+"here ---"
+0
+ Prashant Datta Traders  ---- 1223 ------- 20200.0  0.0 ------  165954.0 ---- 165954.0
+#<TxnItem id: 2072, item_id: 79, number: 50, price: #<BigDecimal:5c73a08,'0.404E3',9(18)>, amount: #<BigDecimal:5c73968,'0.202E5',9(18)>, transaction_id: 1223, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-24 06:14:58", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+20200
+"here ---"
+0
+ Prashant Datta Traders  ---- 1225 ------- 1400.0  0.0 ------  167354.0 ---- 167354.0
+#<TxnItem id: 2074, item_id: 82, number: 4, price: #<BigDecimal:5c3d8b8,'0.35E3',9(18)>, amount: #<BigDecimal:5c3d840,'0.14E4',9(18)>, transaction_id: 1225, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-25 06:02:23", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1400
+"here ---"
+0
+ Prashant Datta Traders  ---- 1311 ------- 830.0  0.0 ------  166524.0 ---- 166524.0
+"CALCULATE AMOUNT"
+830
+"here ---"
+0
+ Prashant Datta Traders  ---- 1226 ------- 0.0  100000.0 ------  66524.0 ---- 66524.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1227 ------- 54540.0  0.0 ------  121064.0 ---- 121064.0
+#<TxnItem id: 2075, item_id: 79, number: 135, price: #<BigDecimal:5b360c8,'0.404E3',9(18)>, amount: #<BigDecimal:5b36028,'0.5454E5',9(18)>, transaction_id: 1227, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-25 06:04:43", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+54540
+"here ---"
+0
+ Prashant Datta Traders  ---- 1267 ------- 6275.0  0.0 ------  114789.0 ---- 114789.0
+#<TxnItem id: 2110, item_id: 79, number: 15, price: #<BigDecimal:5b11fe8,'0.405E3',9(18)>, amount: #<BigDecimal:5b11f70,'0.6075E4',9(18)>, transaction_id: 1267, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-27 10:51:20", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+6275
+"here ---"
+0
+ Prashant Datta Traders  ---- 1287 ------- 0.0  40000.0 ------  74789.0 ---- 74789.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1297 ------- 33000.0  0.0 ------  107789.0 ---- 107789.0
+#<TxnItem id: 2129, item_id: 81, number: 100, price: #<BigDecimal:4cadb50,'0.33E3',9(18)>, amount: #<BigDecimal:4cada38,'0.33E5',9(18)>, transaction_id: 1297, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-29 03:49:07", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+33000
+"here ---"
+0
+ Prashant Datta Traders  ---- 1300 ------- 20200.0  0.0 ------  127989.0 ---- 127989.0
+#<TxnItem id: 2130, item_id: 79, number: 50, price: #<BigDecimal:4c27de8,'0.404E3',9(18)>, amount: #<BigDecimal:4c27d48,'0.202E5',9(18)>, transaction_id: 1300, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-29 11:11:14", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+20200
+"here ---"
+0
+ Prashant Datta Traders  ---- 1307 ------- 5335.0  0.0 ------  122654.0 ---- 122654.0
+#<TxnItem id: 2138, item_id: 81, number: 10, price: #<BigDecimal:4b9f4c0,'0.331E3',9(18)>, amount: #<BigDecimal:4b9f3a8,'0.331E4',9(18)>, transaction_id: 1307, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-29 11:26:32", contact_id: 473, item_descri: "">
+#<TxnItem id: 2139, item_id: 79, number: 5, price: #<BigDecimal:4b9f060,'0.405E3',9(18)>, amount: #<BigDecimal:4b9ef70,'0.2025E4',9(18)>, transaction_id: 1307, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-29 11:26:32", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5335
+"here ---"
+0
+ Prashant Datta Traders  ---- 1308 ------- 4605.0  0.0 ------  118049.0 ---- 118049.0
+#<TxnItem id: 2140, item_id: 79, number: 2, price: #<BigDecimal:4af1730,'0.405E3',9(18)>, amount: #<BigDecimal:4af1398,'0.81E3',9(18)>, transaction_id: 1308, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-29 11:28:27", contact_id: 473, item_descri: "">
+#<TxnItem id: 2141, item_id: 98, number: 55, price: #<BigDecimal:4af0ad8,'0.69E2',9(18)>, amount: #<BigDecimal:4af0880,'0.3795E4',9(18)>, transaction_id: 1308, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-05-29 11:28:27", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+4605
+"here ---"
+0
+ Prashant Datta Traders  ---- 1344 ------- 47005.0  0.0 ------  165054.0 ---- 165054.0
+#<TxnItem id: 2175, item_id: 79, number: 119, price: #<BigDecimal:49fba60,'0.395E3',9(18)>, amount: #<BigDecimal:49fb9e8,'0.47005E5',9(18)>, transaction_id: 1344, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-01 07:08:09", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+47005
+"here ---"
+0
+ Prashant Datta Traders  ---- 1352 ------- 0.0  35000.0 ------  130054.0 ---- 130054.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1359 ------- 10350.0  0.0 ------  119704.0 ---- 119704.0
+#<TxnItem id: 2187, item_id: 98, number: 150, price: #<BigDecimal:4948078,'0.69E2',9(18)>, amount: #<BigDecimal:4937e30,'0.1035E5',9(18)>, transaction_id: 1359, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-02 05:26:51", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+10350
+"here ---"
+0
+ Prashant Datta Traders  ---- 1383 ------- 0.0  65000.0 ------  54704.0 ---- 54704.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1399 ------- 32390.0  0.0 ------  87094.0 ---- 87094.0
+#<TxnItem id: 2212, item_id: 79, number: 70, price: #<BigDecimal:484ec08,'0.395E3',9(18)>, amount: #<BigDecimal:484eb18,'0.2765E5',9(18)>, transaction_id: 1399, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-04 14:09:58", contact_id: 473, item_descri: "">
+#<TxnItem id: 2213, item_id: 79, number: 12, price: #<BigDecimal:484e870,'0.395E3',9(18)>, amount: #<BigDecimal:484e6e0,'0.474E4',9(18)>, transaction_id: 1399, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-04 14:09:58", contact_id: 473, item_descri: "Yogish Rixa">
+"CALCULATE AMOUNT"
+32390
+"here ---"
+0
+ Prashant Datta Traders  ---- 1400 ------- 0.0  40000.0 ------  47094.0 ---- 47094.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1406 ------- 16550.0  0.0 ------  30544.0 ---- 30544.0
+#<TxnItem id: 2218, item_id: 81, number: 50, price: #<BigDecimal:47436b0,'0.331E3',9(18)>, amount: #<BigDecimal:4743638,'0.1655E5',9(18)>, transaction_id: 1406, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-05 10:36:01", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+16550
+"here ---"
+0
+ Prashant Datta Traders  ---- 1447 ------- 51350.0  0.0 ------  81894.0 ---- 81894.0
+#<TxnItem id: 2253, item_id: 79, number: 130, price: #<BigDecimal:4681b28,'0.395E3',9(18)>, amount: #<BigDecimal:4681a88,'0.5135E5',9(18)>, transaction_id: 1447, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-08 05:41:10", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+51350
+"here ---"
+0
+ Prashant Datta Traders  ---- 1477 ------- 0.0  48000.0 ------  33894.0 ---- 33894.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1484 ------- 78400.0  0.0 ------  112294.0 ---- 112294.0
+#<TxnItem id: 2277, item_id: 79, number: 200, price: #<BigDecimal:458b980,'0.392E3',9(18)>, amount: #<BigDecimal:458b6d8,'0.784E5',9(18)>, transaction_id: 1484, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-11 05:21:23", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+78400
+"here ---"
+0
+ Prashant Datta Traders  ---- 1557 ------- 0.0  45000.0 ------  67294.0 ---- 67294.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1589 ------- 19500.0  0.0 ------  86794.0 ---- 86794.0
+#<TxnItem id: 2381, item_id: 79, number: 50, price: #<BigDecimal:44b53a8,'0.39E3',9(18)>, amount: #<BigDecimal:44b5330,'0.195E5',9(18)>, transaction_id: 1589, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-18 11:12:32", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+19500
+"here ---"
+0
+ Prashant Datta Traders  ---- 1590 ------- 0.0  480.0 ------  86314.0 ---- 86314.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1591 ------- 0.0  32450.0 ------  53864.0 ---- 53864.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1592 ------- 23400.0  0.0 ------  77264.0 ---- 77264.0
+#<TxnItem id: 2382, item_id: 79, number: 60, price: #<BigDecimal:2f40338,'0.39E3',9(18)>, amount: #<BigDecimal:2f40090,'0.234E5',9(18)>, transaction_id: 1592, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-18 11:17:35", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+23400
+"here ---"
+0
+ Prashant Datta Traders  ---- 1633 ------- 0.0  43000.0 ------  34264.0 ---- 34264.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1847 ------- 17550.0  0.0 ------  16714.0 ---- 16714.0
+#<TxnItem id: 2577, item_id: 79, number: 45, price: #<BigDecimal:2ab6b50,'0.39E3',9(18)>, amount: #<BigDecimal:2ab6920,'0.1755E5',9(18)>, transaction_id: 1847, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-04 06:48:06", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+17550
+"here ---"
+0
+ Prashant Datta Traders  ---- 1647 ------- 53200.0  0.0 ------  69914.0 ---- 69914.0
+#<TxnItem id: 2419, item_id: 79, number: 140, price: #<BigDecimal:273cf10,'0.38E3',9(18)>, amount: #<BigDecimal:273cc40,'0.532E5',9(18)>, transaction_id: 1647, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-23 04:37:54", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+53200
+"here ---"
+0
+ Prashant Datta Traders  ---- 1665 ------- 7620.0  0.0 ------  62294.0 ---- 62294.0
+#<TxnItem id: 2434, item_id: 79, number: 20, price: #<BigDecimal:25d0fa0,'0.381E3',9(18)>, amount: #<BigDecimal:25d0e88,'0.762E4',9(18)>, transaction_id: 1665, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-23 07:43:29", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+7620
+"here ---"
+0
+ Prashant Datta Traders  ---- 1674 ------- 0.0  30000.0 ------  32294.0 ---- 32294.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1685 ------- 45000.0  0.0 ------  77294.0 ---- 77294.0
+#<TxnItem id: 2447, item_id: 79, number: 120, price: #<BigDecimal:65264e8,'0.375E3',9(18)>, amount: #<BigDecimal:6526420,'0.45E5',9(18)>, transaction_id: 1685, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-25 14:42:55", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+45000
+"here ---"
+0
+ Prashant Datta Traders  ---- 1848 ------- 0.0  560.0 ------  76734.0 ---- 76734.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1702 ------- 0.0  60000.0 ------  16734.0 ---- 16734.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1705 ------- 56250.0  0.0 ------  72984.0 ---- 72984.0
+#<TxnItem id: 2461, item_id: 79, number: 150, price: #<BigDecimal:64570f8,'0.375E3',9(18)>, amount: #<BigDecimal:6456fb8,'0.5625E5',9(18)>, transaction_id: 1705, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-06-27 07:01:55", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+56250
+"here ---"
+0
+ Prashant Datta Traders  ---- 1771 ------- 5640.0  0.0 ------  67344.0 ---- 67344.0
+#<TxnItem id: 2522, item_id: 79, number: 15, price: #<BigDecimal:6409010,'0.376E3',9(18)>, amount: #<BigDecimal:6408f20,'0.564E4',9(18)>, transaction_id: 1771, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-01 07:20:25", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5640
+"here ---"
+0
+ Prashant Datta Traders  ---- 1772 ------- 5640.0  0.0 ------  61704.0 ---- 61704.0
+#<TxnItem id: 2523, item_id: 79, number: 15, price: #<BigDecimal:63c5d38,'0.376E3',9(18)>, amount: #<BigDecimal:63c5cc0,'0.564E4',9(18)>, transaction_id: 1772, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-01 07:21:42", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5640
+"here ---"
+0
+ Prashant Datta Traders  ---- 1775 ------- 0.0  25000.0 ------  36704.0 ---- 36704.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1786 ------- 15000.0  0.0 ------  51704.0 ---- 51704.0
+#<TxnItem id: 2534, item_id: 79, number: 40, price: #<BigDecimal:63177b0,'0.375E3',9(18)>, amount: #<BigDecimal:6317710,'0.15E5',9(18)>, transaction_id: 1786, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-02 05:10:41", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+15000
+"here ---"
+0
+ Prashant Datta Traders  ---- 1793 ------- 0.0  450.0 ------  51254.0 ---- 51254.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1802 ------- 0.0  50000.0 ------  1254.0 ---- 1254.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1821 ------- 3750.0  0.0 ------  5004.0 ---- 5004.0
+#<TxnItem id: 2559, item_id: 79, number: 10, price: #<BigDecimal:626e110,'0.375E3',9(18)>, amount: #<BigDecimal:626de40,'0.375E4',9(18)>, transaction_id: 1821, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-03 06:55:08", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3750
+"here ---"
+0
+ Prashant Datta Traders  ---- 1829 ------- 18750.0  0.0 ------  23754.0 ---- 23754.0
+#<TxnItem id: 2563, item_id: 79, number: 50, price: #<BigDecimal:621a448,'0.375E3',9(18)>, amount: #<BigDecimal:621a240,'0.1875E5',9(18)>, transaction_id: 1829, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-03 14:41:18", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+18750
+"here ---"
+0
+ Prashant Datta Traders  ---- 1842 ------- 37500.0  0.0 ------  61254.0 ---- 61254.0
+#<TxnItem id: 2573, item_id: 79, number: 100, price: #<BigDecimal:61b7e60,'0.375E3',9(18)>, amount: #<BigDecimal:61b7c30,'0.375E5',9(18)>, transaction_id: 1842, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-04 05:53:39", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+37500
+"here ---"
+0
+ Prashant Datta Traders  ---- 1846 ------- 3750.0  0.0 ------  65004.0 ---- 65004.0
+#<TxnItem id: 2576, item_id: 79, number: 10, price: #<BigDecimal:6163bf8,'0.375E3',9(18)>, amount: #<BigDecimal:6163b30,'0.375E4',9(18)>, transaction_id: 1846, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-04 06:29:28", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3750
+"here ---"
+0
+ Prashant Datta Traders  ---- 1874 ------- 9375.0  0.0 ------  74379.0 ---- 74379.0
+#<TxnItem id: 2602, item_id: 79, number: 10, price: #<BigDecimal:6133750,'0.375E3',9(18)>, amount: #<BigDecimal:61335c0,'0.375E4',9(18)>, transaction_id: 1874, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-06 14:16:40", contact_id: 473, item_descri: "Yogish Auto">
+#<TxnItem id: 2603, item_id: 79, number: 15, price: #<BigDecimal:6133390,'0.375E3',9(18)>, amount: #<BigDecimal:61332c8,'0.5625E4',9(18)>, transaction_id: 1874, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-06 14:16:40", contact_id: 473, item_descri: "Kooki Auto">
+"CALCULATE AMOUNT"
+9375
+"here ---"
+0
+ Prashant Datta Traders  ---- 1878 ------- 52500.0  0.0 ------  126879.0 ---- 126879.0
+#<TxnItem id: 2606, item_id: 79, number: 140, price: #<BigDecimal:60b7ec0,'0.375E3',9(18)>, amount: #<BigDecimal:60b7dd0,'0.525E5',9(18)>, transaction_id: 1878, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-07 04:15:48", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+52500
+"here ---"
+0
+ Prashant Datta Traders  ---- 1886 ------- 0.0  28000.0 ------  98879.0 ---- 98879.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1904 ------- 5640.0  0.0 ------  93239.0 ---- 93239.0
+#<TxnItem id: 2623, item_id: 79, number: 15, price: #<BigDecimal:60569e0,'0.376E3',9(18)>, amount: #<BigDecimal:60568c8,'0.564E4',9(18)>, transaction_id: 1904, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-08 06:46:21", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5640
+"here ---"
+0
+ Prashant Datta Traders  ---- 1905 ------- 5640.0  0.0 ------  87599.0 ---- 87599.0
+#<TxnItem id: 2624, item_id: 79, number: 15, price: #<BigDecimal:6021380,'0.376E3',9(18)>, amount: #<BigDecimal:6021010,'0.564E4',9(18)>, transaction_id: 1905, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-08 06:46:47", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5640
+"here ---"
+0
+ Prashant Datta Traders  ---- 1920 ------- 0.0  18000.0 ------  69599.0 ---- 69599.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1949 ------- 54150.0  0.0 ------  123749.0 ---- 123749.0
+#<TxnItem id: 2653, item_id: 79, number: 150, price: #<BigDecimal:5fad548,'0.361E3',9(18)>, amount: #<BigDecimal:5fad4a8,'0.5415E5',9(18)>, transaction_id: 1949, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-13 05:02:03", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+54150
+"here ---"
+0
+ Prashant Datta Traders  ---- 1955 ------- 0.0  65000.0 ------  58749.0 ---- 58749.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 1973 ------- 48870.0  0.0 ------  9879.0 ---- 9879.0
+#<TxnItem id: 2670, item_id: 79, number: 135, price: #<BigDecimal:5f3d568,'0.362E3',9(18)>, amount: #<BigDecimal:5f3d310,'0.4887E5',9(18)>, transaction_id: 1973, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-13 05:53:30", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+48870
+"here ---"
+0
+ Prashant Datta Traders  ---- 1972 ------- 29241.0  0.0 ------  39120.0 ---- 39120.0
+#<TxnItem id: 2669, item_id: 79, number: 81, price: #<BigDecimal:5efc298,'0.361E3',9(18)>, amount: #<BigDecimal:5efc220,'0.29241E5',9(18)>, transaction_id: 1972, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-13 05:52:46", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+29241
+"here ---"
+0
+ Prashant Datta Traders  ---- 1974 ------- 5620.0  0.0 ------  33500.0 ---- 33500.0
+#<TxnItem id: 2671, item_id: 79, number: 15, price: #<BigDecimal:5ec1ee0,'0.362E3',9(18)>, amount: #<BigDecimal:5ec1e68,'0.543E4',9(18)>, transaction_id: 1974, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-13 05:54:22", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5620
+"here ---"
+0
+ Prashant Datta Traders  ---- 1975 ------- 0.0  900.0 ------  32600.0 ---- 32600.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2021 ------- 5650.0  0.0 ------  26950.0 ---- 26950.0
+#<TxnItem id: 2712, item_id: 79, number: 15, price: #<BigDecimal:5e68ea8,'0.362E3',9(18)>, amount: #<BigDecimal:5e68de0,'0.543E4',9(18)>, transaction_id: 2021, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-14 04:45:25", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5650
+"here ---"
+0
+ Prashant Datta Traders  ---- 2020 ------- 54150.0  0.0 ------  81100.0 ---- 81100.0
+#<TxnItem id: 2711, item_id: 79, number: 150, price: #<BigDecimal:5e26530,'0.361E3',9(18)>, amount: #<BigDecimal:5e26490,'0.5415E5',9(18)>, transaction_id: 2020, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-14 04:42:37", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+54150
+"here ---"
+0
+ Prashant Datta Traders  ---- 2030 ------- 0.0  1050.0 ------  80050.0 ---- 80050.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2050 ------- 0.0  35000.0 ------  45050.0 ---- 45050.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2074 ------- 57760.0  0.0 ------  102810.0 ---- 102810.0
+#<TxnItem id: 2740, item_id: 79, number: 160, price: #<BigDecimal:5da11a0,'0.361E3',9(18)>, amount: #<BigDecimal:5da1100,'0.5776E5',9(18)>, transaction_id: 2074, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-17 07:37:15", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+57760
+"here ---"
+0
+ Prashant Datta Traders  ---- 2089 ------- 3620.0  0.0 ------  99190.0 ---- 99190.0
+#<TxnItem id: 2752, item_id: 79, number: 10, price: #<BigDecimal:5d46390,'0.362E3',9(18)>, amount: #<BigDecimal:5d462f0,'0.362E4',9(18)>, transaction_id: 2089, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-18 10:02:57", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3620
+"here ---"
+0
+ Prashant Datta Traders  ---- 2090 ------- 36500.0  0.0 ------  135690.0 ---- 135690.0
+#<TxnItem id: 2753, item_id: 79, number: 100, price: #<BigDecimal:5d0c550,'0.365E3',9(18)>, amount: #<BigDecimal:5d0c4d8,'0.365E5',9(18)>, transaction_id: 2090, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-18 10:04:09", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+36500
+"here ---"
+0
+ Prashant Datta Traders  ---- 2139 ------- 0.0  100000.0 ------  35690.0 ---- 35690.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2150 ------- 4680.0  0.0 ------  40370.0 ---- 40370.0
+#<TxnItem id: 2801, item_id: 79, number: 13, price: #<BigDecimal:5c9da88,'0.36E3',9(18)>, amount: #<BigDecimal:5c9d9e8,'0.468E4',9(18)>, transaction_id: 2150, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-23 05:56:33", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+4680
+"here ---"
+0
+ Prashant Datta Traders  ---- 2159 ------- 53640.0  0.0 ------  94010.0 ---- 94010.0
+#<TxnItem id: 2807, item_id: 79, number: 149, price: #<BigDecimal:5c5f120,'0.36E3',9(18)>, amount: #<BigDecimal:5c5f0a8,'0.5364E5',9(18)>, transaction_id: 2159, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-24 04:13:22", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+53640
+"here ---"
+0
+ Prashant Datta Traders  ---- 2165 ------- 25270.0  0.0 ------  68740.0 ---- 68740.0
+#<TxnItem id: 2811, item_id: 79, number: 70, price: #<BigDecimal:5c218e8,'0.361E3',9(18)>, amount: #<BigDecimal:5c21780,'0.2527E5',9(18)>, transaction_id: 2165, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-07 07:02:34", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+25270
+"here ---"
+0
+ Prashant Datta Traders  ---- 2174 ------- 9025.0  0.0 ------  59715.0 ---- 59715.0
+#<TxnItem id: 2816, item_id: 79, number: 25, price: #<BigDecimal:5b965e0,'0.361E3',9(18)>, amount: #<BigDecimal:5b963d8,'0.9025E4',9(18)>, transaction_id: 2174, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-24 06:02:57", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+9025
+"here ---"
+0
+ Prashant Datta Traders  ---- 2178 ------- 25200.0  0.0 ------  84915.0 ---- 84915.0
+#<TxnItem id: 2818, item_id: 79, number: 70, price: #<BigDecimal:5b2d928,'0.36E3',9(18)>, amount: #<BigDecimal:5b2d478,'0.252E5',9(18)>, transaction_id: 2178, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-24 11:40:31", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+25200
+"here ---"
+0
+ Prashant Datta Traders  ---- 2216 ------- 0.0  20000.0 ------  64915.0 ---- 64915.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2229 ------- 21480.0  0.0 ------  86395.0 ---- 86395.0
+#<TxnItem id: 2858, item_id: 79, number: 60, price: #<BigDecimal:5ac55d0,'0.358E3',9(18)>, amount: #<BigDecimal:5ac5558,'0.2148E5',9(18)>, transaction_id: 2229, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-28 04:59:42", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+21480
+"here ---"
+0
+ Prashant Datta Traders  ---- 2243 ------- 0.0  60000.0 ------  26395.0 ---- 26395.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2262 ------- 5385.0  0.0 ------  21010.0 ---- 21010.0
+#<TxnItem id: 2873, item_id: 79, number: 15, price: #<BigDecimal:4bff050,'0.359E3',9(18)>, amount: #<BigDecimal:4bfefd8,'0.5385E4',9(18)>, transaction_id: 2262, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-30 04:25:09", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5385
+"here ---"
+0
+ Prashant Datta Traders  ---- 2267 ------- 53700.0  0.0 ------  74710.0 ---- 74710.0
+#<TxnItem id: 2877, item_id: 79, number: 150, price: #<BigDecimal:4b7d3c0,'0.358E3',9(18)>, amount: #<BigDecimal:4b7d2a8,'0.537E5',9(18)>, transaction_id: 2267, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-07-30 05:10:46", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+53700
+"here ---"
+0
+ Prashant Datta Traders  ---- 2303 ------- 4140.0  0.0 ------  70570.0 ---- 70570.0
+#<TxnItem id: 2909, item_id: 98, number: 60, price: #<BigDecimal:4adafd0,'0.69E2',9(18)>, amount: #<BigDecimal:4adaf08,'0.414E4',9(18)>, transaction_id: 2303, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-08-01 11:26:12", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+4140
+"here ---"
+0
+ Prashant Datta Traders  ---- 2305 ------- 17900.0  0.0 ------  88470.0 ---- 88470.0
+#<TxnItem id: 2911, item_id: 79, number: 50, price: #<BigDecimal:4a24cd0,'0.358E3',9(18)>, amount: #<BigDecimal:4a24a78,'0.179E5',9(18)>, transaction_id: 2305, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-08-01 11:29:09", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+17900
+"here ---"
+0
+ Prashant Datta Traders  ---- 2318 ------- 0.0  25000.0 ------  63470.0 ---- 63470.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2341 ------- 0.0  20000.0 ------  43470.0 ---- 43470.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2345 ------- 9225.0  0.0 ------  52695.0 ---- 52695.0
+#<TxnItem id: 2941, item_id: 79, number: 25, price: #<BigDecimal:48da618,'0.365E3',9(18)>, amount: #<BigDecimal:48da410,'0.9125E4',9(18)>, transaction_id: 2345, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-08-04 11:30:04", contact_id: 473, item_descri: "KA-31/9508 Vehical">
+"CALCULATE AMOUNT"
+9225
+"here ---"
+0
+ Prashant Datta Traders  ---- 2379 ------- 0.0  50000.0 ------  2695.0 ---- 2695.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2384 ------- 30000.0  0.0 ------  32695.0 ---- 32695.0
+#<TxnItem id: 2960, item_id: 79, number: 80, price: #<BigDecimal:47ceee0,'0.375E3',9(18)>, amount: #<BigDecimal:47cee68,'0.3E5',9(18)>, transaction_id: 2384, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-08-07 03:50:59", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+30000
+"here ---"
+0
+ Prashant Datta Traders  ---- 2445 ------- 0.0  12000.0 ------  20695.0 ---- 20695.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2450 ------- 52500.0  0.0 ------  73195.0 ---- 73195.0
+#<TxnItem id: 3009, item_id: 79, number: 140, price: #<BigDecimal:46bc728,'0.375E3',9(18)>, amount: #<BigDecimal:46bc5c0,'0.525E5',9(18)>, transaction_id: 2450, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-08-12 04:43:13", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+52500
+"here ---"
+0
+ Prashant Datta Traders  ---- 2494 ------- 0.0  20000.0 ------  53195.0 ---- 53195.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2508 ------- 5640.0  0.0 ------  47555.0 ---- 47555.0
+#<TxnItem id: 3053, item_id: 79, number: 15, price: #<BigDecimal:45a5920,'0.376E3',9(18)>, amount: #<BigDecimal:45a56f0,'0.564E4',9(18)>, transaction_id: 2508, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-08-17 05:27:31", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5640
+"here ---"
+0
+ Prashant Datta Traders  ---- 2764 ------- 5640.0  0.0 ------  41915.0 ---- 41915.0
+#<TxnItem id: 3260, item_id: 79, number: 15, price: #<BigDecimal:44f12e0,'0.376E3',9(18)>, amount: #<BigDecimal:44f1240,'0.564E4',9(18)>, transaction_id: 2764, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-07 06:55:12", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5640
+"here ---"
+0
+ Prashant Datta Traders  ---- 2540 ------- 0.0  20000.0 ------  21915.0 ---- 21915.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2606 ------- 3750.0  0.0 ------  25665.0 ---- 25665.0
+#<TxnItem id: 3128, item_id: 120, number: 15, price: #<BigDecimal:43d77d8,'0.25E3',9(18)>, amount: #<BigDecimal:43d7580,'0.375E4',9(18)>, transaction_id: 2606, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-08-27 04:59:55", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3750
+"here ---"
+0
+ Prashant Datta Traders  ---- 2607 ------- 63875.0  0.0 ------  89540.0 ---- 89540.0
+#<TxnItem id: 3129, item_id: 79, number: 175, price: #<BigDecimal:30456c0,'0.365E3',9(18)>, amount: #<BigDecimal:30453f0,'0.63875E5',9(18)>, transaction_id: 2607, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-08-27 05:00:42", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+63875
+"here ---"
+0
+ Prashant Datta Traders  ---- 2763 ------- 0.0  55000.0 ------  34540.0 ---- 34540.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2664 ------- 36500.0  0.0 ------  71040.0 ---- 71040.0
+#<TxnItem id: 3178, item_id: 79, number: 100, price: #<BigDecimal:2ad39a8,'0.365E3',9(18)>, amount: #<BigDecimal:2ad3778,'0.365E5',9(18)>, transaction_id: 2664, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-03 05:43:53", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+36500
+"here ---"
+0
+ Prashant Datta Traders  ---- 2718 ------- 0.0  30000.0 ------  41040.0 ---- 41040.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2740 ------- 7320.0  0.0 ------  33720.0 ---- 33720.0
+#<TxnItem id: 3240, item_id: 79, number: 20, price: #<BigDecimal:2613058,'0.366E3',9(18)>, amount: #<BigDecimal:2612ec8,'0.732E4',9(18)>, transaction_id: 2740, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-05 07:27:41", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+7320
+"here ---"
+0
+ Prashant Datta Traders  ---- 2761 ------- 0.0  20000.0 ------  13720.0 ---- 13720.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2774 ------- 45375.0  0.0 ------  59095.0 ---- 59095.0
+#<TxnItem id: 3266, item_id: 79, number: 125, price: #<BigDecimal:652db30,'0.363E3',9(18)>, amount: #<BigDecimal:652da90,'0.45375E5',9(18)>, transaction_id: 2774, created_by: 11, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-30 07:07:25", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+45375
+"here ---"
+0
+ Prashant Datta Traders  ---- 3022 ------- 7320.0  0.0 ------  51775.0 ---- 51775.0
+#<TxnItem id: 3453, item_id: 79, number: 20, price: #<BigDecimal:64bd998,'0.366E3',9(18)>, amount: #<BigDecimal:64bd920,'0.732E4',9(18)>, transaction_id: 3022, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-28 05:20:16", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+7320
+"here ---"
+0
+ Prashant Datta Traders  ---- 2818 ------- 0.0  34000.0 ------  17775.0 ---- 17775.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2840 ------- 1830.0  0.0 ------  15945.0 ---- 15945.0
+#<TxnItem id: 3314, item_id: 79, number: 5, price: #<BigDecimal:643a318,'0.366E3',9(18)>, amount: #<BigDecimal:643a2a0,'0.183E4',9(18)>, transaction_id: 2840, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-15 06:47:47", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1830
+"here ---"
+0
+ Prashant Datta Traders  ---- 2845 ------- 32670.0  0.0 ------  48615.0 ---- 48615.0
+#<TxnItem id: 3318, item_id: 79, number: 90, price: #<BigDecimal:63e9300,'0.363E3',9(18)>, amount: #<BigDecimal:63e9198,'0.3267E5',9(18)>, transaction_id: 2845, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-15 07:00:00", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+32670
+"here ---"
+0
+ Prashant Datta Traders  ---- 2863 ------- 0.0  36000.0 ------  12615.0 ---- 12615.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2901 ------- 728.0  0.0 ------  11887.0 ---- 11887.0
+#<TxnItem id: 3361, item_id: 79, number: 2, price: #<BigDecimal:6336f48,'0.364E3',9(18)>, amount: #<BigDecimal:6336e30,'0.728E3',9(18)>, transaction_id: 2901, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-18 12:35:49", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+728
+"here ---"
+0
+ Prashant Datta Traders  ---- 2904 ------- 36300.0  0.0 ------  48187.0 ---- 48187.0
+#<TxnItem id: 3364, item_id: 79, number: 100, price: #<BigDecimal:62e6ea8,'0.363E3',9(18)>, amount: #<BigDecimal:62e6d90,'0.363E5',9(18)>, transaction_id: 2904, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-18 12:38:27", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+36300
+"here ---"
+0
+ Prashant Datta Traders  ---- 2924 ------- 0.0  40000.0 ------  8187.0 ---- 8187.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 2975 ------- 0.0  30040.0 ------  -21853.0 ---- -21853.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3067 ------- 1089.0  0.0 ------  -22942.0 ---- -22942.0
+#<TxnItem id: 3487, item_id: 79, number: 3, price: #<BigDecimal:622c030,'0.363E3',9(18)>, amount: #<BigDecimal:6223de0,'0.1089E4',9(18)>, transaction_id: 3067, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-30 11:48:52", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1089
+"here ---"
+0
+ Prashant Datta Traders  ---- 2976 ------- 49700.0  360.0 ------  26398.0 ---- 26398.0
+#<TxnItem id: 3418, item_id: 79, number: 140, price: #<BigDecimal:61ba3b8,'0.355E3',9(18)>, amount: #<BigDecimal:61ba278,'0.497E5',9(18)>, transaction_id: 2976, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-24 10:32:19", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+49700
+"here ---"
+0
+ Prashant Datta Traders  ---- 3009 ------- 35500.0  0.0 ------  61898.0 ---- 61898.0
+#<TxnItem id: 3442, item_id: 79, number: 100, price: #<BigDecimal:6162618,'0.355E3',9(18)>, amount: #<BigDecimal:61625a0,'0.355E5',9(18)>, transaction_id: 3009, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-09-28 04:27:50", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+35500
+"here ---"
+0
+ Prashant Datta Traders  ---- 3084 ------- 1800.0  0.0 ------  60098.0 ---- 60098.0
+#<TxnItem id: 3498, item_id: 79, number: 5, price: #<BigDecimal:612b488,'0.356E3',9(18)>, amount: #<BigDecimal:612b398,'0.178E4',9(18)>, transaction_id: 3084, created_by: 11, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-03 06:53:39", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1800
+"here ---"
+0
+ Prashant Datta Traders  ---- 3085 ------- 23140.0  0.0 ------  36958.0 ---- 36958.0
+#<TxnItem id: 3499, item_id: 79, number: 65, price: #<BigDecimal:60be5b8,'0.356E3',9(18)>, amount: #<BigDecimal:60be540,'0.2314E5',9(18)>, transaction_id: 3085, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-01 12:02:43", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+23140
+"here ---"
+0
+ Prashant Datta Traders  ---- 3095 ------- 0.0  20000.0 ------  16958.0 ---- 16958.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3114 ------- 49700.0  0.0 ------  66658.0 ---- 66658.0
+#<TxnItem id: 3517, item_id: 79, number: 140, price: #<BigDecimal:6054ed8,'0.355E3',9(18)>, amount: #<BigDecimal:6054d98,'0.497E5',9(18)>, transaction_id: 3114, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-03 06:44:35", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+49700
+"here ---"
+0
+ Prashant Datta Traders  ---- 3117 ------- 5340.0  0.0 ------  61318.0 ---- 61318.0
+#<TxnItem id: 3520, item_id: 79, number: 15, price: #<BigDecimal:6018848,'0.356E3',9(18)>, amount: #<BigDecimal:60187a8,'0.534E4',9(18)>, transaction_id: 3117, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-03 10:38:18", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5340
+"here ---"
+0
+ Prashant Datta Traders  ---- 3141 ------- 0.0  40000.0 ------  21318.0 ---- 21318.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3150 ------- 2840.0  0.0 ------  24158.0 ---- 24158.0
+#<TxnItem id: 3545, item_id: 79, number: 8, price: #<BigDecimal:5f9b898,'0.355E3',9(18)>, amount: #<BigDecimal:5f9b7a8,'0.284E4',9(18)>, transaction_id: 3150, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-06 05:00:16", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+2840
+"here ---"
+0
+ Prashant Datta Traders  ---- 3168 ------- 35500.0  0.0 ------  59658.0 ---- 59658.0
+#<TxnItem id: 3558, item_id: 79, number: 100, price: #<BigDecimal:5f51f40,'0.355E3',9(18)>, amount: #<BigDecimal:5f51ea0,'0.355E5',9(18)>, transaction_id: 3168, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-07 13:55:36", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+35500
+"here ---"
+0
+ Prashant Datta Traders  ---- 3187 ------- 21480.0  0.0 ------  81138.0 ---- 81138.0
+#<TxnItem id: 3572, item_id: 79, number: 60, price: #<BigDecimal:5f0c3f0,'0.358E3',9(18)>, amount: #<BigDecimal:5f0c300,'0.2148E5',9(18)>, transaction_id: 3187, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-08 14:14:28", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+21480
+"here ---"
+0
+ Prashant Datta Traders  ---- 3188 ------- 1800.0  0.0 ------  79338.0 ---- 79338.0
+#<TxnItem id: 3573, item_id: 79, number: 5, price: #<BigDecimal:5ecad88,'0.356E3',9(18)>, amount: #<BigDecimal:5ecacc0,'0.178E4',9(18)>, transaction_id: 3188, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-08 14:15:38", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1800
+"here ---"
+0
+ Prashant Datta Traders  ---- 3192 ------- 0.0  25000.0 ------  54338.0 ---- 54338.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3210 ------- 0.0  15000.0 ------  39338.0 ---- 39338.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3238 ------- 17900.0  0.0 ------  21438.0 ---- 21438.0
+#<TxnItem id: 3607, item_id: 79, number: 50, price: #<BigDecimal:5e3dfc8,'0.358E3',9(18)>, amount: #<BigDecimal:5e3ded8,'0.179E5',9(18)>, transaction_id: 3238, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-11 06:21:59", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+17900
+"here ---"
+0
+ Prashant Datta Traders  ---- 3241 ------- 35084.0  0.0 ------  56522.0 ---- 56522.0
+#<TxnItem id: 3609, item_id: 79, number: 98, price: #<BigDecimal:5dfa368,'0.358E3',9(18)>, amount: #<BigDecimal:5dfa2c8,'0.35084E5',9(18)>, transaction_id: 3241, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-11 06:36:03", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+35084
+"here ---"
+0
+ Prashant Datta Traders  ---- 3262 ------- 0.0  12000.0 ------  44522.0 ---- 44522.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3269 ------- 21000.0  0.0 ------  65522.0 ---- 65522.0
+#<TxnItem id: 3634, item_id: 81, number: 75, price: #<BigDecimal:5d90558,'0.28E3',9(18)>, amount: #<BigDecimal:5d903f0,'0.21E5',9(18)>, transaction_id: 3269, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-14 05:49:25", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+21000
+"here ---"
+0
+ Prashant Datta Traders  ---- 3282 ------- 4667.0  0.0 ------  60855.0 ---- 60855.0
+#<TxnItem id: 3647, item_id: 79, number: 13, price: #<BigDecimal:5d32fc0,'0.359E3',9(18)>, amount: #<BigDecimal:5d32e08,'0.4667E4',9(18)>, transaction_id: 3282, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-14 12:43:47", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+4667
+"here ---"
+0
+ Prashant Datta Traders  ---- 3284 ------- 53700.0  0.0 ------  114555.0 ---- 114555.0
+#<TxnItem id: 3648, item_id: 79, number: 100, price: #<BigDecimal:5cee0f0,'0.358E3',9(18)>, amount: #<BigDecimal:5cee028,'0.358E5',9(18)>, transaction_id: 3284, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-14 10:47:46", contact_id: 473, item_descri: "">
+#<TxnItem id: 3649, item_id: 79, number: 50, price: #<BigDecimal:5ceddd0,'0.358E3',9(18)>, amount: #<BigDecimal:5cedd58,'0.179E5',9(18)>, transaction_id: 3284, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-14 10:47:46", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+53700
+"here ---"
+0
+ Prashant Datta Traders  ---- 3308 ------- 1815.0  0.0 ------  112740.0 ---- 112740.0
+#<TxnItem id: 3663, item_id: 79, number: 5, price: #<BigDecimal:5c96800,'0.359E3',9(18)>, amount: #<BigDecimal:5c96788,'0.1795E4',9(18)>, transaction_id: 3308, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-16 12:41:58", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1815
+"here ---"
+0
+ Prashant Datta Traders  ---- 3327 ------- 0.0  15000.0 ------  97740.0 ---- 97740.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3382 ------- 0.0  40000.0 ------  57740.0 ---- 57740.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3408 ------- 5325.0  0.0 ------  63065.0 ---- 63065.0
+#<TxnItem id: 3737, item_id: 79, number: 15, price: #<BigDecimal:5ba31a0,'0.355E3',9(18)>, amount: #<BigDecimal:5ba2930,'0.5325E4',9(18)>, transaction_id: 3408, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-21 14:02:44", contact_id: 473, item_descri: "Yogish Auto">
+"CALCULATE AMOUNT"
+5325
+"here ---"
+0
+ Prashant Datta Traders  ---- 3414 ------- 35500.0  0.0 ------  98565.0 ---- 98565.0
+#<TxnItem id: 3740, item_id: 79, number: 100, price: #<BigDecimal:5b34fc0,'0.355E3',9(18)>, amount: #<BigDecimal:5b34ea8,'0.355E5',9(18)>, transaction_id: 3414, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-22 10:34:13", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+35500
+"here ---"
+0
+ Prashant Datta Traders  ---- 3458 ------- 0.0  38000.0 ------  60565.0 ---- 60565.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3465 ------- 35500.0  0.0 ------  96065.0 ---- 96065.0
+#<TxnItem id: 3781, item_id: 79, number: 100, price: #<BigDecimal:5ac7ce0,'0.355E3',9(18)>, amount: #<BigDecimal:5ac7c18,'0.355E5',9(18)>, transaction_id: 3465, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-28 13:13:10", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+35500
+"here ---"
+0
+ Prashant Datta Traders  ---- 3479 ------- 0.0  40000.0 ------  56065.0 ---- 56065.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3494 ------- 0.0  30000.0 ------  26065.0 ---- 26065.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3497 ------- 21300.0  0.0 ------  47365.0 ---- 47365.0
+#<TxnItem id: 3803, item_id: 79, number: 60, price: #<BigDecimal:4b9c040,'0.355E3',9(18)>, amount: #<BigDecimal:4b87f28,'0.213E5',9(18)>, transaction_id: 3497, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-29 04:20:25", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+21300
+"here ---"
+0
+ Prashant Datta Traders  ---- 3526 ------- 102480.0  0.0 ------  149845.0 ---- 149845.0
+#<TxnItem id: 3828, item_id: 82, number: 120, price: #<BigDecimal:4af3530,'0.314E3',9(18)>, amount: #<BigDecimal:4af3328,'0.3768E5',9(18)>, transaction_id: 3526, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-30 06:47:17", contact_id: 473, item_descri: "">
+#<TxnItem id: 3829, item_id: 83, number: 75, price: #<BigDecimal:4af2ec8,'0.393E3',9(18)>, amount: #<BigDecimal:4af2e50,'0.29475E5',9(18)>, transaction_id: 3526, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-30 06:47:17", contact_id: 473, item_descri: "">
+#<TxnItem id: 3830, item_id: 84, number: 75, price: #<BigDecimal:4af2bf8,'0.471E3',9(18)>, amount: #<BigDecimal:4af2b58,'0.35325E5',9(18)>, transaction_id: 3526, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-10-30 06:47:17", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+102480
+"here ---"
+0
+ Prashant Datta Traders  ---- 3541 ------- 0.0  50000.0 ------  99845.0 ---- 99845.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3556 ------- 63900.0  0.0 ------  163745.0 ---- 163745.0
+#<TxnItem id: 3854, item_id: 79, number: 180, price: #<BigDecimal:496eb38,'0.355E3',9(18)>, amount: #<BigDecimal:496ea20,'0.639E5',9(18)>, transaction_id: 3556, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-11-02 05:23:44", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+63900
+"here ---"
+0
+ Prashant Datta Traders  ---- 3573 ------- 0.0  3600.0 ------  160145.0 ---- 160145.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3590 ------- 32500.0  0.0 ------  192645.0 ---- 192645.0
+#<TxnItem id: 3877, item_id: 98, number: 500, price: #<BigDecimal:4850f08,'0.65E2',9(18)>, amount: #<BigDecimal:4850e68,'0.325E5',9(18)>, transaction_id: 3590, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-11-03 04:56:53", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+32500
+"here ---"
+0
+ Prashant Datta Traders  ---- 3603 ------- 0.0  16500.0 ------  176145.0 ---- 176145.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3639 ------- 0.0  50000.0 ------  126145.0 ---- 126145.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3675 ------- 3550.0  0.0 ------  129695.0 ---- 129695.0
+#<TxnItem id: 3934, item_id: 79, number: 10, price: #<BigDecimal:46bf978,'0.355E3',9(18)>, amount: #<BigDecimal:46bf810,'0.355E4',9(18)>, transaction_id: 3675, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-11-09 04:59:11", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3550
+"here ---"
+0
+ Prashant Datta Traders  ---- 3684 ------- 52950.0  0.0 ------  182645.0 ---- 182645.0
+#<TxnItem id: 3943, item_id: 79, number: 150, price: #<BigDecimal:4611d78,'0.353E3',9(18)>, amount: #<BigDecimal:4611d00,'0.5295E5',9(18)>, transaction_id: 3684, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-11-09 05:41:59", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+52950
+"here ---"
+0
+ Prashant Datta Traders  ---- 3689 ------- 0.0  40000.0 ------  142645.0 ---- 142645.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3717 ------- 26175.0  6650.0 ------  162170.0 ---- 162170.0
+#<TxnItem id: 3962, item_id: 79, number: 75, price: #<BigDecimal:44e1480,'0.349E3',9(18)>, amount: #<BigDecimal:44e1318,'0.26175E5',9(18)>, transaction_id: 3717, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-11-13 13:06:00", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+26175
+"here ---"
+0
+ Prashant Datta Traders  ---- 3718 ------- 3530.0  0.0 ------  158640.0 ---- 158640.0
+#<TxnItem id: 3963, item_id: 79, number: 10, price: #<BigDecimal:44531d0,'0.353E3',9(18)>, amount: #<BigDecimal:4453040,'0.353E4',9(18)>, transaction_id: 3718, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-11-13 13:08:50", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3530
+"here ---"
+0
+ Prashant Datta Traders  ---- 3757 ------- 800.0  0.0 ------  159440.0 ---- 159440.0
+#<TxnItem id: 3994, item_id: 100, number: 1, price: #<BigDecimal:3183a00,'0.8E3',9(18)>, amount: #<BigDecimal:3183000,'0.8E3',9(18)>, transaction_id: 3757, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-11-17 14:58:48", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+800
+"here ---"
+0
+ Prashant Datta Traders  ---- 3760 ------- 0.0  40000.0 ------  119440.0 ---- 119440.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3770 ------- 1050.0  0.0 ------  118390.0 ---- 118390.0
+#<TxnItem id: 4004, item_id: 79, number: 3, price: #<BigDecimal:2b5de50,'0.35E3',9(18)>, amount: #<BigDecimal:2b5bbf0,'0.105E4',9(18)>, transaction_id: 3770, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-11-18 05:00:30", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1050
+"here ---"
+0
+ Prashant Datta Traders  ---- 3800 ------- 0.0  20000.0 ------  98390.0 ---- 98390.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3816 ------- 0.0  26000.0 ------  72390.0 ---- 72390.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3817 ------- 0.0  20.0 ------  72370.0 ---- 72370.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3825 ------- 69800.0  0.0 ------  142170.0 ---- 142170.0
+#<TxnItem id: 4042, item_id: 79, number: 200, price: #<BigDecimal:5c0cdd0,'0.349E3',9(18)>, amount: #<BigDecimal:5c0cd58,'0.698E5',9(18)>, transaction_id: 3825, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-11-24 04:35:08", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+69800
+"here ---"
+0
+ Prashant Datta Traders  ---- 3873 ------- 0.0  6000.0 ------  136170.0 ---- 136170.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3888 ------- 0.0  40000.0 ------  96170.0 ---- 96170.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3907 ------- 1765.0  0.0 ------  94405.0 ---- 94405.0
+#<TxnItem id: 4097, item_id: 79, number: 5, price: #<BigDecimal:645c7d8,'0.353E3',9(18)>, amount: #<BigDecimal:645c558,'0.1765E4',9(18)>, transaction_id: 3907, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-11-30 11:13:11", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1765
+"here ---"
+0
+ Prashant Datta Traders  ---- 3908 ------- 0.0  18000.0 ------  76405.0 ---- 76405.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3909 ------- 18150.0  0.0 ------  94555.0 ---- 94555.0
+#<TxnItem id: 4098, item_id: 79, number: 50, price: #<BigDecimal:63c6788,'0.363E3',9(18)>, amount: #<BigDecimal:63c6710,'0.1815E5',9(18)>, transaction_id: 3909, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-11-30 11:14:50", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+18150
+"here ---"
+0
+ Prashant Datta Traders  ---- 3910 ------- 0.0  28000.0 ------  66555.0 ---- 66555.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 3944 ------- 54813.0  0.0 ------  121368.0 ---- 121368.0
+#<TxnItem id: 4125, item_id: 79, number: 151, price: #<BigDecimal:6307a90,'0.363E3',9(18)>, amount: #<BigDecimal:63079c8,'0.54813E5',9(18)>, transaction_id: 3944, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-02 03:48:26", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+54813
+"here ---"
+0
+ Prashant Datta Traders  ---- 4043 ------- 7280.0  0.0 ------  114088.0 ---- 114088.0
+#<TxnItem id: 4205, item_id: 79, number: 20, price: #<BigDecimal:62aeee0,'0.364E3',9(18)>, amount: #<BigDecimal:62aee40,'0.728E4',9(18)>, transaction_id: 4043, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-08 05:23:29", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+7280
+"here ---"
+0
+ Prashant Datta Traders  ---- 4006 ------- 0.0  20000.0 ------  94088.0 ---- 94088.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4029 ------- 30000.0  450.0 ------  123638.0 ---- 123638.0
+#<TxnItem id: 4197, item_id: 80, number: 100, price: #<BigDecimal:621aa10,'0.3E3',9(18)>, amount: #<BigDecimal:621a8f8,'0.3E5',9(18)>, transaction_id: 4029, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-07 14:47:53", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+30000
+"here ---"
+0
+ Prashant Datta Traders  ---- 4036 ------- 25060.0  0.0 ------  148698.0 ---- 148698.0
+#<TxnItem id: 4200, item_id: 79, number: 70, price: #<BigDecimal:6192f98,'0.358E3',9(18)>, amount: #<BigDecimal:6192e30,'0.2506E5',9(18)>, transaction_id: 4036, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-08 05:07:11", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+25060
+"here ---"
+0
+ Prashant Datta Traders  ---- 4040 ------- -1004.0  25000.0 ------  122694.0 ---- 122694.0
+"CALCULATE AMOUNT"
+-1004
+"here ---"
+0
+ Prashant Datta Traders  ---- 4256 ------- 6615.0  0.0 ------  116079.0 ---- 116079.0
+#<TxnItem id: 4343, item_id: 82, number: 21, price: #<BigDecimal:6129548,'0.315E3',9(18)>, amount: #<BigDecimal:61294a8,'0.6615E4',9(18)>, transaction_id: 4256, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-26 05:03:14", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+6615
+"here ---"
+0
+ Prashant Datta Traders  ---- 4073 ------- 0.0  30000.0 ------  86079.0 ---- 86079.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4089 ------- 63900.0  0.0 ------  149979.0 ---- 149979.0
+#<TxnItem id: 4232, item_id: 79, number: 180, price: #<BigDecimal:6088878,'0.355E3',9(18)>, amount: #<BigDecimal:60886e8,'0.639E5',9(18)>, transaction_id: 4089, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-12 04:33:40", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+63900
+"here ---"
+0
+ Prashant Datta Traders  ---- 4257 ------- 14240.0  0.0 ------  135739.0 ---- 135739.0
+#<TxnItem id: 4344, item_id: 79, number: 40, price: #<BigDecimal:6048868,'0.356E3',9(18)>, amount: #<BigDecimal:60487f0,'0.1424E5',9(18)>, transaction_id: 4257, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-26 05:06:43", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+14240
+"here ---"
+0
+ Prashant Datta Traders  ---- 4162 ------- 0.0  40000.0 ------  95739.0 ---- 95739.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4178 ------- 0.0  6000.0 ------  89739.0 ---- 89739.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4179 ------- 35500.0  0.0 ------  125239.0 ---- 125239.0
+#<TxnItem id: 4296, item_id: 79, number: 100, price: #<BigDecimal:5f924f0,'0.355E3',9(18)>, amount: #<BigDecimal:5f92310,'0.355E5',9(18)>, transaction_id: 4179, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-21 03:58:15", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+35500
+"here ---"
+0
+ Prashant Datta Traders  ---- 4202 ------- 0.0  20000.0 ------  105239.0 ---- 105239.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4229 ------- 1780.0  0.0 ------  103459.0 ---- 103459.0
+#<TxnItem id: 4328, item_id: 79, number: 5, price: #<BigDecimal:5f0d728,'0.356E3',9(18)>, amount: #<BigDecimal:5f0d688,'0.178E4',9(18)>, transaction_id: 4229, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-23 14:30:40", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1780
+"here ---"
+0
+ Prashant Datta Traders  ---- 4236 ------- 0.0  27000.0 ------  76459.0 ---- 76459.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4240 ------- 53250.0  0.0 ------  129709.0 ---- 129709.0
+#<TxnItem id: 4333, item_id: 79, number: 150, price: #<BigDecimal:5e9ebe8,'0.355E3',9(18)>, amount: #<BigDecimal:5e9eb70,'0.5325E5',9(18)>, transaction_id: 4240, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-25 14:22:19", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+53250
+"here ---"
+0
+ Prashant Datta Traders  ---- 4254 ------- 0.0  350.0 ------  130059.0 ---- 130059.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4255 ------- 0.0  1700.0 ------  128359.0 ---- 128359.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4271 ------- 45890.0  0.0 ------  174249.0 ---- 174249.0
+#<TxnItem id: 4354, item_id: 79, number: 130, price: #<BigDecimal:5dfbbc8,'0.353E3',9(18)>, amount: #<BigDecimal:5dfbb50,'0.4589E5',9(18)>, transaction_id: 4271, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-28 06:29:22", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+45890
+"here ---"
+0
+ Prashant Datta Traders  ---- 4281 ------- 0.0  17000.0 ------  157249.0 ---- 157249.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4296 ------- 3540.0  0.0 ------  153709.0 ---- 153709.0
+#<TxnItem id: 4374, item_id: 79, number: 10, price: #<BigDecimal:5d831f0,'0.354E3',9(18)>, amount: #<BigDecimal:5d82bd8,'0.354E4',9(18)>, transaction_id: 4296, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2015-12-29 05:47:19", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3540
+"here ---"
+0
+ Prashant Datta Traders  ---- 4302 ------- 0.0  50000.0 ------  103709.0 ---- 103709.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4318 ------- 0.0  15000.0 ------  88709.0 ---- 88709.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4325 ------- 28240.0  0.0 ------  116949.0 ---- 116949.0
+#<TxnItem id: 4391, item_id: 79, number: 80, price: #<BigDecimal:5cc1730,'0.353E3',9(18)>, amount: #<BigDecimal:5cc16b8,'0.2824E5',9(18)>, transaction_id: 4325, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-01-01 06:18:58", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+28240
+"here ---"
+0
+ Prashant Datta Traders  ---- 4336 ------- 0.0  20000.0 ------  96949.0 ---- 96949.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4356 ------- 0.0  15000.0 ------  81949.0 ---- 81949.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4370 ------- 56480.0  7800.0 ------  130629.0 ---- 130629.0
+#<TxnItem id: 4429, item_id: 79, number: 160, price: #<BigDecimal:5bee178,'0.353E3',9(18)>, amount: #<BigDecimal:5bee0b0,'0.5648E5',9(18)>, transaction_id: 4370, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-01-03 06:17:46", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+56480
+"here ---"
+0
+ Prashant Datta Traders  ---- 4388 ------- 2124.0  0.0 ------  128505.0 ---- 128505.0
+#<TxnItem id: 4439, item_id: 79, number: 6, price: #<BigDecimal:5b837b0,'0.354E3',9(18)>, amount: #<BigDecimal:5b83738,'0.2124E4',9(18)>, transaction_id: 4388, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-01-04 14:36:58", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+2124
+"here ---"
+0
+ Prashant Datta Traders  ---- 4402 ------- 0.0  15000.0 ------  113505.0 ---- 113505.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4636 ------- 28160.0  0.0 ------  141665.0 ---- 141665.0
+#<TxnItem id: 4615, item_id: 79, number: 80, price: #<BigDecimal:5acde88,'0.352E3',9(18)>, amount: #<BigDecimal:5acdde8,'0.2816E5',9(18)>, transaction_id: 4636, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-01-21 06:38:52", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+28160
+"here ---"
+0
+ Prashant Datta Traders  ---- 4438 ------- 0.0  20000.0 ------  121665.0 ---- 121665.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4637 ------- 0.0  35000.0 ------  86665.0 ---- 86665.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4507 ------- 52500.0  0.0 ------  139165.0 ---- 139165.0
+#<TxnItem id: 4522, item_id: 79, number: 150, price: #<BigDecimal:4b9da08,'0.35E3',9(18)>, amount: #<BigDecimal:4b9d8f0,'0.525E5',9(18)>, transaction_id: 4507, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-01-22 04:44:32", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+52500
+"here ---"
+0
+ Prashant Datta Traders  ---- 4523 ------- 0.0  25000.0 ------  114165.0 ---- 114165.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4592 ------- 0.0  40000.0 ------  74165.0 ---- 74165.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4650 ------- 0.0  40000.0 ------  34165.0 ---- 34165.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4651 ------- 32200.0  0.0 ------  66365.0 ---- 66365.0
+#<TxnItem id: 4620, item_id: 79, number: 92, price: #<BigDecimal:496f8d0,'0.35E3',9(18)>, amount: #<BigDecimal:496f858,'0.322E5',9(18)>, transaction_id: 4651, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-01-22 04:40:51", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+32200
+"here ---"
+0
+ Prashant Datta Traders  ---- 4678 ------- 52500.0  0.0 ------  118865.0 ---- 118865.0
+#<TxnItem id: 4641, item_id: 79, number: 150, price: #<BigDecimal:48cc950,'0.35E3',9(18)>, amount: #<BigDecimal:48cc838,'0.525E5',9(18)>, transaction_id: 4678, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-01-24 05:01:07", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+52500
+"here ---"
+0
+ Prashant Datta Traders  ---- 4719 ------- 0.0  25000.0 ------  93865.0 ---- 93865.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4747 ------- 62640.0  0.0 ------  156505.0 ---- 156505.0
+#<TxnItem id: 4698, item_id: 79, number: 180, price: #<BigDecimal:47977b0,'0.348E3',9(18)>, amount: #<BigDecimal:4797698,'0.6264E5',9(18)>, transaction_id: 4747, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-01-29 05:33:26", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+62640
+"here ---"
+0
+ Prashant Datta Traders  ---- 4759 ------- 0.0  65000.0 ------  91505.0 ---- 91505.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4806 ------- 10788.0  0.0 ------  80717.0 ---- 80717.0
+#<TxnItem id: 4739, item_id: 79, number: 31, price: #<BigDecimal:4646438,'0.348E3',9(18)>, amount: #<BigDecimal:4646398,'0.10788E5',9(18)>, transaction_id: 4806, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-01 05:34:44", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+10788
+"here ---"
+0
+ Prashant Datta Traders  ---- 4789 ------- 52200.0  0.0 ------  132917.0 ---- 132917.0
+#<TxnItem id: 4727, item_id: 79, number: 150, price: #<BigDecimal:4598d88,'0.348E3',9(18)>, amount: #<BigDecimal:4598c98,'0.522E5',9(18)>, transaction_id: 4789, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-01 04:52:34", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+52200
+"here ---"
+0
+ Prashant Datta Traders  ---- 4793 ------- 0.0  1000.0 ------  131917.0 ---- 131917.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4805 ------- 0.0  20000.0 ------  111917.0 ---- 111917.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4836 ------- 5040.0  0.0 ------  106877.0 ---- 106877.0
+#<TxnItem id: 4763, item_id: 82, number: 16, price: #<BigDecimal:32c2e98,'0.315E3',9(18)>, amount: #<BigDecimal:32c2a10,'0.504E4',9(18)>, transaction_id: 4836, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-04 05:58:57", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5040
+"here ---"
+0
+ Prashant Datta Traders  ---- 4850 ------- 0.0  30000.0 ------  76877.0 ---- 76877.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4859 ------- 7875.0  0.0 ------  69002.0 ---- 69002.0
+#<TxnItem id: 4779, item_id: 82, number: 25, price: #<BigDecimal:2b97ba0,'0.315E3',9(18)>, amount: #<BigDecimal:2b97a38,'0.7875E4',9(18)>, transaction_id: 4859, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-04 14:32:50", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+7875
+"here ---"
+0
+ Prashant Datta Traders  ---- 4892 ------- 0.0  55000.0 ------  14002.0 ---- 14002.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4908 ------- 35300.0  0.0 ------  49302.0 ---- 49302.0
+#<TxnItem id: 4818, item_id: 79, number: 100, price: #<BigDecimal:26330b0,'0.353E3',9(18)>, amount: #<BigDecimal:2632ed0,'0.353E5',9(18)>, transaction_id: 4908, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-09 04:30:10", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+35300
+"here ---"
+0
+ Prashant Datta Traders  ---- 4930 ------- 0.0  1387.0 ------  47915.0 ---- 47915.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4965 ------- 0.0  25000.0 ------  22915.0 ---- 22915.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 4991 ------- 14379.0  0.0 ------  8536.0 ---- 8536.0
+#<TxnItem id: 4868, item_id: 84, number: 6, price: #<BigDecimal:64bfdb0,'0.477E3',9(18)>, amount: #<BigDecimal:64bfcc0,'0.2862E4',9(18)>, transaction_id: 4991, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-11 14:12:54", contact_id: 473, item_descri: "">
+#<TxnItem id: 4869, item_id: 83, number: 21, price: #<BigDecimal:64bf9c8,'0.397E3',9(18)>, amount: #<BigDecimal:64bf900,'0.8337E4',9(18)>, transaction_id: 4991, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-11 14:12:54", contact_id: 473, item_descri: "">
+#<TxnItem id: 4870, item_id: 82, number: 10, price: #<BigDecimal:64bf680,'0.318E3',9(18)>, amount: #<BigDecimal:64bf608,'0.318E4',9(18)>, transaction_id: 4991, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-11 14:12:54", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+14379
+"here ---"
+0
+ Prashant Datta Traders  ---- 5018 ------- 39050.0  0.0 ------  47586.0 ---- 47586.0
+#<TxnItem id: 4890, item_id: 79, number: 110, price: #<BigDecimal:642f2d8,'0.355E3',9(18)>, amount: #<BigDecimal:642f210,'0.3905E5',9(18)>, transaction_id: 5018, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-15 04:23:58", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+39050
+"here ---"
+0
+ Prashant Datta Traders  ---- 5024 ------- 0.0  22000.0 ------  25586.0 ---- 25586.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5027 ------- 5340.0  0.0 ------  20246.0 ---- 20246.0
+#<TxnItem id: 4895, item_id: 79, number: 15, price: #<BigDecimal:6377430,'0.356E3',9(18)>, amount: #<BigDecimal:6377368,'0.534E4',9(18)>, transaction_id: 5027, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-15 07:06:09", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5340
+"here ---"
+0
+ Prashant Datta Traders  ---- 5041 ------- 4272.0  0.0 ------  15974.0 ---- 15974.0
+#<TxnItem id: 4906, item_id: 79, number: 12, price: #<BigDecimal:630df08,'0.356E3',9(18)>, amount: #<BigDecimal:630de90,'0.4272E4',9(18)>, transaction_id: 5041, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-16 05:49:38", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+4272
+"here ---"
+0
+ Prashant Datta Traders  ---- 5066 ------- 17750.0  0.0 ------  33724.0 ---- 33724.0
+#<TxnItem id: 4926, item_id: 79, number: 50, price: #<BigDecimal:62ade00,'0.355E3',9(18)>, amount: #<BigDecimal:62add10,'0.1775E5',9(18)>, transaction_id: 5066, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-16 07:13:57", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+17750
+"here ---"
+0
+ Prashant Datta Traders  ---- 5067 ------- 0.0  40000.0 ------  -6276.0 ---- -6276.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5089 ------- 78100.0  0.0 ------  71824.0 ---- 71824.0
+#<TxnItem id: 4938, item_id: 79, number: 220, price: #<BigDecimal:620b9e8,'0.355E3',9(18)>, amount: #<BigDecimal:620b6f0,'0.781E5',9(18)>, transaction_id: 5089, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-27 04:35:11", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+78100
+"here ---"
+0
+ Prashant Datta Traders  ---- 5103 ------- 0.0  30000.0 ------  41824.0 ---- 41824.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5134 ------- 9920.0  0.0 ------  31904.0 ---- 31904.0
+#<TxnItem id: 4975, item_id: 79, number: 10, price: #<BigDecimal:6155f30,'0.356E3',9(18)>, amount: #<BigDecimal:6155e40,'0.356E4',9(18)>, transaction_id: 5134, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-20 04:52:49", contact_id: 473, item_descri: "">
+#<TxnItem id: 4976, item_id: 82, number: 20, price: #<BigDecimal:6155aa8,'0.318E3',9(18)>, amount: #<BigDecimal:61559e0,'0.636E4',9(18)>, transaction_id: 5134, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-20 04:52:49", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+9920
+"here ---"
+0
+ Prashant Datta Traders  ---- 5261 ------- 27202.0  0.0 ------  59106.0 ---- 59106.0
+#<TxnItem id: 5073, item_id: 98, number: 406, price: #<BigDecimal:60c7b90,'0.67E2',9(18)>, amount: #<BigDecimal:60c7ac8,'0.27202E5',9(18)>, transaction_id: 5261, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-27 04:41:01", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+27202
+"here ---"
+0
+ Prashant Datta Traders  ---- 5204 ------- 0.0  30000.0 ------  29106.0 ---- 29106.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5232 ------- 31950.0  0.0 ------  61056.0 ---- 61056.0
+#<TxnItem id: 5050, item_id: 79, number: 90, price: #<BigDecimal:604e218,'0.355E3',9(18)>, amount: #<BigDecimal:604def8,'0.3195E5',9(18)>, transaction_id: 5232, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-25 05:32:41", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+31950
+"here ---"
+0
+ Prashant Datta Traders  ---- 5262 ------- 28440.0  0.0 ------  89496.0 ---- 89496.0
+#<TxnItem id: 5074, item_id: 84, number: 60, price: #<BigDecimal:600d330,'0.474E3',9(18)>, amount: #<BigDecimal:600d290,'0.2844E5',9(18)>, transaction_id: 5262, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-27 04:46:00", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+28440
+"here ---"
+0
+ Prashant Datta Traders  ---- 5247 ------- 0.0  15000.0 ------  74496.0 ---- 74496.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5257 ------- 53250.0  0.0 ------  127746.0 ---- 127746.0
+#<TxnItem id: 5070, item_id: 79, number: 150, price: #<BigDecimal:5f78fa0,'0.355E3',9(18)>, amount: #<BigDecimal:5f78f28,'0.5325E5',9(18)>, transaction_id: 5257, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-26 14:11:29", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+53250
+"here ---"
+0
+ Prashant Datta Traders  ---- 5288 ------- 23075.0  0.0 ------  150821.0 ---- 150821.0
+#<TxnItem id: 5094, item_id: 79, number: 65, price: #<BigDecimal:5f25058,'0.355E3',9(18)>, amount: #<BigDecimal:5f24fe0,'0.23075E5',9(18)>, transaction_id: 5288, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-02-28 04:43:40", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+23075
+"here ---"
+0
+ Prashant Datta Traders  ---- 5302 ------- 0.0  30000.0 ------  120821.0 ---- 120821.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5309 ------- 55025.0  0.0 ------  175846.0 ---- 175846.0
+#<TxnItem id: 5110, item_id: 79, number: 155, price: #<BigDecimal:5eac0b8,'0.355E3',9(18)>, amount: #<BigDecimal:5eac040,'0.55025E5',9(18)>, transaction_id: 5309, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-02 06:37:11", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+55025
+"here ---"
+0
+ Prashant Datta Traders  ---- 5319 ------- 0.0  20000.0 ------  155846.0 ---- 155846.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5322 ------- 35500.0  0.0 ------  191346.0 ---- 191346.0
+#<TxnItem id: 5118, item_id: 79, number: 100, price: #<BigDecimal:5e34518,'0.355E3',9(18)>, amount: #<BigDecimal:5e344a0,'0.355E5',9(18)>, transaction_id: 5322, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-02 06:35:33", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+35500
+"here ---"
+0
+ Prashant Datta Traders  ---- 5352 ------- 0.0  70000.0 ------  121346.0 ---- 121346.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5383 ------- 0.0  40000.0 ------  81346.0 ---- 81346.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5392 ------- 10680.0  0.0 ------  70666.0 ---- 70666.0
+#<TxnItem id: 5159, item_id: 79, number: 30, price: #<BigDecimal:5d76bd0,'0.356E3',9(18)>, amount: #<BigDecimal:5d76888,'0.1068E5',9(18)>, transaction_id: 5392, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-08 05:20:13", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+10680
+"here ---"
+0
+ Prashant Datta Traders  ---- 5398 ------- 42600.0  0.0 ------  113266.0 ---- 113266.0
+#<TxnItem id: 5165, item_id: 79, number: 120, price: #<BigDecimal:5d18968,'0.355E3',9(18)>, amount: #<BigDecimal:5d188f0,'0.426E5',9(18)>, transaction_id: 5398, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-08 05:29:56", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+42600
+"here ---"
+0
+ Prashant Datta Traders  ---- 5399 ------- 5325.0  0.0 ------  118591.0 ---- 118591.0
+#<TxnItem id: 5166, item_id: 79, number: 15, price: #<BigDecimal:5cc9638,'0.355E3',9(18)>, amount: #<BigDecimal:5cc9598,'0.5325E4',9(18)>, transaction_id: 5399, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-08 05:31:34", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5325
+"here ---"
+0
+ Prashant Datta Traders  ---- 5447 ------- 0.0  50000.0 ------  68591.0 ---- 68591.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5464 ------- 5325.0  0.0 ------  73916.0 ---- 73916.0
+#<TxnItem id: 5206, item_id: 79, number: 15, price: #<BigDecimal:5c45090,'0.355E3',9(18)>, amount: #<BigDecimal:5c44eb0,'0.5325E4',9(18)>, transaction_id: 5464, created_by: 11, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-23 07:47:17", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5325
+"here ---"
+0
+ Prashant Datta Traders  ---- 5468 ------- 0.0  35000.0 ------  38916.0 ---- 38916.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5472 ------- 5325.0  0.0 ------  44241.0 ---- 44241.0
+#<TxnItem id: 5214, item_id: 79, number: 15, price: #<BigDecimal:5b60940,'0.355E3',9(18)>, amount: #<BigDecimal:5b608c8,'0.5325E4',9(18)>, transaction_id: 5472, created_by: 11, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-14 04:49:10", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5325
+"here ---"
+0
+ Prashant Datta Traders  ---- 5474 ------- 7100.0  0.0 ------  51341.0 ---- 51341.0
+#<TxnItem id: 5216, item_id: 79, number: 20, price: #<BigDecimal:5b01968,'0.355E3',9(18)>, amount: #<BigDecimal:5b01710,'0.71E4',9(18)>, transaction_id: 5474, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-14 04:56:11", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+7100
+"here ---"
+0
+ Prashant Datta Traders  ---- 5479 ------- 1775.0  0.0 ------  53116.0 ---- 53116.0
+#<TxnItem id: 5219, item_id: 79, number: 5, price: #<BigDecimal:4cb37f8,'0.355E3',9(18)>, amount: #<BigDecimal:4cb3730,'0.1775E4',9(18)>, transaction_id: 5479, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-14 05:02:10", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1775
+"here ---"
+0
+ Prashant Datta Traders  ---- 5484 ------- 26625.0  0.0 ------  79741.0 ---- 79741.0
+#<TxnItem id: 5224, item_id: 79, number: 75, price: #<BigDecimal:4c11bb0,'0.355E3',9(18)>, amount: #<BigDecimal:4c11b10,'0.26625E5',9(18)>, transaction_id: 5484, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-14 05:20:24", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+26625
+"here ---"
+0
+ Prashant Datta Traders  ---- 5502 ------- 42600.0  0.0 ------  122341.0 ---- 122341.0
+#<TxnItem id: 5240, item_id: 79, number: 120, price: #<BigDecimal:4b5a4b0,'0.355E3',9(18)>, amount: #<BigDecimal:4b5a410,'0.426E5',9(18)>, transaction_id: 5502, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-15 04:52:43", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+42600
+"here ---"
+0
+ Prashant Datta Traders  ---- 5529 ------- 3560.0  0.0 ------  118781.0 ---- 118781.0
+#<TxnItem id: 5267, item_id: 79, number: 10, price: #<BigDecimal:4a8c920,'0.356E3',9(18)>, amount: #<BigDecimal:4a8c790,'0.356E4',9(18)>, transaction_id: 5529, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-15 05:54:41", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+3560
+"here ---"
+0
+ Prashant Datta Traders  ---- 5531 ------- 0.0  40000.0 ------  78781.0 ---- 78781.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5532 ------- 10680.0  0.0 ------  68101.0 ---- 68101.0
+#<TxnItem id: 5269, item_id: 79, number: 30, price: #<BigDecimal:49514c0,'0.356E3',9(18)>, amount: #<BigDecimal:4951448,'0.1068E5',9(18)>, transaction_id: 5532, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-15 05:57:46", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+10680
+"here ---"
+0
+ Prashant Datta Traders  ---- 5545 ------- 50200.0  0.0 ------  118301.0 ---- 118301.0
+#<TxnItem id: 5279, item_id: 79, number: 140, price: #<BigDecimal:489d268,'0.355E3',9(18)>, amount: #<BigDecimal:489d100,'0.497E5',9(18)>, transaction_id: 5545, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-15 06:26:46", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+50200
+"here ---"
+0
+ Prashant Datta Traders  ---- 5588 ------- 7100.0  0.0 ------  125401.0 ---- 125401.0
+#<TxnItem id: 5308, item_id: 79, number: 20, price: #<BigDecimal:47ec8f0,'0.355E3',9(18)>, amount: #<BigDecimal:47ec7d8,'0.71E4',9(18)>, transaction_id: 5588, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-17 14:35:31", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+7100
+"here ---"
+0
+ Prashant Datta Traders  ---- 5589 ------- 0.0  40000.0 ------  85401.0 ---- 85401.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5599 ------- 10500.0  0.0 ------  95901.0 ---- 95901.0
+#<TxnItem id: 5316, item_id: 79, number: 15, price: #<BigDecimal:4667cc8,'0.35E3',9(18)>, amount: #<BigDecimal:4667c50,'0.525E4',9(18)>, transaction_id: 5599, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-18 05:49:25", contact_id: 473, item_descri: "">
+#<TxnItem id: 5317, item_id: 79, number: 15, price: #<BigDecimal:46679a8,'0.35E3',9(18)>, amount: #<BigDecimal:4667660,'0.525E4',9(18)>, transaction_id: 5599, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-18 05:49:25", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+10500
+"here ---"
+0
+ Prashant Datta Traders  ---- 5601 ------- 0.0  10000.0 ------  85901.0 ---- 85901.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5607 ------- 5250.0  0.0 ------  91151.0 ---- 91151.0
+#<TxnItem id: 5321, item_id: 79, number: 15, price: #<BigDecimal:44e01e8,'0.35E3',9(18)>, amount: #<BigDecimal:44e0058,'0.525E4',9(18)>, transaction_id: 5607, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-18 10:32:36", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+5250
+"here ---"
+0
+ Prashant Datta Traders  ---- 5617 ------- 21000.0  0.0 ------  112151.0 ---- 112151.0
+#<TxnItem id: 5329, item_id: 79, number: 60, price: #<BigDecimal:440f750,'0.35E3',9(18)>, amount: #<BigDecimal:440f548,'0.21E5',9(18)>, transaction_id: 5617, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-19 04:40:16", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+21000
+"here ---"
+0
+ Prashant Datta Traders  ---- 5642 ------- 35000.0  0.0 ------  147151.0 ---- 147151.0
+#<TxnItem id: 5348, item_id: 79, number: 100, price: #<BigDecimal:3023a70,'0.35E3',9(18)>, amount: #<BigDecimal:3022e68,'0.35E5',9(18)>, transaction_id: 5642, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-21 06:38:49", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+35000
+"here ---"
+0
+ Prashant Datta Traders  ---- 5679 ------- 0.0  50000.0 ------  97151.0 ---- 97151.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5689 ------- 35000.0  0.0 ------  132151.0 ---- 132151.0
+#<TxnItem id: 5385, item_id: 79, number: 100, price: #<BigDecimal:2a69fa8,'0.35E3',9(18)>, amount: #<BigDecimal:2a69f08,'0.35E5',9(18)>, transaction_id: 5689, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-23 05:03:11", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+35000
+"here ---"
+0
+ Prashant Datta Traders  ---- 5729 ------- 0.0  5760.0 ------  126391.0 ---- 126391.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5728 ------- 0.0  80000.0 ------  46391.0 ---- 46391.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5845 ------- 52500.0  0.0 ------  98891.0 ---- 98891.0
+#<TxnItem id: 5460, item_id: 79, number: 150, price: #<BigDecimal:7581608,'0.35E3',9(18)>, amount: #<BigDecimal:7581590,'0.525E5',9(18)>, transaction_id: 5845, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-31 13:45:05", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+52500
+"here ---"
+0
+ Prashant Datta Traders  ---- 5772 ------- 0.0  20000.0 ------  78891.0 ---- 78891.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5781 ------- 1500.0  0.0 ------  80391.0 ---- 80391.0
+#<TxnItem id: 5430, item_id: 87, number: 3, price: #<BigDecimal:74ddff8,'0.5E3',9(18)>, amount: #<BigDecimal:74ddf80,'0.15E4',9(18)>, transaction_id: 5781, created_by: 11, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-31 13:47:20", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1500
+"here ---"
+0
+ Prashant Datta Traders  ---- 5796 ------- 80500.0  0.0 ------  160891.0 ---- 160891.0
+#<TxnItem id: 5436, item_id: 79, number: 230, price: #<BigDecimal:74f37b8,'0.35E3',9(18)>, amount: #<BigDecimal:74f3740,'0.805E5',9(18)>, transaction_id: 5796, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-29 10:19:17", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+80500
+"here ---"
+0
+ Prashant Datta Traders  ---- 5797 ------- 0.0  5250.0 ------  155641.0 ---- 155641.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5846 ------- 21060.0  0.0 ------  134581.0 ---- 134581.0
+#<TxnItem id: 5461, item_id: 79, number: 60, price: #<BigDecimal:7664110,'0.351E3',9(18)>, amount: #<BigDecimal:7664098,'0.2106E5',9(18)>, transaction_id: 5846, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-31 13:50:28", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+21060
+"here ---"
+0
+ Prashant Datta Traders  ---- 5809 ------- 42000.0  0.0 ------  176581.0 ---- 176581.0
+#<TxnItem id: 5441, item_id: 79, number: 120, price: #<BigDecimal:7679880,'0.35E3',9(18)>, amount: #<BigDecimal:7679808,'0.42E5',9(18)>, transaction_id: 5809, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-30 10:49:45", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+42000
+"here ---"
+0
+ Prashant Datta Traders  ---- 5844 ------- 21060.0  0.0 ------  155521.0 ---- 155521.0
+#<TxnItem id: 5459, item_id: 79, number: 60, price: #<BigDecimal:768ef00,'0.351E3',9(18)>, amount: #<BigDecimal:768ee88,'0.2106E5',9(18)>, transaction_id: 5844, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-03-31 13:41:07", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+21060
+"here ---"
+0
+ Prashant Datta Traders  ---- 5871 ------- 0.0  20000.0 ------  135521.0 ---- 135521.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5872 ------- 1755.0  0.0 ------  133766.0 ---- 133766.0
+#<TxnItem id: 5480, item_id: 79, number: 5, price: #<BigDecimal:76af890,'0.351E3',9(18)>, amount: #<BigDecimal:76af818,'0.1755E4',9(18)>, transaction_id: 5872, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-02 14:57:27", contact_id: 473, item_descri: "">
+"CALCULATE AMOUNT"
+1755
+"here ---"
+0
+ Prashant Datta Traders  ---- 5895 ------- 23048.0  0.0 ------  110718.0 ---- 110718.0
+#<TxnItem id: 5501, item_id: 98, number: 344, price: #<BigDecimal:76bcf68,'0.67E2',9(18)>, amount: #<BigDecimal:76bcef0,'0.23048E5',9(18)>, transaction_id: 5895, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-05 04:33:33", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+23048
+"here ---"
+0
+ Prashant Datta Traders  ---- 5896 ------- 0.0  800.0 ------  109918.0 ---- 109918.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5904 ------- 48720.0  0.0 ------  158638.0 ---- 158638.0
+#<TxnItem id: 5506, item_id: 79, number: 140, price: #<BigDecimal:76dd9e8,'0.348E3',9(18)>, amount: #<BigDecimal:76dd970,'0.4872E5',9(18)>, transaction_id: 5904, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-05 05:31:57", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+48720
+"here ---"
+0
+ Prashant Datta Traders  ---- 5916 ------- 20940.0  0.0 ------  137698.0 ---- 137698.0
+#<TxnItem id: 5518, item_id: 79, number: 60, price: #<BigDecimal:76f3090,'0.349E3',9(18)>, amount: #<BigDecimal:76f3018,'0.2094E5',9(18)>, transaction_id: 5916, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-06 03:26:57", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+20940
+"here ---"
+0
+ Prashant Datta Traders  ---- 5917 ------- 0.0  35000.0 ------  102698.0 ---- 102698.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 5977 ------- 33634.0  0.0 ------  136332.0 ---- 136332.0
+#<TxnItem id: 5560, item_id: 98, number: 502, price: #<BigDecimal:7723ad8,'0.67E2',9(18)>, amount: #<BigDecimal:7723a60,'0.33634E5',9(18)>, transaction_id: 5977, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-11 14:45:48", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+33634
+"here ---"
+0
+ Prashant Datta Traders  ---- 6016 ------- 0.0  100000.0 ------  36332.0 ---- 36332.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6017 ------- 5220.0  0.0 ------  41552.0 ---- 41552.0
+#<TxnItem id: 5593, item_id: 79, number: 15, price: #<BigDecimal:7754520,'0.348E3',9(18)>, amount: #<BigDecimal:77544a8,'0.522E4',9(18)>, transaction_id: 6017, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-12 06:00:19", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5220
+"here ---"
+0
+ Prashant Datta Traders  ---- 6029 ------- 118320.0  0.0 ------  159872.0 ---- 159872.0
+#<TxnItem id: 5600, item_id: 79, number: 340, price: #<BigDecimal:7779ca8,'0.348E3',9(18)>, amount: #<BigDecimal:7779c30,'0.11832E6',9(18)>, transaction_id: 6029, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-13 04:14:32", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+118320
+"here ---"
+0
+ Prashant Datta Traders  ---- 6081 ------- 0.0  20000.0 ------  139872.0 ---- 139872.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6155 ------- 0.0  35000.0 ------  104872.0 ---- 104872.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6177 ------- 0.0  25000.0 ------  79872.0 ---- 79872.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6209 ------- 17250.0  0.0 ------  97122.0 ---- 97122.0
+#<TxnItem id: 5766, item_id: 79, number: 50, price: #<BigDecimal:77e0bd8,'0.345E3',9(18)>, amount: #<BigDecimal:77e0b60,'0.1725E5',9(18)>, transaction_id: 6209, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-21 11:08:13", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+17250
+"here ---"
+0
+ Prashant Datta Traders  ---- 6219 ------- 0.0  50000.0 ------  47122.0 ---- 47122.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6223 ------- 74800.0  0.0 ------  121922.0 ---- 121922.0
+#<TxnItem id: 5778, item_id: 79, number: 220, price: #<BigDecimal:7821610,'0.34E3',9(18)>, amount: #<BigDecimal:7821598,'0.748E5',9(18)>, transaction_id: 6223, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-22 06:42:00", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+74800
+"here ---"
+0
+ Prashant Datta Traders  ---- 6239 ------- 5115.0  0.0 ------  116807.0 ---- 116807.0
+#<TxnItem id: 5788, item_id: 79, number: 15, price: #<BigDecimal:7842ce8,'0.341E3',9(18)>, amount: #<BigDecimal:7842c70,'0.5115E4',9(18)>, transaction_id: 6239, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-23 05:29:54", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5115
+"here ---"
+0
+ Prashant Datta Traders  ---- 6245 ------- 0.0  20000.0 ------  96807.0 ---- 96807.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6307 ------- 81600.0  0.0 ------  178407.0 ---- 178407.0
+#<TxnItem id: 5842, item_id: 79, number: 240, price: #<BigDecimal:7883720,'0.34E3',9(18)>, amount: #<BigDecimal:78836a8,'0.816E5',9(18)>, transaction_id: 6307, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-27 07:43:45", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+81600
+"here ---"
+0
+ Prashant Datta Traders  ---- 6308 ------- 0.0  60000.0 ------  118407.0 ---- 118407.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6345 ------- 5100.0  0.0 ------  123507.0 ---- 123507.0
+#<TxnItem id: 5865, item_id: 79, number: 15, price: #<BigDecimal:78b4168,'0.34E3',9(18)>, amount: #<BigDecimal:78b40f0,'0.51E4',9(18)>, transaction_id: 6345, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-29 05:03:52", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5100
+"here ---"
+0
+ Prashant Datta Traders  ---- 6358 ------- 30600.0  0.0 ------  154107.0 ---- 154107.0
+#<TxnItem id: 5871, item_id: 79, number: 90, price: #<BigDecimal:78d98f0,'0.34E3',9(18)>, amount: #<BigDecimal:78d9878,'0.306E5',9(18)>, transaction_id: 6358, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-30 04:28:08", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+30600
+"here ---"
+0
+ Prashant Datta Traders  ---- 6362 ------- 4080.0  0.0 ------  158187.0 ---- 158187.0
+#<TxnItem id: 5875, item_id: 79, number: 12, price: #<BigDecimal:78ff000,'0.34E3',9(18)>, amount: #<BigDecimal:78fef88,'0.408E4',9(18)>, transaction_id: 6362, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-30 04:39:50", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+4080
+"here ---"
+0
+ Prashant Datta Traders  ---- 6382 ------- 98600.0  0.0 ------  256787.0 ---- 256787.0
+#<TxnItem id: 5890, item_id: 79, number: 290, price: #<BigDecimal:79187f8,'0.34E3',9(18)>, amount: #<BigDecimal:7918780,'0.986E5',9(18)>, transaction_id: 6382, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-02 05:13:08", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+98600
+"here ---"
+0
+ Prashant Datta Traders  ---- 6409 ------- 0.0  100000.0 ------  156787.0 ---- 156787.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6432 ------- 34500.0  0.0 ------  191287.0 ---- 191287.0
+#<TxnItem id: 5926, item_id: 79, number: 100, price: #<BigDecimal:7955220,'0.345E3',9(18)>, amount: #<BigDecimal:79551a8,'0.345E5',9(18)>, transaction_id: 6432, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-05 04:10:04", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+34500
+"here ---"
+0
+ Prashant Datta Traders  ---- 6453 ------- 0.0  100000.0 ------  91287.0 ---- 91287.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6485 ------- 5190.0  0.0 ------  86097.0 ---- 86097.0
+#<TxnItem id: 5976, item_id: 79, number: 15, price: #<BigDecimal:7991ba8,'0.346E3',9(18)>, amount: #<BigDecimal:7991b30,'0.519E4',9(18)>, transaction_id: 6485, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 06:39:57", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5190
+"here ---"
+0
+ Prashant Datta Traders  ---- 6505 ------- 0.0  60000.0 ------  26097.0 ---- 26097.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6511 ------- 17000.0  0.0 ------  43097.0 ---- 43097.0
+#<TxnItem id: 5993, item_id: 79, number: 50, price: #<BigDecimal:79ce5a8,'0.34E3',9(18)>, amount: #<BigDecimal:79ce530,'0.17E5',9(18)>, transaction_id: 6511, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-09 05:19:50", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+17000
+"here ---"
+0
+ Prashant Datta Traders  ---- 6519 ------- 40800.0  0.0 ------  83897.0 ---- 83897.0
+#<TxnItem id: 5999, item_id: 79, number: 120, price: #<BigDecimal:79f7d18,'0.34E3',9(18)>, amount: #<BigDecimal:79f7ca0,'0.408E5',9(18)>, transaction_id: 6519, created_by: 11, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-24 05:48:29", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+40800
+"here ---"
+0
+ Prashant Datta Traders  ---- 6582 ------- 5100.0  0.0 ------  88997.0 ---- 88997.0
+#<TxnItem id: 6047, item_id: 82, number: 15, price: #<BigDecimal:7a0d488,'0.34E3',9(18)>, amount: #<BigDecimal:7a0d410,'0.51E4',9(18)>, transaction_id: 6582, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-13 12:03:03", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5100
+"here ---"
+0
+ Prashant Datta Traders  ---- 6615 ------- 46575.0  0.0 ------  135572.0 ---- 135572.0
+#<TxnItem id: 6079, item_id: 79, number: 135, price: #<BigDecimal:7a32c88,'0.345E3',9(18)>, amount: #<BigDecimal:7a32c10,'0.46575E5',9(18)>, transaction_id: 6615, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-14 11:56:29", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+46575
+"here ---"
+0
+ Prashant Datta Traders  ---- 6649 ------- 0.0  45000.0 ------  90572.0 ---- 90572.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6653 ------- 3450.0  0.0 ------  87122.0 ---- 87122.0
+#<TxnItem id: 6105, item_id: 79, number: 10, price: #<BigDecimal:7a735d0,'0.345E3',9(18)>, amount: #<BigDecimal:7a73558,'0.345E4',9(18)>, transaction_id: 6653, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-24 05:52:57", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+3450
+"here ---"
+0
+ Prashant Datta Traders  ---- 6667 ------- 10050.0  0.0 ------  77072.0 ---- 77072.0
+#<TxnItem id: 6119, item_id: 98, number: 150, price: #<BigDecimal:7a88cf0,'0.67E2',9(18)>, amount: #<BigDecimal:7a88c78,'0.1005E5',9(18)>, transaction_id: 6667, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-24 05:51:24", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+10050
+"here ---"
+0
+ Prashant Datta Traders  ---- 6708 ------- 880.0  0.0 ------  77952.0 ---- 77952.0
+#<TxnItem id: 6148, item_id: 86, number: 2, price: #<BigDecimal:7aae450,'0.44E3',9(18)>, amount: #<BigDecimal:7aae3d8,'0.88E3',9(18)>, transaction_id: 6708, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-19 11:25:59", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+880
+"here ---"
+0
+ Prashant Datta Traders  ---- 6717 ------- 0.0  70000.0 ------  7952.0 ---- 7952.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6813 ------- 52500.0  0.0 ------  60452.0 ---- 60452.0
+#<TxnItem id: 6246, item_id: 79, number: 150, price: #<BigDecimal:7aeaf18,'0.35E3',9(18)>, amount: #<BigDecimal:7aeaea0,'0.525E5',9(18)>, transaction_id: 6813, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-24 05:46:47", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+52500
+"here ---"
+0
+ Prashant Datta Traders  ---- 6727 ------- 31500.0  0.0 ------  91952.0 ---- 91952.0
+#<TxnItem id: 6163, item_id: 79, number: 90, price: #<BigDecimal:7b086f8,'0.35E3',9(18)>, amount: #<BigDecimal:7b08680,'0.315E5',9(18)>, transaction_id: 6727, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-24 05:54:42", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+31500
+"here ---"
+0
+ Prashant Datta Traders  ---- 6758 ------- 1750.0  0.0 ------  93702.0 ---- 93702.0
+#<TxnItem id: 6198, item_id: 79, number: 5, price: #<BigDecimal:7b29e98,'0.35E3',9(18)>, amount: #<BigDecimal:7b29e20,'0.175E4',9(18)>, transaction_id: 6758, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-24 04:11:31", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+1750
+"here ---"
+0
+ Prashant Datta Traders  ---- 6766 ------- 24500.0  0.0 ------  118202.0 ---- 118202.0
+#<TxnItem id: 6201, item_id: 79, number: 70, price: #<BigDecimal:7b535b8,'0.35E3',9(18)>, amount: #<BigDecimal:7b53540,'0.245E5',9(18)>, transaction_id: 6766, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-24 04:16:58", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+24500
+"here ---"
+0
+ Prashant Datta Traders  ---- 6769 ------- 3500.0  0.0 ------  114702.0 ---- 114702.0
+#<TxnItem id: 6203, item_id: 79, number: 10, price: #<BigDecimal:7b6cd10,'0.35E3',9(18)>, amount: #<BigDecimal:7b6cc98,'0.35E4',9(18)>, transaction_id: 6769, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-24 04:25:11", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+3500
+"here ---"
+0
+ Prashant Datta Traders  ---- 6775 ------- 14040.0  0.0 ------  100662.0 ---- 100662.0
+#<TxnItem id: 6210, item_id: 79, number: 40, price: #<BigDecimal:7b8e398,'0.351E3',9(18)>, amount: #<BigDecimal:7b8e320,'0.1404E5',9(18)>, transaction_id: 6775, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-24 04:34:37", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+14040
+"here ---"
+0
+ Prashant Datta Traders  ---- 6778 ------- 1755.0  0.0 ------  98907.0 ---- 98907.0
+#<TxnItem id: 6213, item_id: 79, number: 5, price: #<BigDecimal:7bb7a68,'0.351E3',9(18)>, amount: #<BigDecimal:7bb79f0,'0.1755E4',9(18)>, transaction_id: 6778, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-24 04:36:13", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+1755
+"here ---"
+0
+ Prashant Datta Traders  ---- 6785 ------- 300.0  0.0 ------  99207.0 ---- 99207.0
+#<TxnItem id: 6222, item_id: 159, number: 10, price: #<BigDecimal:7bcd200,'0.3E2',9(18)>, amount: #<BigDecimal:7bcd188,'0.3E3',9(18)>, transaction_id: 6785, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-24 04:53:57", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+300
+"here ---"
+0
+ Prashant Datta Traders  ---- 6836 ------- 0.0  70000.0 ------  29207.0 ---- 29207.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6849 ------- 70000.0  0.0 ------  99207.0 ---- 99207.0
+#<TxnItem id: 6270, item_id: 79, number: 200, price: #<BigDecimal:7c0dc10,'0.35E3',9(18)>, amount: #<BigDecimal:7c0db98,'0.7E5',9(18)>, transaction_id: 6849, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-28 04:52:48", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+70000
+"here ---"
+0
+ Prashant Datta Traders  ---- 6874 ------- 14040.0  0.0 ------  85167.0 ---- 85167.0
+#<TxnItem id: 6291, item_id: 79, number: 40, price: #<BigDecimal:7c2f298,'0.351E3',9(18)>, amount: #<BigDecimal:7c2f220,'0.1404E5',9(18)>, transaction_id: 6874, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-28 05:40:26", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+14040
+"here ---"
+0
+ Prashant Datta Traders  ---- 6882 ------- 35500.0  0.0 ------  120667.0 ---- 120667.0
+#<TxnItem id: 6298, item_id: 79, number: 100, price: #<BigDecimal:7c4ca78,'0.355E3',9(18)>, amount: #<BigDecimal:7c4ca00,'0.355E5',9(18)>, transaction_id: 6882, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-28 07:08:08", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+35500
+"here ---"
+0
+ Prashant Datta Traders  ---- 6906 ------- 0.0  30000.0 ------  90667.0 ---- 90667.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6918 ------- 69000.0  0.0 ------  159667.0 ---- 159667.0
+#<TxnItem id: 6332, item_id: 79, number: 200, price: #<BigDecimal:7c894a0,'0.345E3',9(18)>, amount: #<BigDecimal:7c89428,'0.69E5',9(18)>, transaction_id: 6918, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-30 05:58:39", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+69000
+"here ---"
+0
+ Prashant Datta Traders  ---- 6920 ------- 5390.0  0.0 ------  154277.0 ---- 154277.0
+#<TxnItem id: 6334, item_id: 79, number: 15, price: #<BigDecimal:7caeb88,'0.346E3',9(18)>, amount: #<BigDecimal:7caeb10,'0.519E4',9(18)>, transaction_id: 6920, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-30 04:29:17", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5390
+"here ---"
+0
+ Prashant Datta Traders  ---- 6936 ------- 0.0  36000.0 ------  118277.0 ---- 118277.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6991 ------- 0.0  50000.0 ------  68277.0 ---- 68277.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 6996 ------- 5320.0  0.0 ------  62957.0 ---- 62957.0
+#<TxnItem id: 6378, item_id: 81, number: 20, price: #<BigDecimal:7d02760,'0.266E3',9(18)>, amount: #<BigDecimal:7d026e8,'0.532E4',9(18)>, transaction_id: 6996, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-02 04:29:04", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5320
+"here ---"
+0
+ Prashant Datta Traders  ---- 7031 ------- 37100.0  0.0 ------  100057.0 ---- 100057.0
+#<TxnItem id: 6412, item_id: 81, number: 140, price: #<BigDecimal:7d2bf20,'0.265E3',9(18)>, amount: #<BigDecimal:7d2bea8,'0.371E5',9(18)>, transaction_id: 7031, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-03 07:11:45", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+37100
+"here ---"
+0
+ Prashant Datta Traders  ---- 6998 ------- 34500.0  0.0 ------  134557.0 ---- 134557.0
+#<TxnItem id: 6380, item_id: 79, number: 100, price: #<BigDecimal:7d416e0,'0.345E3',9(18)>, amount: #<BigDecimal:7d41668,'0.345E5',9(18)>, transaction_id: 6998, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-03 07:00:21", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+34500
+"here ---"
+0
+ Prashant Datta Traders  ---- 7021 ------- 10380.0  0.0 ------  124177.0 ---- 124177.0
+#<TxnItem id: 6402, item_id: 79, number: 30, price: #<BigDecimal:7d66e18,'0.346E3',9(18)>, amount: #<BigDecimal:7d66da0,'0.1038E5',9(18)>, transaction_id: 7021, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-03 05:18:00", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+10380
+"here ---"
+0
+ Prashant Datta Traders  ---- 7024 ------- 10380.0  0.0 ------  113797.0 ---- 113797.0
+#<TxnItem id: 6405, item_id: 79, number: 15, price: #<BigDecimal:7d804d0,'0.346E3',9(18)>, amount: #<BigDecimal:7d80458,'0.519E4',9(18)>, transaction_id: 7024, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-03 05:36:45", contact_id: 473, item_descri: nil>
+#<TxnItem id: 6406, item_id: 79, number: 15, price: #<BigDecimal:7d802c8,'0.346E3',9(18)>, amount: #<BigDecimal:7d80250,'0.519E4',9(18)>, transaction_id: 7024, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-03 05:36:45", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+10380
+"here ---"
+0
+ Prashant Datta Traders  ---- 7028 ------- 5190.0  0.0 ------  108607.0 ---- 108607.0
+#<TxnItem id: 6408, item_id: 79, number: 15, price: #<BigDecimal:7dbbf30,'0.346E3',9(18)>, amount: #<BigDecimal:7dbbeb8,'0.519E4',9(18)>, transaction_id: 7028, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-03 06:57:09", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5190
+"here ---"
+0
+ Prashant Datta Traders  ---- 7029 ------- 10380.0  0.0 ------  98227.0 ---- 98227.0
+#<TxnItem id: 6409, item_id: 79, number: 30, price: #<BigDecimal:7dd5660,'0.346E3',9(18)>, amount: #<BigDecimal:7dd55e8,'0.1038E5',9(18)>, transaction_id: 7029, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-03 06:58:01", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+10380
+"here ---"
+0
+ Prashant Datta Traders  ---- 7196 ------- 5190.0  0.0 ------  93037.0 ---- 93037.0
+#<TxnItem id: 6545, item_id: 79, number: 15, price: #<BigDecimal:7dfad20,'0.346E3',9(18)>, amount: #<BigDecimal:7dfaca8,'0.519E4',9(18)>, transaction_id: 7196, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-09 07:41:51", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5190
+"here ---"
+0
+ Prashant Datta Traders  ---- 7076 ------- 32775.0  0.0 ------  125812.0 ---- 125812.0
+#<TxnItem id: 6446, item_id: 79, number: 95, price: #<BigDecimal:7e184d8,'0.345E3',9(18)>, amount: #<BigDecimal:7e18460,'0.32775E5',9(18)>, transaction_id: 7076, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-06 05:15:06", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+32775
+"here ---"
+0
+ Prashant Datta Traders  ---- 7111 ------- 0.0  40000.0 ------  85812.0 ---- 85812.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7136 ------- 34500.0  0.0 ------  120312.0 ---- 120312.0
+#<TxnItem id: 6501, item_id: 79, number: 100, price: #<BigDecimal:7e54e88,'0.345E3',9(18)>, amount: #<BigDecimal:7e54e10,'0.345E5',9(18)>, transaction_id: 7136, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-07 14:13:50", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+34500
+"here ---"
+0
+ Prashant Datta Traders  ---- 7149 ------- 22490.0  0.0 ------  97822.0 ---- 97822.0
+#<TxnItem id: 6507, item_id: 79, number: 65, price: #<BigDecimal:7e76560,'0.346E3',9(18)>, amount: #<BigDecimal:7e764e8,'0.2249E5',9(18)>, transaction_id: 7149, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-08 06:46:03", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+22490
+"here ---"
+0
+ Prashant Datta Traders  ---- 7195 ------- 5865.0  0.0 ------  103687.0 ---- 103687.0
+#<TxnItem id: 6544, item_id: 79, number: 17, price: #<BigDecimal:7ea3ce0,'0.345E3',9(18)>, amount: #<BigDecimal:7ea3c68,'0.5865E4',9(18)>, transaction_id: 7195, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-09 07:39:03", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5865
+"here ---"
+0
+ Prashant Datta Traders  ---- 7198 ------- 117300.0  0.0 ------  220987.0 ---- 220987.0
+#<TxnItem id: 6546, item_id: 79, number: 340, price: #<BigDecimal:7eb94c8,'0.345E3',9(18)>, amount: #<BigDecimal:7eb9450,'0.1173E6',9(18)>, transaction_id: 7198, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-09 14:29:10", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+117300
+"here ---"
+0
+ Prashant Datta Traders  ---- 7201 ------- 0.0  600.0 ------  220387.0 ---- 220387.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7204 ------- 0.0  34500.0 ------  185887.0 ---- 185887.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7224 ------- 20700.0  0.0 ------  206587.0 ---- 206587.0
+#<TxnItem id: 6574, item_id: 79, number: 60, price: #<BigDecimal:7f11128,'0.345E3',9(18)>, amount: #<BigDecimal:7f110b0,'0.207E5',9(18)>, transaction_id: 7224, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-13 11:40:33", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+20700
+"here ---"
+0
+ Prashant Datta Traders  ---- 7232 ------- 41520.0  0.0 ------  165067.0 ---- 165067.0
+#<TxnItem id: 6582, item_id: 79, number: 120, price: #<BigDecimal:7f32828,'0.346E3',9(18)>, amount: #<BigDecimal:7f327b0,'0.4152E5',9(18)>, transaction_id: 7232, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-13 12:07:09", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+41520
+"here ---"
+0
+ Prashant Datta Traders  ---- 7233 ------- 1950.0  0.0 ------  167017.0 ---- 167017.0
+#<TxnItem id: 6583, item_id: 88, number: 3, price: #<BigDecimal:7f5bf98,'0.65E3',9(18)>, amount: #<BigDecimal:7f5bf20,'0.195E4',9(18)>, transaction_id: 7233, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-13 12:07:40", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+1950
+"here ---"
+0
+ Prashant Datta Traders  ---- 7234 ------- 0.0  25000.0 ------  142017.0 ---- 142017.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7235 ------- 0.0  10000.0 ------  132017.0 ---- 132017.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7236 ------- 32085.0  0.0 ------  164102.0 ---- 164102.0
+#<TxnItem id: 6584, item_id: 79, number: 93, price: #<BigDecimal:7fb3c98,'0.345E3',9(18)>, amount: #<BigDecimal:7fb3c20,'0.32085E5',9(18)>, transaction_id: 7236, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-13 12:09:40", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+32085
+"here ---"
+0
+ Prashant Datta Traders  ---- 7237 ------- 0.0  160000.0 ------  4102.0 ---- 4102.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7296 ------- 5190.0  0.0 ------  -1088.0 ---- -1088.0
+#<TxnItem id: 6641, item_id: 79, number: 15, price: #<BigDecimal:7fe4618,'0.346E3',9(18)>, amount: #<BigDecimal:7fe45a0,'0.519E4',9(18)>, transaction_id: 7296, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-14 04:54:53", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5190
+"here ---"
+0
+ Prashant Datta Traders  ---- 7344 ------- 37950.0  0.0 ------  36862.0 ---- 36862.0
+#<TxnItem id: 6672, item_id: 79, number: 110, price: #<BigDecimal:8009dc8,'0.345E3',9(18)>, amount: #<BigDecimal:8009d50,'0.3795E5',9(18)>, transaction_id: 7344, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-16 13:59:25", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+37950
+"here ---"
+0
+ Prashant Datta Traders  ---- 7376 ------- 19030.0  0.0 ------  17832.0 ---- 17832.0
+#<TxnItem id: 6698, item_id: 79, number: 55, price: #<BigDecimal:802b478,'0.346E3',9(18)>, amount: #<BigDecimal:802b400,'0.1903E5',9(18)>, transaction_id: 7376, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-17 05:08:48", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+19030
+"here ---"
+0
+ Prashant Datta Traders  ---- 7447 ------- 58650.0  0.0 ------  76482.0 ---- 76482.0
+#<TxnItem id: 6766, item_id: 79, number: 170, price: #<BigDecimal:8048c58,'0.345E3',9(18)>, amount: #<BigDecimal:8048be0,'0.5865E5',9(18)>, transaction_id: 7447, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-20 06:32:44", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+58650
+"here ---"
+0
+ Prashant Datta Traders  ---- 7450 ------- 24150.0  0.0 ------  100632.0 ---- 100632.0
+#<TxnItem id: 6769, item_id: 79, number: 70, price: #<BigDecimal:806e368,'0.345E3',9(18)>, amount: #<BigDecimal:806e2f0,'0.2415E5',9(18)>, transaction_id: 7450, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-20 06:35:22", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+24150
+"here ---"
+0
+ Prashant Datta Traders  ---- 7405 ------- 75900.0  0.0 ------  176532.0 ---- 176532.0
+#<TxnItem id: 6722, item_id: 79, number: 220, price: #<BigDecimal:8097b50,'0.345E3',9(18)>, amount: #<BigDecimal:8097ad8,'0.759E5',9(18)>, transaction_id: 7405, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-20 04:59:28", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+75900
+"here ---"
+0
+ Prashant Datta Traders  ---- 7418 ------- 0.0  60000.0 ------  116532.0 ---- 116532.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7463 ------- 22490.0  0.0 ------  94042.0 ---- 94042.0
+#<TxnItem id: 6777, item_id: 79, number: 65, price: #<BigDecimal:80c84a8,'0.346E3',9(18)>, amount: #<BigDecimal:80c8430,'0.2249E5',9(18)>, transaction_id: 7463, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-21 04:42:58", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+22490
+"here ---"
+0
+ Prashant Datta Traders  ---- 7468 ------- 17300.0  0.0 ------  76742.0 ---- 76742.0
+#<TxnItem id: 6780, item_id: 79, number: 50, price: #<BigDecimal:80edb68,'0.346E3',9(18)>, amount: #<BigDecimal:80edaf0,'0.173E5',9(18)>, transaction_id: 7468, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-21 04:58:40", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+17300
+"here ---"
+0
+ Prashant Datta Traders  ---- 7473 ------- 86250.0  0.0 ------  162992.0 ---- 162992.0
+#<TxnItem id: 6786, item_id: 79, number: 250, price: #<BigDecimal:81132c8,'0.345E3',9(18)>, amount: #<BigDecimal:8113250,'0.8625E5',9(18)>, transaction_id: 7473, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-21 05:06:56", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+86250
+"here ---"
+0
+ Prashant Datta Traders  ---- 7507 ------- 0.0  70000.0 ------  92992.0 ---- 92992.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7549 ------- 2645.0  0.0 ------  95637.0 ---- 95637.0
+#<TxnItem id: 6826, item_id: 98, number: 35, price: #<BigDecimal:8153d00,'0.67E2',9(18)>, amount: #<BigDecimal:8153c88,'0.2345E4',9(18)>, transaction_id: 7549, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-24 05:54:04", contact_id: 473, item_descri: nil>
+#<TxnItem id: 6827, item_id: 159, number: 10, price: #<BigDecimal:8153af8,'0.3E2',9(18)>, amount: #<BigDecimal:8153a80,'0.3E3',9(18)>, transaction_id: 7549, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-24 05:54:04", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+2645
+"here ---"
+0
+ Prashant Datta Traders  ---- 7578 ------- 20700.0  0.0 ------  116337.0 ---- 116337.0
+#<TxnItem id: 6842, item_id: 79, number: 60, price: #<BigDecimal:817f810,'0.345E3',9(18)>, amount: #<BigDecimal:817f798,'0.207E5',9(18)>, transaction_id: 7578, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-27 04:29:10", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+20700
+"here ---"
+0
+ Prashant Datta Traders  ---- 7583 ------- 3460.0  0.0 ------  112877.0 ---- 112877.0
+#<TxnItem id: 6847, item_id: 79, number: 10, price: #<BigDecimal:8198f18,'0.346E3',9(18)>, amount: #<BigDecimal:8198ea0,'0.346E4',9(18)>, transaction_id: 7583, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-27 04:33:13", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+3460
+"here ---"
+0
+ Prashant Datta Traders  ---- 7598 ------- 22490.0  0.0 ------  90387.0 ---- 90387.0
+#<TxnItem id: 6861, item_id: 79, number: 65, price: #<BigDecimal:81be600,'0.346E3',9(18)>, amount: #<BigDecimal:81be588,'0.2249E5',9(18)>, transaction_id: 7598, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-27 06:54:56", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+22490
+"here ---"
+0
+ Prashant Datta Traders  ---- 7599 ------- 0.0  35000.0 ------  55387.0 ---- 55387.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7614 ------- 51750.0  0.0 ------  107137.0 ---- 107137.0
+#<TxnItem id: 6868, item_id: 79, number: 150, price: #<BigDecimal:81fafd8,'0.345E3',9(18)>, amount: #<BigDecimal:81faf60,'0.5175E5',9(18)>, transaction_id: 7614, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-06-28 06:14:51", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+51750
+"here ---"
+0
+ Prashant Datta Traders  ---- 7631 ------- 0.0  101000.0 ------  6137.0 ---- 6137.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7656 ------- 31050.0  0.0 ------  37187.0 ---- 37187.0
+#<TxnItem id: 6892, item_id: 79, number: 90, price: #<BigDecimal:823bab0,'0.345E3',9(18)>, amount: #<BigDecimal:823ba38,'0.3105E5',9(18)>, transaction_id: 7656, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-01 04:52:16", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+31050
+"here ---"
+0
+ Prashant Datta Traders  ---- 7662 ------- 3460.0  0.0 ------  33727.0 ---- 33727.0
+#<TxnItem id: 6898, item_id: 79, number: 10, price: #<BigDecimal:8255190,'0.346E3',9(18)>, amount: #<BigDecimal:8255118,'0.346E4',9(18)>, transaction_id: 7662, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-01 04:56:00", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+3460
+"here ---"
+0
+ Prashant Datta Traders  ---- 7717 ------- 5190.0  0.0 ------  28537.0 ---- 28537.0
+#<TxnItem id: 6943, item_id: 79, number: 15, price: #<BigDecimal:827a8a0,'0.346E3',9(18)>, amount: #<BigDecimal:827a828,'0.519E4',9(18)>, transaction_id: 7717, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-04 07:17:10", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5190
+"here ---"
+0
+ Prashant Datta Traders  ---- 7750 ------- 0.0  75000.0 ------  -46463.0 ---- -46463.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7817 ------- 6900.0  0.0 ------  -39563.0 ---- -39563.0
+#<TxnItem id: 7018, item_id: 79, number: 20, price: #<BigDecimal:82b72a0,'0.345E3',9(18)>, amount: #<BigDecimal:82b7228,'0.69E4',9(18)>, transaction_id: 7817, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-11 10:37:41", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+6900
+"here ---"
+0
+ Prashant Datta Traders  ---- 7822 ------- 1725.0  0.0 ------  -37838.0 ---- -37838.0
+#<TxnItem id: 7023, item_id: 79, number: 5, price: #<BigDecimal:82d0a70,'0.345E3',9(18)>, amount: #<BigDecimal:82d09f8,'0.1725E4',9(18)>, transaction_id: 7822, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-11 13:57:22", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+1725
+"here ---"
+0
+ Prashant Datta Traders  ---- 7828 ------- 3450.0  0.0 ------  -34388.0 ---- -34388.0
+#<TxnItem id: 7029, item_id: 79, number: 10, price: #<BigDecimal:82f61a8,'0.345E3',9(18)>, amount: #<BigDecimal:82f6130,'0.345E4',9(18)>, transaction_id: 7828, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-11 14:06:34", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+3450
+"here ---"
+0
+ Prashant Datta Traders  ---- 7829 ------- 34500.0  0.0 ------  112.0 ---- 112.0
+#<TxnItem id: 7030, item_id: 79, number: 100, price: #<BigDecimal:831f940,'0.345E3',9(18)>, amount: #<BigDecimal:831f8c8,'0.345E5',9(18)>, transaction_id: 7829, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-11 14:07:40", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+34500
+"here ---"
+0
+ Prashant Datta Traders  ---- 7830 ------- 33500.0  0.0 ------  33612.0 ---- 33612.0
+#<TxnItem id: 7031, item_id: 180, number: 500, price: #<BigDecimal:83390e8,'0.67E2',9(18)>, amount: #<BigDecimal:8339070,'0.335E5',9(18)>, transaction_id: 7830, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-11 14:08:32", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+33500
+"here ---"
+0
+ Prashant Datta Traders  ---- 7856 ------- 0.0  100000.0 ------  -66388.0 ---- -66388.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7880 ------- 0.0  40000.0 ------  -106388.0 ---- -106388.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 7883 ------- 47875.0  0.0 ------  -58513.0 ---- -58513.0
+#<TxnItem id: 7058, item_id: 79, number: 125, price: #<BigDecimal:838cd60,'0.345E3',9(18)>, amount: #<BigDecimal:838cce8,'0.43125E5',9(18)>, transaction_id: 7883, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-14 13:32:12", contact_id: 473, item_descri: nil>
+#<TxnItem id: 7059, item_id: 114, number: 1, price: #<BigDecimal:838cb58,'0.14E4',9(18)>, amount: #<BigDecimal:838cae0,'0.14E4',9(18)>, transaction_id: 7883, created_by: 11, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-16 04:00:29", contact_id: 473, item_descri: nil>
+#<TxnItem id: 7060, item_id: 115, number: 1, price: #<BigDecimal:838c950,'0.75E3',9(18)>, amount: #<BigDecimal:838c8d8,'0.75E3',9(18)>, transaction_id: 7883, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-14 13:32:12", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+47875
+"here ---"
+0
+ Prashant Datta Traders  ---- 7893 ------- 51750.0  0.0 ------  -6763.0 ---- -6763.0
+#<TxnItem id: 7067, item_id: 79, number: 150, price: #<BigDecimal:83cab60,'0.345E3',9(18)>, amount: #<BigDecimal:83caae8,'0.5175E5',9(18)>, transaction_id: 7893, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-14 13:47:51", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+51750
+"here ---"
+0
+ Prashant Datta Traders  ---- 7909 ------- 3795.0  0.0 ------  -2968.0 ---- -2968.0
+#<TxnItem id: 7080, item_id: 79, number: 11, price: #<BigDecimal:83e4358,'0.345E3',9(18)>, amount: #<BigDecimal:83e42e0,'0.3795E4',9(18)>, transaction_id: 7909, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-15 05:47:29", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+3795
+"here ---"
+0
+ Prashant Datta Traders  ---- 7910 ------- 31050.0  0.0 ------  28082.0 ---- 28082.0
+#<TxnItem id: 7081, item_id: 79, number: 90, price: #<BigDecimal:8409ab8,'0.345E3',9(18)>, amount: #<BigDecimal:8409a40,'0.3105E5',9(18)>, transaction_id: 7910, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-15 06:31:12", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+31050
+"here ---"
+0
+ Prashant Datta Traders  ---- 7918 ------- 103500.0  0.0 ------  131582.0 ---- 131582.0
+#<TxnItem id: 7086, item_id: 79, number: 300, price: #<BigDecimal:842f218,'0.345E3',9(18)>, amount: #<BigDecimal:842f1a0,'0.1035E6',9(18)>, transaction_id: 7918, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-16 03:59:41", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+103500
+"here ---"
+0
+ Prashant Datta Traders  ---- 7943 ------- 51750.0  0.0 ------  183332.0 ---- 183332.0
+#<TxnItem id: 7105, item_id: 79, number: 150, price: #<BigDecimal:84489e8,'0.345E3',9(18)>, amount: #<BigDecimal:8448970,'0.5175E5',9(18)>, transaction_id: 7943, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-18 04:30:42", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+51750
+"here ---"
+0
+ Prashant Datta Traders  ---- 7974 ------- 31050.0  0.0 ------  214382.0 ---- 214382.0
+#<TxnItem id: 7135, item_id: 79, number: 90, price: #<BigDecimal:8472180,'0.345E3',9(18)>, amount: #<BigDecimal:8472108,'0.3105E5',9(18)>, transaction_id: 7974, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-19 06:18:12", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+31050
+"here ---"
+0
+ Prashant Datta Traders  ---- 8010 ------- 0.0  185000.0 ------  29382.0 ---- 29382.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 8011 ------- 22490.0  0.0 ------  6892.0 ---- 6892.0
+#<TxnItem id: 7161, item_id: 79, number: 65, price: #<BigDecimal:84aeb08,'0.346E3',9(18)>, amount: #<BigDecimal:84aea90,'0.2249E5',9(18)>, transaction_id: 8011, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-21 04:36:53", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+22490
+"here ---"
+0
+ Prashant Datta Traders  ---- 8029 ------- 12110.0  0.0 ------  -5218.0 ---- -5218.0
+#<TxnItem id: 7171, item_id: 79, number: 35, price: #<BigDecimal:84cc298,'0.346E3',9(18)>, amount: #<BigDecimal:84cc220,'0.1211E5',9(18)>, transaction_id: 8029, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-22 04:41:17", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+12110
+"here ---"
+0
+ Prashant Datta Traders  ---- 8030 ------- 34500.0  0.0 ------  29282.0 ---- 29282.0
+#<TxnItem id: 7172, item_id: 79, number: 100, price: #<BigDecimal:84f19d0,'0.345E3',9(18)>, amount: #<BigDecimal:84f1958,'0.345E5',9(18)>, transaction_id: 8030, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-22 04:41:51", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+34500
+"here ---"
+0
+ Prashant Datta Traders  ---- 8125 ------- 51750.0  0.0 ------  81032.0 ---- 81032.0
+#<TxnItem id: 7238, item_id: 79, number: 150, price: #<BigDecimal:8513170,'0.345E3',9(18)>, amount: #<BigDecimal:85130f8,'0.5175E5',9(18)>, transaction_id: 8125, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-26 04:29:12", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+51750
+"here ---"
+0
+ Prashant Datta Traders  ---- 8134 ------- 19500.0  0.0 ------  100532.0 ---- 100532.0
+#<TxnItem id: 7246, item_id: 81, number: 75, price: #<BigDecimal:8530900,'0.26E3',9(18)>, amount: #<BigDecimal:8530888,'0.195E5',9(18)>, transaction_id: 8134, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-27 05:20:29", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+19500
+"here ---"
+0
+ Prashant Datta Traders  ---- 8135 ------- 0.0  15000.0 ------  85532.0 ---- 85532.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 8168 ------- 750.0  0.0 ------  84782.0 ---- 84782.0
+#<TxnItem id: 7268, item_id: 115, number: 1, price: #<BigDecimal:856d2b0,'0.75E3',9(18)>, amount: #<BigDecimal:856d238,'0.75E3',9(18)>, transaction_id: 8168, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-07-29 05:40:20", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+750
+"here ---"
+0
+ Prashant Datta Traders  ---- 8234 ------- 51750.0  0.0 ------  136532.0 ---- 136532.0
+#<TxnItem id: 7319, item_id: 79, number: 150, price: #<BigDecimal:8592a10,'0.345E3',9(18)>, amount: #<BigDecimal:8592998,'0.5175E5',9(18)>, transaction_id: 8234, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-01 07:21:07", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+51750
+"here ---"
+0
+ Prashant Datta Traders  ---- 8235 ------- 0.0  50000.0 ------  86532.0 ---- 86532.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 8339 ------- 8650.0  0.0 ------  77882.0 ---- 77882.0
+#<TxnItem id: 7392, item_id: 79, number: 25, price: #<BigDecimal:85cf3c0,'0.346E3',9(18)>, amount: #<BigDecimal:85cf348,'0.865E4',9(18)>, transaction_id: 8339, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-09 05:30:37", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+8650
+"here ---"
+0
+ Prashant Datta Traders  ---- 8329 ------- 0.0  50000.0 ------  27882.0 ---- 27882.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 8351 ------- 70000.0  0.0 ------  97882.0 ---- 97882.0
+#<TxnItem id: 7399, item_id: 79, number: 200, price: #<BigDecimal:8613db8,'0.35E3',9(18)>, amount: #<BigDecimal:8613d40,'0.7E5',9(18)>, transaction_id: 8351, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-11 05:01:39", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+70000
+"here ---"
+0
+ Prashant Datta Traders  ---- 8403 ------- 22815.0  0.0 ------  75067.0 ---- 75067.0
+#<TxnItem id: 7435, item_id: 79, number: 65, price: #<BigDecimal:8629500,'0.351E3',9(18)>, amount: #<BigDecimal:8629488,'0.22815E5',9(18)>, transaction_id: 8403, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-15 06:31:44", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+22815
+"here ---"
+0
+ Prashant Datta Traders  ---- 8406 ------- 3510.0  0.0 ------  71557.0 ---- 71557.0
+#<TxnItem id: 7438, item_id: 79, number: 10, price: #<BigDecimal:8610168,'0.351E3',9(18)>, amount: #<BigDecimal:86100f0,'0.351E4',9(18)>, transaction_id: 8406, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-15 06:31:24", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+3510
+"here ---"
+0
+ Prashant Datta Traders  ---- 8411 ------- 5265.0  0.0 ------  66292.0 ---- 66292.0
+#<TxnItem id: 7442, item_id: 79, number: 15, price: #<BigDecimal:85e4518,'0.351E3',9(18)>, amount: #<BigDecimal:85e44a0,'0.5265E4',9(18)>, transaction_id: 8411, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-15 06:30:56", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+5265
+"here ---"
+0
+ Prashant Datta Traders  ---- 8415 ------- 3510.0  0.0 ------  62782.0 ---- 62782.0
+#<TxnItem id: 7446, item_id: 79, number: 10, price: #<BigDecimal:85c02d0,'0.351E3',9(18)>, amount: #<BigDecimal:85c0258,'0.351E4',9(18)>, transaction_id: 8415, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-15 06:30:35", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+3510
+"here ---"
+0
+ Prashant Datta Traders  ---- 8420 ------- 13600.0  0.0 ------  76382.0 ---- 76382.0
+#<TxnItem id: 7449, item_id: 79, number: 40, price: #<BigDecimal:85984d8,'0.34E3',9(18)>, amount: #<BigDecimal:8598460,'0.136E5',9(18)>, transaction_id: 8420, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-15 06:29:14", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+13600
+"here ---"
+0
+ Prashant Datta Traders  ---- 8438 ------- 4092.0  0.0 ------  72290.0 ---- 72290.0
+#<TxnItem id: 7466, item_id: 79, number: 12, price: #<BigDecimal:8578390,'0.341E3',9(18)>, amount: #<BigDecimal:85782c8,'0.4092E4',9(18)>, transaction_id: 8438, created_by: 4, updated_by: 4, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-15 07:44:55", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+4092
+"here ---"
+0
+ Prashant Datta Traders  ---- 8440 ------- 1995.0  0.0 ------  74285.0 ---- 74285.0
+#<TxnItem id: 7468, item_id: 120, number: 7, price: #<BigDecimal:8550318,'0.285E3',9(18)>, amount: #<BigDecimal:85502a0,'0.1995E4',9(18)>, transaction_id: 8440, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-15 06:59:00", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+1995
+"here ---"
+0
+ Prashant Datta Traders  ---- 8442 ------- 1070.0  0.0 ------  75355.0 ---- 75355.0
+#<TxnItem id: 7470, item_id: 101, number: 50, price: #<BigDecimal:8528138,'0.214E2',18(18)>, amount: #<BigDecimal:85280c0,'0.107E4',9(18)>, transaction_id: 8442, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-15 07:00:21", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+1070
+"here ---"
+0
+ Prashant Datta Traders  ---- 8451 ------- 13520.0  0.0 ------  88875.0 ---- 88875.0
+#<TxnItem id: 7479, item_id: 79, number: 40, price: #<BigDecimal:8504008,'0.338E3',9(18)>, amount: #<BigDecimal:8503f18,'0.1352E5',9(18)>, transaction_id: 8451, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-15 07:53:07", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+13520
+"here ---"
+0
+ Prashant Datta Traders  ---- 8458 ------- 67600.0  0.0 ------  156475.0 ---- 156475.0
+#<TxnItem id: 7481, item_id: 79, number: 200, price: #<BigDecimal:84d7d78,'0.338E3',9(18)>, amount: #<BigDecimal:84d7cd8,'0.676E5',9(18)>, transaction_id: 8458, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-16 04:04:07", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+67600
+"here ---"
+0
+ Prashant Datta Traders  ---- 8469 ------- 0.0  25000.0 ------  131475.0 ---- 131475.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 8720 ------- 16950.0  0.0 ------  114525.0 ---- 114525.0
+#<TxnItem id: 7681, item_id: 79, number: 50, price: #<BigDecimal:849ddf8,'0.339E3',9(18)>, amount: #<BigDecimal:849dd80,'0.1695E5',9(18)>, transaction_id: 8720, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-30 08:08:33", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+16950
+"here ---"
+0
+ Prashant Datta Traders  ---- 8485 ------- 0.0  1200.0 ------  113325.0 ---- 113325.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 8493 ------- 23730.0  0.0 ------  89595.0 ---- 89595.0
+#<TxnItem id: 7509, item_id: 79, number: 70, price: #<BigDecimal:845fd28,'0.339E3',9(18)>, amount: #<BigDecimal:845fcb0,'0.2373E5',9(18)>, transaction_id: 8493, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-18 06:35:21", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+23730
+"here ---"
+0
+ Prashant Datta Traders  ---- 8499 ------- 81120.0  0.0 ------  170715.0 ---- 170715.0
+#<TxnItem id: 7513, item_id: 79, number: 240, price: #<BigDecimal:8437c10,'0.338E3',9(18)>, amount: #<BigDecimal:8437b98,'0.8112E5',9(18)>, transaction_id: 8499, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-19 04:58:33", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+81120
+"here ---"
+0
+ Prashant Datta Traders  ---- 8502 ------- 1140.0  0.0 ------  171855.0 ---- 171855.0
+#<TxnItem id: 7516, item_id: 120, number: 4, price: #<BigDecimal:8413810,'0.285E3',9(18)>, amount: #<BigDecimal:8413798,'0.114E4',9(18)>, transaction_id: 8502, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-19 05:00:09", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+1140
+"here ---"
+0
+ Prashant Datta Traders  ---- 8540 ------- 0.0  50000.0 ------  121855.0 ---- 121855.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 8589 ------- 0.0  35000.0 ------  86855.0 ---- 86855.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prashant Datta Traders  ---- 8591 ------- 25350.0  0.0 ------  112205.0 ---- 112205.0
+#<TxnItem id: 7584, item_id: 79, number: 75, price: #<BigDecimal:83bb958,'0.338E3',9(18)>, amount: #<BigDecimal:83bb8e0,'0.2535E5',9(18)>, transaction_id: 8591, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-24 05:50:58", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+25350
+"here ---"
+0
+ Prashant Datta Traders  ---- 8661 ------- 50700.0  0.0 ------  162905.0 ---- 162905.0
+#<TxnItem id: 7633, item_id: 79, number: 150, price: #<BigDecimal:839b018,'0.338E3',9(18)>, amount: #<BigDecimal:839afa0,'0.507E5',9(18)>, transaction_id: 8661, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-27 05:45:09", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+50700
+"here ---"
+0
+ Prashant Datta Traders  ---- 8845 ------- 0.0  81000.0 ------  81905.0 ---- 81905.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+*********************************************
+ Prashant Datta Traders  ---- 8719 ------- 84500.0  0.0 ------  165405.0 ---- 166405.0
+******
+#<TxnItem id: 7680, item_id: 79, number: 250, price: #<BigDecimal:8355770,'0.338E3',9(18)>, amount: #<BigDecimal:83556f8,'0.845E5',9(18)>, transaction_id: 8719, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-08-30 08:02:48", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+84500
+"here ---"
+0
+*********************************************
+ Prashant Datta Traders  ---- 8844 ------- 7839.0  0.0 ------  157566.0 ---- 158566.0
+******
+#<TxnItem id: 7773, item_id: 98, number: 117, price: #<BigDecimal:8244020,'0.67E2',9(18)>, amount: #<BigDecimal:823ff48,'0.7839E4',9(18)>, transaction_id: 8844, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-09-09 04:19:36", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+7839
+"here ---"
+0
+*********************************************
+ Prashant Datta Traders  ---- 8731 ------- 0.0  80000.0 ------  77566.0 ---- 78566.0
+******
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+*********************************************
+ Prashant Datta Traders  ---- 8733 ------- 339.0  0.0 ------  77227.0 ---- 78227.0
+******
+#<TxnItem id: 7690, item_id: 79, number: 1, price: #<BigDecimal:81ad1c0,'0.339E3',9(18)>, amount: #<BigDecimal:81ad148,'0.339E3',9(18)>, transaction_id: 8733, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-09-02 11:24:09", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+339
+"here ---"
+0
+*********************************************
+ Prashant Datta Traders  ---- 8813 ------- 12204.0  0.0 ------  65023.0 ---- 66023.0
+******
+#<TxnItem id: 7745, item_id: 79, number: 36, price: #<BigDecimal:815e200,'0.339E3',9(18)>, amount: #<BigDecimal:815e188,'0.12204E5',9(18)>, transaction_id: 8813, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-09-08 07:23:51", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+12204
+"here ---"
+0
+*********************************************
+ Prashant Datta Traders  ---- 8814 ------- 11240.0  0.0 ------  76263.0 ---- 77263.0
+******
+#<TxnItem id: 7746, item_id: 79, number: 30, price: #<BigDecimal:810b258,'0.36E3',9(18)>, amount: #<BigDecimal:810b1b8,'0.108E5',9(18)>, transaction_id: 8814, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-09-08 07:25:26", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+11240
+"here ---"
+0
+*********************************************
+ Prashant Datta Traders  ---- 8831 ------- 8750.0  0.0 ------  85013.0 ---- 86013.0
+******
+#<TxnItem id: 7762, item_id: 79, number: 15, price: #<BigDecimal:80c0550,'0.35E3',9(18)>, amount: #<BigDecimal:80c04d8,'0.525E4',9(18)>, transaction_id: 8831, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-09-08 07:45:33", contact_id: 473, item_descri: nil>
+#<TxnItem id: 7763, item_id: 79, number: 5, price: #<BigDecimal:80c02d0,'0.35E3',9(18)>, amount: #<BigDecimal:80c0258,'0.175E4',9(18)>, transaction_id: 8831, created_by: 11, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-09-08 07:45:33", contact_id: 473, item_descri: nil>
+#<TxnItem id: 7769, item_id: 79, number: 5, price: #<BigDecimal:80c00c8,'0.35E3',9(18)>, amount: #<BigDecimal:80c0050,'0.175E4',9(18)>, transaction_id: 8831, created_by: 11, updated_by: 11, created_at: "1999-12-31 18:00:00", updated_at: "2016-09-08 12:18:24", contact_id: nil, item_descri: nil>
+"CALCULATE AMOUNT"
+8750
+"here ---"
+0
+*********************************************
+ Prashant Datta Traders  ---- 8838 ------- 0.0  50000.0 ------  35013.0 ---- 36013.0
+******
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+*********************************************
+ Prashant Datta Traders  ---- 8849 ------- 105000.0  0.0 ------  140013.0 ---- 141013.0
+******
+#<TxnItem id: 7776, item_id: 79, number: 200, price: #<BigDecimal:80189b8,'0.35E3',9(18)>, amount: #<BigDecimal:8018940,'0.7E5',9(18)>, transaction_id: 8849, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-09-09 05:09:40", contact_id: 473, item_descri: nil>
+#<TxnItem id: 7777, item_id: 79, number: 100, price: #<BigDecimal:80186e8,'0.35E3',9(18)>, amount: #<BigDecimal:8018620,'0.35E5',9(18)>, transaction_id: 8849, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-09-09 05:09:40", contact_id: 473, item_descri: nil>
+"CALCULATE AMOUNT"
+105000
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6320 ------- 1400.0  0.0 ------  1400.0 ---- 1400.0
+#<TxnItem id: 5848, item_id: 79, number: 4, price: #<BigDecimal:7fab048,'0.35E3',9(18)>, amount: #<BigDecimal:7faafd0,'0.14E4',9(18)>, transaction_id: 6320, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-04-28 04:24:16", contact_id: 687, item_descri: nil>
+"CALCULATE AMOUNT"
+1400
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6337 ------- 0.0  1400.0 ------  0.0 ---- 0.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6498 ------- 17201.0  0.0 ------  17201.0 ---- 17201.0
+#<TxnItem id: 5984, item_id: 84, number: 21, price: #<BigDecimal:7f69918,'0.501E3',9(18)>, amount: #<BigDecimal:7f698a0,'0.10521E5',9(18)>, transaction_id: 6498, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 13:23:22", contact_id: 687, item_descri: nil>
+#<TxnItem id: 5985, item_id: 82, number: 20, price: #<BigDecimal:7f69710,'0.334E3',9(18)>, amount: #<BigDecimal:7f69698,'0.668E4',9(18)>, transaction_id: 6498, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 13:23:22", contact_id: 687, item_descri: nil>
+"CALCULATE AMOUNT"
+17201
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6476 ------- 0.0  10000.0 ------  7201.0 ---- 7201.0
+"CALCULATE AMOUNT"
+0
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6479 ------- 17150.01  0.0 ------  24351.01 ---- 24351.01
+#<TxnItem id: 5968, item_id: 79, number: 3, price: #<BigDecimal:7f21370,'0.345E3',9(18)>, amount: #<BigDecimal:7f212f8,'0.1035E4',9(18)>, transaction_id: 6479, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 06:00:53", contact_id: 687, item_descri: nil>
+#<TxnItem id: 5969, item_id: 84, number: 10, price: #<BigDecimal:7f21168,'0.501E3',9(18)>, amount: #<BigDecimal:7f210f0,'0.501E4',9(18)>, transaction_id: 6479, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 06:00:53", contact_id: 687, item_descri: nil>
+#<TxnItem id: 5970, item_id: 83, number: 17, price: #<BigDecimal:7f20f60,'0.41747E3',18(18)>, amount: #<BigDecimal:7f20ee8,'0.709701E4',18(18)>, transaction_id: 6479, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 06:00:53", contact_id: 687, item_descri: nil>
+#<TxnItem id: 5971, item_id: 82, number: 12, price: #<BigDecimal:7f20d58,'0.334E3',9(18)>, amount: #<BigDecimal:7f20ce0,'0.4008E4',9(18)>, transaction_id: 6479, created_by: 4, updated_by: nil, created_at: "1999-12-31 18:00:00", updated_at: "2016-05-07 06:00:53", contact_id: 687, item_descri: nil>
+"CALCULATE AMOUNT"
+17150
+"here ---"
+0
+ Prakash Bhat Bilachikattu  ---- 6499 ------- -1.01  24350.0 ------  0.0 ---- 0.0
+"CALCULATE AMOUNT"
+-1
+"here ---"
+0

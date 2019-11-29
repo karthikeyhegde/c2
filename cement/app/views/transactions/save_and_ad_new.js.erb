@@ -1,0 +1,6 @@
+$('#transaction_form').before("<%= j(render  :template => 'transactions/_saved_contact_balance', :locals => {:trans => @trans} ) %>");
+document.getElementById("transaction_form").reset();
+ var $form = $('#transaction_form') // Replace with your form selector
+      $('select', $form).each(function() {
+        $(this).val($(this).prop('defaultSelected'));
+      });

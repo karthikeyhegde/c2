@@ -1,0 +1,54 @@
+<br><br><br><br>
+<div id="show_data" class="row-fluid">
+<div id='rp_container' class="span12">
+
+  <table class="table zebra-striped  " style='font-size:13px;width:90%' align="center">
+  <thead style="background-color:#FE2E9A;">
+    <th class="col-sm-1"> Items/Timeline > </th>
+    <%@report.headers.each{|h| %>
+
+
+      <th class="col-sm-1"><%=h%></th>
+
+
+    <%}%>
+    
+  </thead>
+  <tbody>
+  <% cells = @report.headers.size 
+   i = 0
+  %>
+  <% @report.res_bunch.each{|r| %>
+     <%i+= 1 %>
+    <%if i%2 == 0%>
+        <tr id="trans_tr_#{r[0]}">
+    <%else%>
+       <tr class="info" id="trans_tr_#{r[0]}">
+    <%end%>
+   
+ 
+     <td><%=r[1]%></td>
+     <% k = 2 %>
+     <% while   k < (cells*2 + 2) %>
+       
+           
+
+        <td><%=r[k]%>
+        &nbsp;&nbsp;
+        <%=r[k+1]%>
+         
+         <% k += 2%>
+        </td>
+    <%end%>
+
+
+
+    </tr>
+   <%}%> 
+  </tbody>
+
+</table>
+<hr>
+
+</div>
+</div>

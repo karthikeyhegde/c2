@@ -1,0 +1,53 @@
+<div id='contact_form' class="row-fluid" >
+
+  <div class="span5">
+   <div class="row-fluid">
+      <div class="span4">Regual Customer: </div>
+      <div class="span1"><%=f.check_box :regular%> </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">Name: </div>
+      <div class="span2"><%= f.text_field :name %> </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">Label: </div>
+      <div class="span2"><%= f.text_field :contact_type %> </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">Address: </div>
+      <div class="span2"><%= f.text_area :address, :rows => '5'%> </div>
+    </div>
+   
+   
+  </div>
+  <div class="span5">
+     <div class="row-fluid">
+      <div class="span4">Item Supplier: </div>
+      <div class="span1"><%=f.check_box :supplier%> </div>
+    </div>
+     <div class="row-fluid">
+      <div class="span3">Other Name</div>
+      <div class="span2"><%= f.text_field :subname %>  </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span3" style='color:#356635'> Starting Balance (Rs) </div>
+      <div class="span2"><%= f.text_field :starting_balance %><br><br> </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span3">Contact# </div>
+      <div class="span2"><%= f.text_field :contact_number %> </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span3">Contact#(2)</div>
+      <div class="span2"><%= f.text_field :contact_number2 %> </div>
+    </div>
+     <div class="row-fluid">
+      <div class="span3">Place: </div>
+      <div class="span2"><%= f.text_field :place %> </div>
+    </div>
+    
+
+
+  </div>
+
+</div>
