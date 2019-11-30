@@ -4,6 +4,7 @@ class StockEntry < ActiveRecord::Base
     belongs_to :item
     belongs_to    :contact
 
+    audited :allow_mass_assignment => true
 
     before_save :calc_entry_stock
     after_save  :calc_item_current_stock

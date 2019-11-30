@@ -78,13 +78,14 @@ def remove
  def ask_signin
  end	
 
-
-   def enter_in
+ def enter_in
 
   p " In enter in"
   p request.remote_ip()
  	@user = User.authenticate(params[:username], params[:password])
 
+  p @user.restriction_type
+  p @user.allowed_ip
 
  	if @user.nil?
  		flash[:error] = "Invalid username or password"
@@ -102,7 +103,6 @@ def remove
   end		
     return
   end	
-
 
   def no_access
   end 

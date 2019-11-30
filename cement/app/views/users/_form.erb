@@ -37,8 +37,8 @@
       <div class="span4" style='text-align:right;'>Othe Information </div>
       <div class="span4"><%= f.text_area :info,  :rows => '3'%> </div>
     </div>
-   
-     <div class="row-fluid">
+
+    <div class="row-fluid">
       <div class="span4" style='text-align:right;'>Restriction Type </div>
       <div class="span4"><%= f.select :restriction_type, options_for_select(["","IP ADDRESS","Nothing"], selected_key = f.object.restriction_type) %> </div>
     </div>
@@ -46,7 +46,7 @@
     <div class="row-fluid">
       <div class="span4" style='text-align:right;'>Allowed IP Address (If Restriction Type is IP Address) </div>
       <div class="span4"><%= f.text_field :allowed_ip, class:'input', style:'height:30px;'%> </div>
-    </div>    
+    </div>
 
   </div>
 

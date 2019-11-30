@@ -23,7 +23,7 @@ class Transaction < ActiveRecord::Base
   
 
   def all_validation
-    errors.add(:Customer, "Costumer  cannot be blank") if contact_id.blank?
+    errors.add(:Customer, "Costumer field is blank or invalid") if contact_id.blank?
     errors.add( :Date, " Date cannot be blank") if on_date.blank?
     errors.add( :Items, " Enter value for any one of the fields , items/payment amount/hamaali/vehical charges/discount ") if ( txn_items.blank? || txn_items[0].item_id == 0) and payment_amount.to_i == 0 and amount.to_i == 0 and discount.to_i == 0 and hamaali.to_i == 0 and vehicle_charges.to_i == 0
 
@@ -118,21 +118,14 @@ class Transaction < ActiveRecord::Base
    return da[2]+'-'+da[1]+'-'+da[0]
   end  
 
-  def mysql_date_time dt 
-   arr =  dt.split(' ')
-   str = ''
-   str = arr[0]+" "+arr[1] if arr.size > 1
-   return str
-  end  
-
   def update_balance_changes
    p "here ---"
    p self.difference_amount.to_i
     if !self.difference_amount.blank? 
        msql_date = mysql_date(self.on_date)
-       msql_create_at = mysql_date_time(self.created_at.to_s)
+       mysqlcreated =  self.created_at.strftime('%Y-%m-%d %H:%M:%S')
        sql = "UPDATE transactions set contact_balance = (contact_balance + (#{self.difference_amount}) ) "
-       sql << "where contact_id = #{self.contact_id} and ( on_date > '#{msql_date}' OR (on_date = '#{msql_date}' and created_at > '#{msql_create_at}' )) "
+       sql << "where contact_id = #{self.contact_id} and ( on_date > '#{msql_date}' OR (on_date = '#{msql_date}' and created_at > '#{mysqlcreated}' )) "
        p sql
        ActiveRecord::Base.connection.execute(sql)      
     end 
@@ -144,9 +137,9 @@ class Transaction < ActiveRecord::Base
       txn_balance =  txn_amount - txn_payment
         
       msql_date = mysql_date(self.on_date)
-      msql_create_at = mysql_date_time(self.created_at.to_s)
+      mysqlcreated =  self.created_at.strftime('%Y-%m-%d %H:%M:%S')
       sql = "UPDATE transactions set contact_balance = (contact_balance - (#{txn_balance}) ) "
-      sql << "where contact_id = #{self.contact_id} and ( on_date > '#{msql_date}' OR (on_date = '#{msql_date}' and created_at > '#{msql_create_at}' ))  "
+      sql << "where contact_id = #{self.contact_id} and ( on_date > '#{msql_date}' OR (on_date = '#{msql_date}' and created_at > '#{mysqlcreated}' ))  "
       ActiveRecord::Base.connection.execute(sql)
       self.contact.balance = self.contact.balance - txn_balance
       self.contact.save!
@@ -156,6 +149,9 @@ class Transaction < ActiveRecord::Base
 
   def destroy_dependent_txitems
      self.txn_items.each{|t|
+      p "calling TX Items"
+      p t.item.current_stock
+      p t.number
       t.destroy
      }
   end  

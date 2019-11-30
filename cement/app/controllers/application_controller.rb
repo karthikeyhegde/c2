@@ -9,7 +9,6 @@ class ApplicationController < ActionController::Base
   end  
 
   def authorize
- 
      if session[:user_id].nil?
         redirect_to :controller => 'users', :action => 'ask_signin'
         return

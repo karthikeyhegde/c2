@@ -2,11 +2,15 @@ class PaymentsController < ApplicationController
 
 
   def index
-    sort_column = params[:sort_colum] || 'on_date'
-    sort_order = params[:sort_order]  || "DESC"
-    page_size = params[:page_size] || 20
-    offset = params[:offset] || 0
-    @payments = Payment.order("#{sort_column} #{sort_order}, created_at DESC")
+    @sort_column = params[:sort_colum] || 'on_date'
+    @sort_order = params[:sort_order]  || "DESC"
+    @page_size = params[:page_size] || 20
+    @offset = params[:offset] || 0
+    
+    values = Utility.pagination_process(params,"Payments")
+    @trs_text = values[1]
+    total = Payment.count
+    @payments = Payment.where(values[0]).order("#{@sort_column} #{@sort_order}, created_at DESC ")
   end
   
   def show
@@ -104,6 +108,22 @@ class PaymentsController < ApplicationController
     respond_to do |format|
      format.js {render layout: false}
     end
+  end  
+
+  def pagination
+    @sort_column = params[:sort_colum] || 'on_date'
+    @sort_order = params[:sort_order]  || "DESC"
+    @page_size = params[:page_size] || 20
+    @offset = params[:offset] || 0
+    
+    values  = Utility.pagination_process(params,"Payments")
+
+     @trs_text = values[1]
+    total = Payment.count
+    @payments = Payment.where(values[0]).order("#{@sort_column} #{@sort_order}, created_at DESC ")
+    respond_to do |format|
+      format.js {render layout: false}
+   end 
   end  
 	
 end	

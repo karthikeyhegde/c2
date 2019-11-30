@@ -3,6 +3,9 @@ class ItemsController < ApplicationController
 
  def index
   @items = Item.order(:name)
+  p "PARAMS IND"
+  p params
+  p flash
  end
 
  def show
@@ -15,9 +18,8 @@ class ItemsController < ApplicationController
 
  def create
   @item = Item.new(params[:item])
-  p 'ITEM PARAMS'
+  p "ITEMS -- "
   p params[:item]
-  
   default_date = MySetting.find_by_name('stock_start_date')
   @item.start_date = default_date.value;
   p @item
@@ -45,8 +47,9 @@ class ItemsController < ApplicationController
    Item.find(params[:id]).destroy
    redirect_to :action => 'index'
  rescue Exception => e
+  flash[:message] = e.to_s
+  redirect_to({ action: 'index' }, message: "Something serious happened")
    p e.to_s
-   p e.baktrace
  end 
  end
 
@@ -103,8 +106,6 @@ class ItemsController < ApplicationController
       end
   end  
 
-
-
     @txn_items = @item.rep_ixnitems sdate, edate
     @all_sum = 0
     @all_numbers = 0
@@ -147,6 +148,23 @@ class ItemsController < ApplicationController
     @stock_entries  = StockEntry.list ({:item_id => parmas[:id]})   
  end
 
+
+def ajax_reptxn
+  rep_txnitems
+  respond_to do |format|
+         format.js {render layout: false}
+  end  
+end
+
+def ajax_stockentry
+  @item = Item.find(params[:id].to_i)
+  res = @item.stock_entries_with_total
+  @item_stock_entries = res["stockentries"]
+  @total = res["total"]
+  respond_to do |format|
+         format.js {render layout: false}
+  end  
+end  
  
 
 

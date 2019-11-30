@@ -11,9 +11,15 @@
  </div>
 </div>
 
-<div id="index_list" class="row-fluid">
+<div id="pagn_lnk" class="row-fluid">
+   <div class="span12" id='pgnt_div"'>
+     <%=render  :template => 'transactions/_paging_links.erb', :locals => {:ctr_method => 'pagination_payments_path',:form_act => pagination_payments_path}  %>
+   </div>
+</div>
 
-   <div class="span12">
+<div id="index_list" class="row-fluid">
+  
+   <div class="span12" id="py_list">
     
      <%=render :partial => "list" %>
 

@@ -4,8 +4,17 @@
  </div>
 </div>
 
-<div id="index_list" class="row-fluid">
-   <div class="span12">
-    <%=render :partial => 'list'%>
+<div id="pagn_lnk" class="row-fluid float-right">
+   <div class="span12 " id='pgnt_div"'>
+     <%=render  :template => 'transactions/_paging_links.erb', :locals => {:ctr_method => 'pagination_stock_entries_path',:form_act => pagination_stock_entries_path}  %>
    </div>
-  </div>
+</div>
+
+<div id="index_list" class="row-fluid">
+  
+   <div class="span12" id="se_list">
+    
+     <%=render :partial => "list" %>
+
+   </div>
+</div>

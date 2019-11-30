@@ -1,13 +1,19 @@
 class Item < ActiveRecord::Base
   # attr_accessible :title, :body
    has_many :txn_items
+   has_many :stock_entries
    before_create :assign_stock
    before_update :update_stock
+   before_destroy :check_associations
 
-  include BaseUtils
+   include BaseUtils
 
 
+  def check_associations
+     str = "Item '#{self.name}' has been reffered in a Transactions/StockEntry. Cannot be deleted"
+     raise str if ( self.txn_items.size > 0 || self.stock_entries.size > 0)
 
+  end  
 
 def assign_stock
   self.current_stock = self.starting_stock
@@ -67,6 +73,18 @@ end
       return sum
   end  
 
+  def stock_entries_with_total sdt = nil, edt = nil
+
+    sdt = self.start_date if sdt.nil?
+    edt = DateTime.now.tomorrow
+    sentries = StockEntry.where(' item_id = ? and created_at  between ? and  ?',self.id,sdt,edt )
+    sum = 0
+      sentries.each{|s| 
+       sum += (s.is_return == 1? (s.numbers * -1) : s.numbers)
+      }
+      return {'stockentries' => sentries,  'total' =>sum}
+  end  
+
 
   def self.mass_update_currentstock
       @default_date = MySetting.find_by_name('stock_start_date')
@@ -92,6 +110,7 @@ end
      return arr
   end  
 
+  
 
   def aggrigated_list hash
 

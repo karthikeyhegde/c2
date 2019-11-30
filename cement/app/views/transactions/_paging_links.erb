@@ -1,24 +1,24 @@
 
 <div class=" span2" >
            <span id="page_number"> 
-            <%=link_to  "2 Week",  pagination_transactions_path(:sorted_column => @sort_column,:sort_order => @sort_order, :no_of_weeks => 2), :remote => true, :method => :post, :id => '2_weeks', :onclick => "$('#myspinner').show()" %>
+            <%=link_to  "2 Week",  send(ctr_method,{:sorted_column => @sort_column,:sort_order => @sort_order, :no_of_weeks => 2}), :remote => true, :method => :post, :id => '2_weeks', :onclick => "$('#myspinner').show()" %>
 
           </span> |
 
           <span id="page_number"> 
-            <%=link_to  "3 Week",  pagination_transactions_path(:sorted_column => @sort_column,:sort_order => @sort_order, :no_of_weeks => 3), :remote => true, :method => :post , :id=>'3_weeks', :onclick => "$('#myspinner').show()" %>
+            <%=link_to  "3 Week",  send(ctr_method,{:sorted_column => @sort_column,:sort_order => @sort_order, :no_of_weeks => 3}), :remote => true, :method => :post , :id=>'3_weeks', :onclick => "$('#myspinner').show()" %>
             
           </span> |
 
           <span id="page_number"> 
-            <%=link_to  "1 Month",  pagination_transactions_path(:sorted_column => @sort_column,:sort_order => @sort_order, :month_ago => true), :remote => true, :method => :post, :id => '1_month', :onclick => "$('#myspinner').show()" %>
+            <%=link_to  "1 Month",  send(ctr_method,{:sorted_column => @sort_column,:sort_order => @sort_order, :month_ago => true}), :remote => true, :method => :post, :id => '1_month', :onclick => "$('#myspinner').show()" %>
           </span> 
 |
    </div>
 <div class=" span4">
 
 <span>
-          <%=form_tag pagination_transactions_path, :remote => true do%>
+          <%=form_tag "#{form_act}", :remote => true do%>
         <%=text_field_tag :from_date, '', {class: 'report-date', style:'height:25px;width:120px;', :placeholder => "From Date"}%>
 
        <span style="font-size:18px;"> - </span>

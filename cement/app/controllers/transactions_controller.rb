@@ -6,16 +6,10 @@ class TransactionsController < ApplicationController
   @sort_order = params[:sort_order]  || "DESC"
   @page_size = params[:page_size] || 20
 
-  no_of_weeks =  params[:no_of_weeks].blank? ? 0 : params[:no_of_weeks].to_i
+  no_of_weeks =  params[:no_of_weeks].blank? ? 2 : params[:no_of_weeks].to_i
   date_str = "on_date > '"+no_of_weeks.weeks.ago.strftime("%Y-%m-%d")+"' " if no_of_weeks > 1
   @trs_text = "Showing  transactions from last "+no_of_weeks.to_s+" weeks ."
   
-  limit = ""
-  if  no_of_weeks < 1
-   date_str = " 1=1 "
-   limit = "LIMIT 25"
-  end  
-
   if !params[:from_date].blank? || !params[:to_date].blank?
     from_date = ( params[:from_date].blank? ?  '2000-01-01': DateTime.parse(params[:from_date]).strftime('%Y-%m-%d %H:%M'))
     to_date   = ( params[:to_date].blank? ? '2100-01-01' : DateTime.parse(params[:to_date]).strftime('%Y-%m-%d %H:%M') )
@@ -26,7 +20,7 @@ class TransactionsController < ApplicationController
   end
   offset = params[:offset] || 0
   total = Transaction.count
-  @trs = Transaction.where(date_str).order("#{@sort_column} #{@sort_order}, created_at DESC #{limit}")
+  @trs = Transaction.where(date_str).order("#{@sort_column} #{@sort_order}, created_at DESC ")
   
  end
 
@@ -75,11 +69,11 @@ class TransactionsController < ApplicationController
       if !contact_name.blank? and  contact_name.length > 3
         cnt =  Contact.find(params[:transaction][:contact_id]) if !params[:transaction][:contact_id].blank?
         if cnt.blank? || cnt.name_subname != contact_name
-            contact = Contact.new
-            contact.name = contact_name
-            contact.regular = 0
-            contact.save!
-            @trans.contact_id = contact.id
+           # contact = Contact.new
+            #contact.name = contact_name
+          #  contact.regular = 0
+          #  contact.save!
+          # @trans.contact_id = contact.id
         end  
          
       end  
@@ -210,7 +204,7 @@ class TransactionsController < ApplicationController
  end
 
 def remove
-  #begin
+  begin
     txn = Transaction.find(params[:id])
     cid = txn.contact_id
     txn.destroy
@@ -223,10 +217,10 @@ def remove
    end 
    
   
-#  rescue Exception => e 
- #   p e.to_s
-  #  p e.backtrace
-  #end  
+  rescue Exception => e 
+    p e.to_s
+    p e.backtrace
+  end  
  end
 
  def add_item_row
@@ -285,6 +279,11 @@ def remove
  def quick_add
  end
 
+ def fast_add_form
+    @contacts = Contact.all_conts
+    @sites = Site.all
+    @items = Item.all
+ end 
 
  
 end

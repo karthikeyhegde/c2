@@ -1,0 +1,41 @@
+<table class="table table-condensed" style='font-size:12px;width:80%' align="center">
+  <thead style="background-color:#C0C0C0;">
+    <th>Date</th>
+    <th>Item</th>    
+    <th>Contact</th>
+    <th>Numbers & Price</th>
+    <th style="color:#330099">Action</th>
+  </thead>
+  <tbody>
+   <% i = 0
+    @item_stock_entries.each{|c|
+     i+= 1 %>
+    <%if i%2 == 0%>
+       <tr>
+    <%else%>
+       <tr class="info">
+    <%end%>
+      <td><%=c.on_date%></td>
+      <td><%=link_to c.item.name, rep_txnitems_item_url(c.item.id)%></td>
+      <td><%if !c.blank? and !c.contact_id.blank?%><%=link_to c.name_subname, report_page_contact_path(:id => c.contact_id)%><%end%></td>
+      <td><%=c.numbers%>  <%if !c.nil?  and c.price > 0 %> ( <%=c.price%> )<%end%> </td>
+      
+    <td>
+          <span id ='t1'>
+          <%=link_to "Edit", edit_stock_entry_url(c.id), :class=>"label label-info"%><%=space(5).html_safe%>
+         </span>
+         <span id='t2'>
+          <%=link_to "Delete", remove_stock_entry_url(c.id), :method => :post, :onclick => "return confirm('Are you sure?')", :class=>"label label-warning"%>
+         </span>
+      </td>
+   </tr>
+   <%}%>
+   <tr class="warning"><td></td>
+    <td></td>
+    <td>Total</td>
+    <td><%=@total%></td>
+    <td></td>
+   </tr>  
+  </tbody>
+
+</table>

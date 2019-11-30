@@ -39,13 +39,13 @@
               Customer: <%= link_to ((image_tag "add.png", :size=>"10x10")+' New'), add_txn_contacts_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;'}  %> &nbsp;|
         <%=link_to ((image_tag "find.png", :size=>"12x12")+" List"), window_list_contacts_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;'}  %> 
               <br>
-             <%=text_field :txn, :contact, class:'autocomplete', style:"height:30px;"%>
+             <%=text_field :txn, :contact, class:'autocomplete', style:"height:30px;", :tabindex => 1%>
              <br>
              <span id='contact_number' style='color:grey;font-size:11px;font-weight:bold;'></span>
              <%=f.hidden_field :contact_id %>
            </td>
            <td style="padding-left:80px;">Site:  <%=link_to ((image_tag "find.png", :size=>"12x12")+" List"), window_list_sites_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;'}  %> <br> 
-        <%=text_field  :txn, :site, class:'autocomplete', style:"height:30px;"%> <br>
+        <%=text_field  :txn, :site, class:'autocomplete', style:"height:30px;", :tabindex => 2%> <br>
         <%=f.hidden_field :site_id %></td>
          </tr>
      
@@ -69,15 +69,15 @@
             </td>
             <td id='vehicle' style="display:none;padding:20px;">
                Vehicle Charges: <br> 
-             <%=f.text_field :vehicle_charges, style:'height:30px;', :class=>'calc-amount'%>
+             <%=f.text_field :vehicle_charges, style:'height:30px;', :class=>'calc-amount', :tabindex => 20%>
             </td>
             <td id='hamaali' style ="display:none" colspan='2'>
                Hamaali: <%=space(20)%> Discount:
                <br> 
-             <%=f.text_field :hamaali, style:'height:30px;width:100px;', :class=>'calc-amount'%>
+             <%=f.text_field :hamaali, style:'height:30px;width:100px;', :class=>'calc-amount', :tabindex => 21%>
             
              <%=space(5)%>
-             <%=f.text_field :discount, style:'height:30px;width:100px;', :class=>'calc-amount'%>
+             <%=f.text_field :discount, style:'height:30px;width:100px;', :class=>'calc-amount',:tabindex => 22%>
             </td>
             
           </tr>
@@ -95,17 +95,17 @@
           <td style="padding:20px;">
              Payment Type
           <br>
-     <%=f.select  :payment_type, [['Cash','Cash'],['Cheque','Cheque'],['Bank Transaction']],{},{style:'width:150px;'}%>
+     <%=f.select  :payment_type, [['Cash','Cash'],['Cheque','Cheque'],['Bank Transaction']],{},{style:'width:150px;'} %>
           </td>
           <td>Paid Amount 
      <br>
-     <%=f.text_field  :payment_amount, style:'height:30px;'%></b></td>
+     <%=f.text_field  :payment_amount, style:'height:30px;', :tabindex => 24%></b></td>
            <td style="padding-left:80px;"><span class="label">Return: <%=check_box  :transaction, :buyback %></td>
         </tr>
 
         <tr>
           <td id='add_note' style="padding-left:10px;"><%=link_to ((image_tag "add.png", :size=>"11x11")+' Note'),"#", {:onclick => "$('#t_note').show();$('#add_note').hide()"}%></td>
-          <td id='t_note' style="padding-left:20px;display:none;" colspan="3"> Note:<br><%=text_area  :transaction, :descri , :size=>'2X10' %></td>
+          <td id='t_note' style="padding-left:20px;display:none;" colspan="3"> Note:<br><%=text_area  :transaction, :descri , :size=>'2X10', :tabindex => 25%></td>
         </tr>
         
          <tr id='gap_row_3' >

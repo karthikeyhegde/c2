@@ -37,7 +37,7 @@ class Utility
 
    
  def self.excel_export 
-  id = params[:id]
+   id = params[:id]
    from_date = ( params[:from_date].blank? ?  '2000-01-01':params[:from_date] )
    to_date =  ( params[:to_date].blank? ? '2100-01-01' : params[:to_date] )
    f_date = DateTime.parse(from_date).strftime('%Y-%m-%d %H:%M')
@@ -53,24 +53,19 @@ class Utility
       styles = wb.styles
       title = styles.add_style(:sz => 14, :b => true,:bg_color => '00FFFF')
 
-      default = styles.add_style(:border => Axlsx::STYLE_THIN_BORDER)
-      money = styles.add_style(:format_code => '##,##,##0.##', 
-                           :border => Axlsx::STYLE_THIN_BORDER)
-      percent = styles.add_style(:num_fmt => Axlsx::NUM_FMT_PERCENT,   
-                             :border => Axlsx::STYLE_THIN_BORDER)
-
+     
       wb.add_row  ['Contact:',@contact.name_subname]
       report_txt = ''
       if params[:from_date].blank? and params[:to_date].blank?
         report_txt += 'Report of all transactions.'
-       else  
-        report_txt += 'Transactions -'
-        if !params[:from_date].blank? 
+      else  
+         report_txt += 'Transactions -'
+         if !params[:from_date].blank? 
              report_txt += 'From '+params[:from_date] 
-        end
-         if !params[:to_date].blank? 
+         end
+          if !params[:to_date].blank? 
             report_txt += 'up to '+params[:to_date] 
-        end
+          end
              
       end
 
@@ -108,15 +103,28 @@ class Utility
         end  
         count += 1
       }
-
+    end
       time = DateTime.now.to_s.sub(':','')
       #p.serialize @contact.name_subname_underscore+'_transactions_'+time+'.xlsx'
       send_data p.to_stream.read, type: "application/xlsx", filename: @contact.name_subname_underscore+'_transactions_'+time+'.xlsx'
     end
 
+    def self.pagination_process(params,elem)
 
- end 
+      no_of_weeks =  params[:no_of_weeks].blank? ? 2 : params[:no_of_weeks].to_i
+      date_str = "on_date > '"+no_of_weeks.weeks.ago.strftime("%Y-%m-%d")+"' " if no_of_weeks > 1
+      trs_text = "Showing  "+elem+" from last "+no_of_weeks.to_s+" weeks ."
+  
+       if (!params[:from_date].blank? || !params[:to_date].blank?)
+          from_date = ( params[:from_date].blank? ?  '2000-01-01': DateTime.parse(params[:from_date]).strftime('%Y-%m-%d %H:%M'))
+          to_date   = ( params[:to_date].blank? ? '2100-01-01' : DateTime.parse(params[:to_date]).strftime('%Y-%m-%d %H:%M') )
+          date_str  = " on_date  between '"+from_date+"' and '"+to_date+"'"
+          trs_text = " Showing "+elem
+          trs_text += " from "+params[:from_date] if  !params[:from_date].blank?
+          trs_text += " up to "+params[:to_date] if  !params[:to_date].blank?
+       end
 
+       return date_str,trs_text
+    end
 
-    
 end	

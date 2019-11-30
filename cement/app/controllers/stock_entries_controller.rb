@@ -6,21 +6,10 @@ class StockEntriesController < ApplicationController
   @sort_order = params[:sort_order]  || "DESC"
   @page_size = params[:page_size] || 20
 
-  no_of_weeks =  params[:no_of_weeks].blank? ? 52 : params[:no_of_weeks].to_i
-  date_str = "on_date > '"+no_of_weeks.weeks.ago.strftime("%Y-%m-%d")+"' " 
-  @trs_text = "Showing  Stock Entries from last "+no_of_weeks.to_s+" weeks ."
-  
-  if !params[:from_date].blank? || !params[:to_date].blank?
-    from_date = ( params[:from_date].blank? ?  '2000-01-01': DateTime.parse(params[:from_date]).strftime('%Y-%m-%d %H:%M'))
-    to_date   = ( params[:to_date].blank? ? '2100-01-01' : DateTime.parse(params[:to_date]).strftime('%Y-%m-%d %H:%M') )
-    date_str  = "on_date  between '"+from_date+"' and '"+to_date+"'"
-    @trs_text = "Showing Stock Entries "
-    @trs_text += " from "+params[:from_date] if  !params[:from_date].blank?
-    @trs_text += " up to "+params[:to_date] if  !params[:to_date].blank?
-  end
-  offset = params[:offset] || 0
+  values = Utility.pagination_process(params,"Stock Entries")
+  @trs_text = values[1]
   total = StockEntry.count
-  @stock_entries = StockEntry.where(date_str).order("#{@sort_column} #{@sort_order}, created_at DESC ")
+  @stock_entries = StockEntry.where(values[0]).order("#{@sort_column} #{@sort_order}, created_at DESC ")
   
  end
 
@@ -76,5 +65,20 @@ class StockEntriesController < ApplicationController
    render :template => 'contacts/report_page.erb'
 
  end 
+
+  def pagination
+    @sort_column = params[:sort_colum] || 'on_date'
+    @sort_order = params[:sort_order]  || "DESC"
+    @page_size = params[:page_size] || 20
+    @offset = params[:offset] || 0
+    
+    values = Utility.pagination_process(params,"Stock Entries")
+    @trs_text = values[1]
+    total = StockEntry.count
+    @stock_entries = StockEntry.where(values[0]).order("#{@sort_column} #{@sort_order}, created_at DESC ")
+  respond_to do |format|
+      format.js {render layout: false}
+   end 
+  end  
 
 end	

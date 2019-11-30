@@ -43,9 +43,7 @@
 
       <% else %>
         <%c.txn_items.each{|tx|%>
-        <% if tx.item != nil %>
-         <%=tx.item.name%> 
-         <%end%> &nbsp;&nbsp; <%=tx.number%> &nbsp;x&nbsp;<%=tx.price%> 
+         <%=tx.item.name%> &nbsp;&nbsp; <%=tx.number%> &nbsp;x&nbsp;<%=tx.price%> 
          <br>
         <%}%>
         <%if c.hamaali.to_i > 0%>

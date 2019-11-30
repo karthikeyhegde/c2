@@ -29,7 +29,7 @@
     <td><%=c.id%></td>
     <td><%=c.on_date%></td>
     <td><%c.payment_rows.each {|p| %>
-
+    <% puts c.id %>
        <%=p.pay_type%> : <%if !p.note.blank?%> <%=p.note%>  : <%end%> <%=p.amount%> <br>
      <% }%>
      <% if ( c.discount.to_i > 0)  %>Discount : <%=c.discount%><br> <%end%><%=c.payment_note%></td>
