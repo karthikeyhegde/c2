@@ -73,6 +73,8 @@ Cement::Application.routes.draw do
       post 'set_default_date', :on => :collection
       post 'quick_save_item', :on => :collection
       get  'stock_entries', :on => :member
+      get  'ajax_reptxn', :on => :collection
+      get  'ajax_stockentry', :on => :collection
   end
 
   resources :contacts do
@@ -103,6 +105,7 @@ Cement::Application.routes.draw do
     post 'pagination', :on => :collection
     get  'quick_add_form', :on => :collection
     post 'quick_add', :on => :collection
+    get 'fast_add_form', :on => :collection
   end
 
   resources :stock_entries do
@@ -148,6 +151,7 @@ Cement::Application.routes.draw do
   resources :payments do
       post 'remove', :on => :member
       get  'add_payment_row', :on => :collection
+      post 'pagination', :on => :collection
   end   
 
    resources :reports do
