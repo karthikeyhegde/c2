@@ -22,6 +22,7 @@ class PaymentsController < ApplicationController
     @site_name = ''
     @cont = Contact.all_conts
     @sites = Site.all
+    @sb_txt = "Add Payment"
   end 	
 
   def create
@@ -56,6 +57,7 @@ class PaymentsController < ApplicationController
   def edit
   	@payment = Payment.find(params[:id].to_i)
     @site_name = (@payment.site.blank? ?  "":@payment.site.name)
+    @sb_txt = "Update Payment"
     @cont = Contact.all_conts
     @sites = Site.all
   end
@@ -123,7 +125,46 @@ class PaymentsController < ApplicationController
     @payments = Payment.where(values[0]).order("#{@sort_column} #{@sort_order}, created_at DESC ")
     respond_to do |format|
       format.js {render layout: false}
-   end 
+    end 
+  end  
+
+
+  def jx_new
+  end
+  
+  def jx_save
+    p params
+     @payment = Payment.new(params[:payment])
+      params[:payment_rows].each{|key,val|
+
+         pr = PaymentRow.new(val)
+         @payment.payment_rows << pr
+      }
+     @row_ct = params[:row_ct].to_i
+     @payment.assign_amount
+     sleep 5
+     @payment.save!
+      flash[:success] = "Pyment Added Successfully"
+      respond_to do |format|
+      format.js {render layout: false}
+    end 
+  end  
+
+  def jx_row
+  end  
+
+  def async_payment_form
+    @payment = Payment.new
+    @site_name = ''
+    @cont = Contact.all_conts
+    @sites = Site.all
+    @sb_txt = "Add Payment"
+  end  
+
+  def clear_form
+      respond_to do |format|
+      format.js {render layout: false}
+    end 
   end  
 	
 end	

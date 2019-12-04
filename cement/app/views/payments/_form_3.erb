@@ -2,7 +2,7 @@
 <div id='contact-modal-window' class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   Loading ...
 </div>
-<%= form_for @payment, :remote => true do |f| %>
+<%= form_for @payment, url: jx_save_payments_path, :remote => true do |f| %>
 
 <div id='div_item_table' class="row-fluid txn-form" style="border:0;">
    <div class="span2" >
@@ -25,6 +25,7 @@
           <br>
         <%=text_field  :txn, :contact, class:'autocomplete', style:"height:30px;", value: @payment.name_subname%>
         <%=f.hidden_field :contact_id %>
+       <%= hidden_field_tag 'row_ct', '0'  %>
         <br>
         <span id='contact_number' style='color:grey;font-size:14px;'></span>
         </td>
@@ -61,7 +62,7 @@
     </td>
              
 
-           </tr>
+          </tr>
     
 
   <%if !@payment.payment_rows.blank? %>
@@ -78,10 +79,10 @@
     
     <td >
         Discount Amount<br>
-       <%=f.text_field  :discount, id: "discount_amount", class:"keyup_amount", style:"height:30px;width:100px;" %>
+       <%=f.text_field  :discount, id: "discount_amount", class:" keyup_amount", style:"height:30px;width:100px;" %>
     </td>
      <td style="padding-left:10px;">Site:  <%=link_to ((image_tag "find.png", :size=>"12x12")+" List"), window_list_sites_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;'}  %> <br> 
-        <%=text_field  :txn, :site, class:'autocomplete', style:"height:30px;", :value => @site_name%> <br>
+        <%=text_field  :txn, :site, class:'autocomplete resetthis', style:"height:30px;", :value => @site_name%> <br>
         <%=f.hidden_field :site_id %></td>
     <td >
       Total Amount: <%=space(3)%>
@@ -97,15 +98,16 @@
     
     <td colspan=3>
       Note:<br>
-      <%=f.text_area  :descri,  :size => '3x2'%>
+      <%=f.text_area  :descri, class:'resetthis',  :size => '3x2'%>
 
     </td>
     
  </tr>
  <tr>
    <td colspan="3">
-       <%=f.submit @sb_txt,:id => "button_id", :class => 'btn btn-warning', :data => {disable_with: "Submitting..."}  %><%=space(5).html_safe%> <%=link_to "Cancel", payments_url, :style=>"font-weight:bold"%>
+       <%=f.submit @sb_txt,:id => "button_id", :class => 'btn btn-warning'  %><%=space(5).html_safe%> <%=link_to "Cancel", payments_url, :style=>"font-weight:bold"%>
    </td>
+   <td><</td>
  </tr>
  </tbody>
  </table>
@@ -191,4 +193,21 @@
       $('#payment_site_id').val(search_sites[ui.item.value].toString());}       
 
   });
+
+ $("#new_payment").submit(function(e){
+        e.preventDefault();
+         showUnsavedRow();
+         /*$.ajax({
+         type: "POST",
+         url: "<%=clear_form_payments_url%>",
+         timeout: 5000
+      });*/
+    });
+
+ 
+
+ function myFunction(){
+  console.log(" Calling My function")
+  clearPaymentForm();
+ }
 </script> 

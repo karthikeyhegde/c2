@@ -3,9 +3,6 @@ class ItemsController < ApplicationController
 
  def index
   @items = Item.order(:name)
-  p "PARAMS IND"
-  p params
-  p flash
  end
 
  def show
@@ -18,11 +15,8 @@ class ItemsController < ApplicationController
 
  def create
   @item = Item.new(params[:item])
-  p "ITEMS -- "
-  p params[:item]
   default_date = MySetting.find_by_name('stock_start_date')
   @item.start_date = default_date.value;
-  p @item
   @item.save!
   redirect_to :action => 'index'
  end
@@ -92,10 +86,10 @@ class ItemsController < ApplicationController
 
     @item = Item.find(params[:id])
     sdate = nil
-    edate = nil
+    edate = Time.now
   if (params.has_key?(:sdate) && params[:sdate] != nil && params[:sdate] != '' )
     sdate = DateTime.parse(params[:sdate]).strftime('%Y-%m-%d %H:%M') 
-    edate = DateTime.parse(params[:edate]).strftime('%Y-%m-%d %H:%M') 
+    edate = DateTime.parse(params[:edate]).strftime('%Y-%m-%d %H:%M')  if(params.has_key?(:edate) && params[:edate] != nil && params[:edate] != '' )
   else
       if( @item.txn_items.length() >  100)
         sdate = 2.months.ago
@@ -117,6 +111,7 @@ class ItemsController < ApplicationController
  end 
 
  def filter_rep_txnitems
+  p "FROM FILTER"
     rep_txnitems
     render template:  'items/rep_txnitems'
  end
@@ -150,6 +145,7 @@ class ItemsController < ApplicationController
 
 
 def ajax_reptxn
+  p "FROM AJAX"
   rep_txnitems
   respond_to do |format|
          format.js {render layout: false}
@@ -159,6 +155,8 @@ end
 def ajax_stockentry
   @item = Item.find(params[:id].to_i)
   res = @item.stock_entries_with_total
+  p "STK entries "
+  p res
   @item_stock_entries = res["stockentries"]
   @total = res["total"]
   respond_to do |format|

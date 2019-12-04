@@ -1,0 +1,32 @@
+
+
+ <% bgcolor = '#f4f2ff' %>
+
+ 
+
+<div id='dat_row_<%=@row_ct%>' class="row-fluid border-bottom" style="background-color: <%=bgcolor%>">
+	<div id='d1' class="span3" >
+		<i class="fa fa-check-circle" aria-hidden="true"></i> 
+		<%=link_to @payment.id, edit_payment_url(@payment.id), target: :_blank%><%=space(5).html_safe%>
+         
+		<%=@payment.on_date%>
+     </div>
+     <div id='d3' class="span3" >
+		<%=@payment.tofrom_contact%>
+		<%if !@payment.site_id.blank? %>
+           <br>Site: <%=@payment.site.name%>
+        <%end%>
+     </div>
+     <div id='d4' class="span3" >
+     	<%@payment.payment_rows.each {|pr| %>
+     	<%=pr.pay_type%> : <%if !pr.note.blank?%> <%=pr.note%>  : <%end%> <%=pr.amount%> <br>
+     <% }%>
+     <% if ( @payment.discount.to_i > 0)  %>Discount : <%=@payment.discount%><br> <%end%><%=@payment.payment_note%>
+ </div>
+    <div id='d6' class="span1" >
+      <%if @payment.recieved != 1%> -<%end%><%=Utility.indian_number @payment.payment_amount %>
+     	
+     </div>
+
+
+</div>

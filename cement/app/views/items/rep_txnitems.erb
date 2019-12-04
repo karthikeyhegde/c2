@@ -35,7 +35,7 @@ $(document).ready(function() {
   console.log("In Ready");
   $.ajax({
       url: "<%=ajax_reptxn_items_url%>",
-      data: { id: "<%=@item.id%>" },
+      data: { id: "<%=@item.id%>", sdate:"<%=params[:sdate]%>", edate:"<%=params[:edate]%>" },
       
        dataType : 'script',
        success: function (response) { console.log ("Req 1")},
@@ -49,7 +49,7 @@ $(document).ready(function() {
 
   $.ajax({
       url: "<%=ajax_stockentry_items_url%>",
-      data: { id: "<%=@item.id%>" },
+      data: { id: "<%=@item.id%>", sdate:"<%=params[:sdate]%>", edate:"<%=params[:edate]%>" },
       
        dataType : 'script',
        success: function (response) { console.log ("Req 2")},

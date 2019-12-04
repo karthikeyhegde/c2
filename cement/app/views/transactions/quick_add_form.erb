@@ -34,18 +34,18 @@
       </thead> 
       <tbody style='font-size:13px;'>
          <tr id='first_row_fields'>
-           <td style="padding:20px;padding-bottom:10px;"> Date : <br><%= f.text_field :on_date, class:'input', style:'height:30px'%></td>
+           <td style="padding:20px;padding-bottom:10px;"> Date : <br><%= f.text_field :on_date, class:'input', style:'height:30px', :tabindex => 1%></td>
            <td  style="width:20%;padding-bottom:1px;">
               Customer: <%= link_to ((image_tag "add.png", :size=>"10x10")+' New'), add_txn_contacts_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;'}  %> &nbsp;|
         <%=link_to ((image_tag "find.png", :size=>"12x12")+" List"), window_list_contacts_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;'}  %> 
               <br>
-             <%=text_field :txn, :contact, class:'autocomplete', style:"height:30px;", :tabindex => 1%>
+             <%=text_field :txn, :contact, class:'autocomplete', style:"height:30px;",  :tabindex => 2%>
              <br>
              <span id='contact_number' style='color:grey;font-size:11px;font-weight:bold;'></span>
              <%=f.hidden_field :contact_id %>
            </td>
            <td style="padding-left:80px;">Site:  <%=link_to ((image_tag "find.png", :size=>"12x12")+" List"), window_list_sites_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#contact-modal-window', style: 'font-size:12px;'}  %> <br> 
-        <%=text_field  :txn, :site, class:'autocomplete', style:"height:30px;", :tabindex => 2%> <br>
+        <%=text_field  :txn, :site, class:'autocomplete', style:"height:30px;", :tabindex => 3%> <br>
         <%=f.hidden_field :site_id %></td>
          </tr>
      
@@ -140,8 +140,12 @@
 
 <script type="text/javascript">
 
-$('#transaction_on_date').datepicker({ dateFormat: 'dd-mm-yy' });
+$('#transaction_on_date').datepicker({ 
+dateFormat: 'dd-mm-yy',
+onSelect: function(dateText, inst) { $("#txn_contact").focus() }
+});
 $("#transaction_on_date").datepicker('setDate', new Date());
+
 $('.calc-amount').on('keyup', function(){
     
      calc_total_value();
@@ -150,6 +154,18 @@ $('.calc-amount').on('keyup', function(){
 
 
  
+$(document).ready(function() {
+
+       $("#transaction_on_date").focus();
+       $("#txn_site").keydown(function(e) {
+       console.log('site keyup '+e.keyCode);
+        if (e.keyCode == 9 ) {
+          $('.select2-container').focus()
+        }
+    });
+
+});
+
 
   var last_c_str = '';
   var contact_names = [];
@@ -221,4 +237,5 @@ $('#txn_site').autocomplete({
     $(this).attr('disabled', true);
 });
  
+
 </script>

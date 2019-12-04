@@ -9,10 +9,10 @@
 
     </td>
     <td >
-      <%=p.text_field  :note, style:"height:30px;", :placeholder => "Payment Info" %>
+      <%=p.text_field  :note, style:"height:30px;", :placeholder => "Payment Info",  class:" resetthis" %>
     </td>
     <td>
-       <%=p.text_field  :amount, id:"amount_#{row_no}", class:"each_amount", style:"height:30px;", :placeholder => "Amount" %>
+       <%=p.text_field  :amount, id:"amount_#{row_no}", class:"each_amount resetthis ", style:"height:30px;", :placeholder => "Amount" %>
 
       <%=link_to_function  (image_tag "cross_circle.png", :size=>"12x12"), "removeItem('#{row_no}')", style:'font-size:15px;font-weight:bold;'%>
     </td>

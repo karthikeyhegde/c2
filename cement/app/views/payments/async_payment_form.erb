@@ -1,0 +1,57 @@
+
+<script type="text/javascript">
+	var record_ct = 0;
+	function submitFormactions(){
+		showUnsavedRow();
+		clearPaymentForm();
+
+	}
+
+	function showUnsavedRow(){
+
+		var formdata = $("#new_payment").serializeArray();
+        if ($.trim($('#payment_contact_id').val()) == '' || $.trim($('#payment_on_date').val()) == '' ||
+        $.trim($('#total_amnt').text()) == '0.0'){
+          alert(" Enter Required Value");
+          return false;
+        }
+
+		record_ct += 1;
+		$('#row_ct').val(""+record_ct);
+		html = "<div id='r_"+record_ct+"' style='border-bottom: 1px solid red'> <i class='fa fa-spinner fa-spin'></i> Saving..  "+$('#txn_contact').val();
+		html += " "+$('#payment_on_date').val()+"  amount: "+$('#total_amnt').text();
+		html += "</div> "
+		
+		console.log(' LLLL');
+		$("#addedlist").append(html);
+		setTimeout(myFunction, 1000);
+		  
+	}
+
+	function clearPaymentForm(){
+		$('.resetthis').val('');
+		$('#payment_site_id').val('');
+		$('#total_amnt').text('0.0');
+		$("#discount_amount").val(0.0);
+
+	}
+</script>
+
+<div id='multi_funct_page'  style="border:0;">
+	<div id='list_row' class="row-fluid" style="border:0;">
+       <div id='addedlist' class="offset1 span10" >
+       </div>
+     </div>
+     <br><br>
+     	<div id='list_row' class="row-fluid" style="border:0;">
+       <div id='add_form' class="span12" >
+       	   <%=render :partial => 'form_3'%>
+       </div>
+     </div>
+</div>
+
+
+
+
+
+

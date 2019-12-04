@@ -152,6 +152,10 @@ Cement::Application.routes.draw do
       post 'remove', :on => :member
       get  'add_payment_row', :on => :collection
       post 'pagination', :on => :collection
+      get 'async_payment_form', :on => :collection
+      post 'jx_save', :on => :collection
+      post 'clear_form', :on => :collection
+      
   end   
 
    resources :reports do
