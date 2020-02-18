@@ -70,7 +70,7 @@ class TransactionsController < ApplicationController
         cnt =  Contact.find(params[:transaction][:contact_id]) if !params[:transaction][:contact_id].blank?
         if cnt.blank? || cnt.name_subname != contact_name
            # contact = Contact.new
-            #contact.name = contact_name
+          #contact.name = contact_name
           #  contact.regular = 0
           #  contact.save!
           # @trans.contact_id = contact.id
@@ -261,7 +261,7 @@ def remove
     @trs_text += " up to "+params[:to_date] if  !params[:to_date].blank?
   end
 
-   @trs = Transaction.where(date_str).order("#{@sort_column} #{@sort_order}, created_at DESC ")
+   @trs = Transaction.where(date_str).order("#{@sort_column} #{@sort_order}, created_at DESC ").includes(:payment_rows,:contact,:txn_items,:site,:items)
 
    respond_to do |format|
       format.js {render layout: false}

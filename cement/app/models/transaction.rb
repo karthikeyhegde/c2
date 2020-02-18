@@ -12,6 +12,7 @@ class Transaction < ActiveRecord::Base
   belongs_to :site
   has_many :txn_items
   has_many :payment_rows , dependent: :destroy
+  has_many :items,  through: :txn_items
 
   before_create :calculate_amount, :calculate_contact_balance, :if => " skip_updator != true"
   before_update :calculate_amount, :rectify_amount, :if => " skip_updator != true"

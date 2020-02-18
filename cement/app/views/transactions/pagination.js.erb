@@ -1,4 +1,4 @@
 <% str_pth = pagination_transactions_path %>
-$('#pgnt_div').html("<%= j(render  :template => 'transactions/_paging_links.erb', :locals => {:ctr_method => 'pagination_payments_path',:form_act => '#{str_pth}'} ) %>");
-$('#py_list').html("<%= j(render  :template => 'payments/_list.erb') %>");
+$('#pgnt_div').html("<%= j(render  :template => 'transactions/_paging_links.erb', :locals => {:ctr_method => 'pagination_transactions_path',:form_act => '#{str_pth}'} ) %>");
+$('#trans_list').html("<%= j(render  :template => 'transactions/_list.erb') %>");
 $('#myspinner').hide();
