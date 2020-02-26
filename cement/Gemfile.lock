@@ -83,7 +83,7 @@ GEM
     mini_portile2 (2.4.0)
     multi_json (1.14.1)
     mysql2 (0.3.21)
-    nokogiri (1.10.5)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     polyglot (0.3.5)
     rack (1.4.7)
